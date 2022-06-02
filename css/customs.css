@@ -96,3 +96,71 @@
     transition: 0.4s;
 }
 
+/*datepicker*/
+
+.month-wrapper {
+    width: 584px!important;
+    height: 320px;    
+    border-radius: 16px 16px 16px 16px !important;
+}
+.date-picker-wrapper .month-wrapper table{
+    background-color: #F3F2EB;
+    padding: 10px 10px 10px 10px;
+    height: 100%;
+    width: 50%!important;
+    border: 5px solid #ffffff;/*todo color white*/
+    padding: 30px;
+}
+.month-wrapper .gap{
+    margin: 0;
+    width:0px;
+}
+.date-picker-wrapper .month-wrapper table .day.checked{
+    background-color: #e44049 !important; /*TODO COLOR PRIMARY*/
+}
+.date-picker-wrapper .month-wrapper table .day.first-date-selected{    
+    border-radius: 10px 0px 0px 10px;
+}
+.date-picker-wrapper .month-wrapper table .day.last-date-selected{
+    background-color: #e44049 !important; /*TODO COLOR PRIMARY*/
+    border-radius: 0px 10px 10px 0px;
+}
+.date-picker-wrapper .month-wrapper table .day.real-today{        
+    background-color: #e44049 !important; /*TODO COLOR PRIMARY*/
+}
+
+.date-picker-wrapper{
+    background-color: inherit!important;
+}
+
+
+/*bobones precio horario*/
+
+.ui-selectonebutton .ui-button.ui-state-active{
+    border: 0px solid #297DB5;
+    background: #e44049; /*TODO color primary*/
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.ui-button-text.ui-c{
+
+}
+
+.ui-selectonebutton .ui-button.ui-state-default:not(.ui-state-active){
+    background-color: #EBEBEB;
+    border: inherit;
+    padding: 10px 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.ui-selectonebutton .ui-button{
+    color: #ffff;
+    /* width: 20px; */
+    /* height: 40px; */
+    background-image: url(../media/icon-select.svg);
+    background-size: 20px 20.57px;
+    /* background-position: calc(100% - 0px) 50%; */
+    background-repeat: no-repeat;
+}
