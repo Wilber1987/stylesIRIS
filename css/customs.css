@@ -1,0 +1,98 @@
+.ui-selectonemenu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: auto;
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    cursor: pointer;
+    padding-right: 22px;
+    vertical-align: top;
+}
+/*FLECHA DE LOS SELECS*/
+
+.ui-selectonemenu .ui-selectonemenu-trigger {
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    cursor: pointer;
+    /* width: 16px; */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+    width: 30px;
+    height: 30px; 
+    display: block;
+    margin-top: 0px !important;
+    background-image: url(../media/icon-select.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-size: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/*cALENDARIO*/
+.date-range-picker-from{
+    position: relative;
+}
+
+.date-range-picker-from .input-icon, .date-range-picker-from-single .input-icon  {
+    bottom: 25%;
+    right: 10px;
+    position: absolute;
+    z-index: 2;
+    color: #838383;
+    width: 40px;
+    height: 40px;
+    
+    background-image: url(/media/icon-date.svg);
+    background-size: 20px 20.57px;
+    background-position: calc(100%  - 0px) 50%;
+    background-repeat: no-repeat;
+
+}
+/*CHECKS*/
+.box-form ul li .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.box-form ul li .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    top: 3px;
+    background-color: #B5B5B5;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.box-form ul li .slider, .ui-chkbox-icon .ui-icon .ui-c ui-icon-check {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EBEBEB;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
