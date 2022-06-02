@@ -3821,18 +3821,7 @@ input.ui-inputfield {
 #availTabMenu > .tabs-menu-main-page {
   height: 75px; }
 
-button[type=submit] {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 26px;
-  color: #002333;
-  border: 2px solid #002333;
-  border-radius: 100px;
-  /*padding: 13px;*/
-  background-color: #FFFFFF;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
+
   button[type=submit]:hover {
     /*TODO background: $color-grey-light;*/
     background-color: #E44049;

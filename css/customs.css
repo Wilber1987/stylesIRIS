@@ -136,31 +136,96 @@
 
 /*bobones precio horario*/
 
-.ui-selectonebutton .ui-button.ui-state-active{
-    border: 0px solid #297DB5;
+.ui-selectonebutton .ui-button.ui-state-default.ui-state-active{
+    
     background: #e44049; /*TODO color primary*/
-    color: #FFFFFF;
+    /*color: #FFFFFF;
     padding: 10px 30px;
     border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-.ui-button-text.ui-c{
-
+    border-bottom-left-radius: 30px;*/
 }
 
-.ui-selectonebutton .ui-button.ui-state-default:not(.ui-state-active){
-    background-color: #EBEBEB;
+.ui-selectonebutton .ui-button.ui-state-default{    
+    background: #EBEBEB;
+    border: 0px solid #297DB5!important;
     border: inherit;
-    padding: 10px 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    padding: 7px 30px;
+    /*border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;*/
 }
+
 .ui-selectonebutton .ui-button{
     color: #ffff;
     /* width: 20px; */
     /* height: 40px; */
-    background-image: url(../media/icon-select.svg);
+    background-image: url(../media/icon-precio.svg);
     background-size: 20px 20.57px;
     /* background-position: calc(100% - 0px) 50%; */
     background-repeat: no-repeat;
+}
+
+.ui-selectonebutton .ui-button:first-of-type, .ui-selectonebutton .lowcost-contract .generate-document-button:first-of-type, .lowcost-contract .ui-selectonebutton .generate-document-button:first-of-type {
+    border-radius: 25px 0 0 25px;
+}
+.ui-selectonebutton .ui-button:last-of-type, .ui-selectonebutton .lowcost-contract .generate-document-button:last-of-type, .lowcost-contract .ui-selectonebutton .generate-document-button:last-of-type {
+    border-radius: 0 25px 25px 0;
+}
+
+/*boton de buscar tipo submit*/
+button[type=submit]:hover{
+    background-color: #e44049;
+    border: inherit;
+    color: white!important;/*todo $color-white variable*/
+}
+
+button[type=submit] {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #002333;
+    border: 2px solid #002333;
+    border-radius: 100px;
+    padding-left: 43px;
+    padding: 1px 30px 10px 40px;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button[type=submit]::after {
+    background-image: url(/media/icon-btn-next.svg);
+    background-repeat: no-repeat;
+    background-size: 5.04px 9.33px;
+    width: 5.04px;
+    height: 9.33px;
+    background-size: 6px 12px;
+    width: 6px;
+    height: 12px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+button[type=submit]:hover::after {
+    background-image: url(/media/icon-btn-next-hover.svg);
+}
+
+button[type=submit]::before {
+    background-image: url(/media/icon-flights-hover.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+}
+button[type=submit]:hover::before {
+    background-image: url(/media/icon-flights.svg);
 }
