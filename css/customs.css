@@ -291,6 +291,24 @@ button[type=submit]:hover::before {
 
 
 /*#region CHECKS y RADIOS*/
+.ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active{
+    background-color: red!important;
+
+    box-shadow: 0 0 0 2px #ffffff,
+                0 0 0 3px red;/*TODO COLOR PRIMARIO*/
+}
+
+.ui-radiobutton .ui-radiobutton-box {
+ 
+}
+.ui-radiobutton.ui-widget{
+    padding: 2px;
+}
+.ui-radiobutton {    
+    border-radius: 15px;
+}
+
+
 .ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default {
     position: relative;
     display: inline-block;
