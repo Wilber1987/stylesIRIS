@@ -180,9 +180,48 @@
 
 /*#endregion*/
 
-/*BOTONES precio horario*/
 
 /*#region BOTONES*/
+
+/*BOTONES precio horario*/
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type{
+    background-image: url(../media/icon-precio-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type span:first-of-type{
+    background-image: url(../media/icon-precio.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2).ui-state-active span:nth-of-type(1){
+    background-image: url(../media/icon-horario-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2) span:nth-of-type(1){
+    background-image: url(../media/icon-horario.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+
 
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
 
@@ -500,3 +539,14 @@ form {
 }
 
 /*#endregion */
+
+/*#region deshabilitaciones generales*/
+.ui-state-default .ui-icon, .ui-messages .ui-icon, .ui-sidebar-close .ui-icon, .ui-datepicker-header .ui-icon, .ui-dialog-titlebar-icon .ui-icon, .ui-selectcheckboxmenu-filter-container .ui-icon
+{
+    background-image: none!important;
+}
+
+.ui-button-text.ui-c:before{
+    content: none!important;
+}
+/*endregion*/
