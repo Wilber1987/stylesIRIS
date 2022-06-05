@@ -265,14 +265,14 @@
 }
 
 /*boton de buscar tipo submit*/
-button[type=submit]:hover {
+#availabilityForm button[type=submit]:hover {
     background-color: #e44049;
     border: inherit;
     color: white !important;
     /*todo $color-white variable*/
 }
 
-button[type=submit] {
+#availabilityForm button[type=submit] {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -287,7 +287,7 @@ button[type=submit] {
     letter-spacing: 2px;
 }
 
-button[type=submit]::after {
+#availabilityForm button[type=submit]::after {
     background-image: url(/media/icon-btn-next.svg);
     background-repeat: no-repeat;
     background-size: 5.04px 9.33px;
@@ -304,11 +304,11 @@ button[type=submit]::after {
     transform: translateY(-50%);
 }
 
-button[type=submit]:hover::after {
+#availabilityForm button[type=submit]:hover::after {
     background-image: url(/media/icon-btn-next-hover.svg);
 }
 
-button[type=submit]::before {
+#availabilityForm button[type=submit]::before {
     background-image: url(/media/icon-flights-hover.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -322,7 +322,7 @@ button[type=submit]::before {
     transform: translateY(-50%);
 }
 
-button[type=submit]:hover::before {
+#availabilityForm button[type=submit]:hover::before {
     background-image: url(/media/icon-flights.svg);
 }
 
@@ -549,4 +549,44 @@ form {
 .ui-button-text.ui-c:before{
     content: none!important;
 }
+/*endregion*/
+
+/*#region header incluye algunos responsivess*/
+#menu-sticky{
+    background-color: white!important;
+}
+.ui-g.menu-container{
+    margin: 0px;
+}
+/*endregion*/
+
+/*#region responsives */
+@media only screen and (max-width: 991px) {
+    body {
+      background-color: lightblue;
+    }
+    .cb-slideshow{
+        display: none;
+    }
+    #avail-container{
+        border-radius: inherit;
+    }
+    #availTabMenu{
+        border-radius: inherit;
+    }
+    .ui-g.menu-responsive{
+        display: none!important;
+    }
+    .menu {
+        display: flex !important;
+    }
+    .ui-g.menu{
+        height: 75px;
+    }
+    #availabilityForm button[type=submit]{
+        width: auto!important;
+    }
+  }
+
+  
 /*endregion*/
