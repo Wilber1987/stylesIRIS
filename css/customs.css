@@ -180,9 +180,48 @@
 
 /*#endregion*/
 
-/*BOTONES precio horario*/
 
 /*#region BOTONES*/
+
+/*BOTONES precio horario*/
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type{
+    background-image: url(../media/icon-precio-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type span:first-of-type{
+    background-image: url(../media/icon-precio.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2).ui-state-active span:nth-of-type(1){
+    background-image: url(../media/icon-horario-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2) span:nth-of-type(1){
+    background-image: url(../media/icon-horario.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;    
+}
+
+
 
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
 
@@ -226,14 +265,14 @@
 }
 
 /*boton de buscar tipo submit*/
-button[type=submit]:hover {
+#availabilityForm button[type=submit]:hover {
     background-color: #e44049;
     border: inherit;
     color: white !important;
     /*todo $color-white variable*/
 }
 
-button[type=submit] {
+#availabilityForm button[type=submit] {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -248,7 +287,7 @@ button[type=submit] {
     letter-spacing: 2px;
 }
 
-button[type=submit]::after {
+#availabilityForm button[type=submit]::after {
     background-image: url(/media/icon-btn-next.svg);
     background-repeat: no-repeat;
     background-size: 5.04px 9.33px;
@@ -265,11 +304,11 @@ button[type=submit]::after {
     transform: translateY(-50%);
 }
 
-button[type=submit]:hover::after {
+#availabilityForm button[type=submit]:hover::after {
     background-image: url(/media/icon-btn-next-hover.svg);
 }
 
-button[type=submit]::before {
+#availabilityForm button[type=submit]::before {
     background-image: url(/media/icon-flights-hover.svg);
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -283,7 +322,7 @@ button[type=submit]::before {
     transform: translateY(-50%);
 }
 
-button[type=submit]:hover::before {
+#availabilityForm button[type=submit]:hover::before {
     background-image: url(/media/icon-flights.svg);
 }
 
@@ -291,6 +330,24 @@ button[type=submit]:hover::before {
 
 
 /*#region CHECKS y RADIOS*/
+.ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active{
+    background-color: red!important;
+
+    box-shadow: 0 0 0 2px #ffffff,
+                0 0 0 3px red;/*TODO COLOR PRIMARIO*/
+}
+
+.ui-radiobutton .ui-radiobutton-box {
+ 
+}
+.ui-radiobutton.ui-widget{
+    padding: 2px;
+}
+.ui-radiobutton {    
+    border-radius: 15px;
+}
+
+
 .ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default {
     position: relative;
     display: inline-block;
@@ -570,3 +627,53 @@ form {
 
 /*#region TABMENU-CARRUCEL */
 
+/*#region deshabilitaciones generales*/
+.ui-state-default .ui-icon, .ui-messages .ui-icon, .ui-sidebar-close .ui-icon, .ui-datepicker-header .ui-icon, .ui-dialog-titlebar-icon .ui-icon, .ui-selectcheckboxmenu-filter-container .ui-icon
+{
+    background-image: none!important;
+}
+
+.ui-button-text.ui-c:before{
+    content: none!important;
+}
+/*endregion*/
+
+/*#region header incluye algunos responsivess*/
+#menu-sticky{
+    background-color: white!important;
+}
+.ui-g.menu-container{
+    margin: 0px;
+}
+/*endregion*/
+
+/*#region responsives */
+@media only screen and (max-width: 991px) {
+    body {
+      background-color: lightblue;
+    }
+    .cb-slideshow{
+        display: none;
+    }
+    #avail-container{
+        border-radius: inherit;
+    }
+    #availTabMenu{
+        border-radius: inherit;
+    }
+    .ui-g.menu-responsive{
+        display: none!important;
+    }
+    .menu {
+        display: flex !important;
+    }
+    .ui-g.menu{
+        height: 75px;
+    }
+    #availabilityForm button[type=submit]{
+        width: auto!important;
+    }
+  }
+
+  
+/*endregion*/
