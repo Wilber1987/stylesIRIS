@@ -19,6 +19,11 @@
 .footer .footer-container .footer-logo img{
     filter: none;
 }
+
+.footer .footer-container .footer-info .footer-company {
+    margin: 0;
+    margin-left: 15px!important;
+}
 /*#endregion*/
 /*FLECHA DE LOS SELECS*/
 /*#region IMPUT/SElects*/
