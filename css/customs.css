@@ -364,10 +364,37 @@ button[type=submit]:hover::before {
     border-top: 21px solid #FFFFFF;
     border-right: 21px solid #FFFFFF;
     border-left: 21px solid #FFFFFF;
+    position: relative;
+    cursor: pointer;
 }
-
+.btnTab {   
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+.btnTabNext{
+    left: auto;
+    right: 20px;
+    background-image: url(../media/icon-next-hover.svg);
+}
+.btnTabNext:hover{    
+    background-image: url(../media/icon-next-hover.svg);
+}
+.btnTabBefore{
+    background-image: url(../media/icon-prev-hover.svg);
+}
+.btnTabBefore:hover{
+    background-image: url(../media/icon-prev-hover.svg);
+}
 #availTabMenu>.tabs-menu-main-page {
     height: 75px;
+    border-radius: 0px 75px 0px 0px;
+    overflow: hidden;
 }
 
 #avail-container {
@@ -376,11 +403,11 @@ button[type=submit]:hover::before {
     border-radius: 5px;*/
     margin: 0 0 60px 0;
     background: #FFFFFF;
-    border-radius: 0px 100px;
+    border-radius: 0px 100px;    
+    max-width: 1400px;
 }
 
 #avail-form {
-    /*padding: 0 .2em .2em;*/
     background-color: #FFFFFF;
     border-radius: 0px 0px 0px 100px;
     padding: 12px;
@@ -406,7 +433,9 @@ button[type=submit]:hover::before {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 0px;
+    padding: 0px;    
+    width: 1700px;
+
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
@@ -475,6 +504,61 @@ button[type=submit]:hover::before {
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-hotel{
     background-image: url(../media/icon-hotels-hover.svg) !important;
 }
+
+/*nuevo tabmenu*/
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights{
+    background-image: url(../media/icon-hotel_flight.svg) !important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights{
+    background-image: url(../media/icon-hotel_flight-hover.svg) !important;
+}
+
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises{
+    background-image: url(../media/icon-cruises.svg) !important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-cruises{
+    background-image: url(../media/icon-cruises-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature{
+    background-image: url(../media/icon-digital_signature.svg) !important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-digital-signature{
+    background-image: url(../media/icon-digital_signature-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities{
+    background-image: url(../media/icon-activities.svg) !important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-activities{
+    background-image: url(../media/icon-activities-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad{
+    background-image: url(../media/icon-bookroad.svg) !important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-bookroad{
+    background-image: url(../media/icon-bookroad-hover.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway{
+    background-image: url(../media/icon-busway.svg) !important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-busway{
+    background-image: url(../media/icon-busway-hover.svg) !important;
+}
 form {
     width: 100%;
     box-sizing: border-box;
@@ -482,3 +566,7 @@ form {
 }
 
 /*#endregion */
+
+
+/*#region TABMENU-CARRUCEL */
+
