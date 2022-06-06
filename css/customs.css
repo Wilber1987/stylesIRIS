@@ -2,7 +2,29 @@
     --main-font: sans-serif;
     --main-font-two: 16px "DM Sans", sans-serif;
 }
+/*#region footer*/
+.footer{
+    border-radius: 75px 0px 0px 0px;    
+    width: 90%;
+    margin: auto;
+    
+    padding: 0;
+    height: 106px;
+    max-width: 1199px;
+    flex: 0 0 100%;
+}
+.footer-container{
+    background-color: white;
+}
+.footer .footer-container .footer-logo img{
+    filter: none;
+}
 
+.footer .footer-container .footer-info .footer-company {
+    margin: 0;
+    margin-left: 15px!important;
+}
+/*#endregion*/
 /*FLECHA DE LOS SELECS*/
 /*#region IMPUT/SElects*/
 .ui-selectonemenu {
@@ -18,7 +40,6 @@
     padding-right: 22px;
     vertical-align: top;
 }
-
 
 /*FLECHA DE LOS SELECS*/
 
@@ -805,6 +826,33 @@ form {
         margin: 0px !important;
     }
     /*#endregion*/
+
+    
+}
+
+@media only screen and (max-width: 768px){
+    /*#region footer*/
+    .footer{
+        border-radius: 0px 0px 0px 0px;    
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: auto;
+        height: auto;
+    }
+    /*#endregion*/
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo>img{
+        margin: auto;
+        display: block;
+    }
+    .footer-container>a, .footer-container>div{
+        margin-bottom: 20px!important;
+    }
 }
 
 
