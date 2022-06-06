@@ -185,40 +185,40 @@
 
 /*BOTONES precio horario*/
 
-#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type{
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type {
     background-image: url(../media/icon-precio-hover.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
     background-position-y: center !important;
-    width: 100%;    
+    width: 100%;
 }
 
-#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type span:first-of-type{
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type span:first-of-type {
     background-image: url(../media/icon-precio.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
     background-position-y: center !important;
-    width: 100%;    
+    width: 100%;
 }
 
-#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2).ui-state-active span:nth-of-type(1){
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2).ui-state-active span:nth-of-type(1) {
     background-image: url(../media/icon-horario-hover.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
     background-position-y: center !important;
-    width: 100%;    
+    width: 100%;
 }
 
-#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2) span:nth-of-type(1){
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2) span:nth-of-type(1) {
     background-image: url(../media/icon-horario.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
     background-position-y: center !important;
-    width: 100%;    
+    width: 100%;
 }
 
 
@@ -330,20 +330,21 @@
 
 
 /*#region CHECKS y RADIOS*/
-.ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active{
-    background-color: red!important;
+.ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
+    background-color: red !important;
 
     box-shadow: 0 0 0 2px #ffffff,
-                0 0 0 3px red;/*TODO COLOR PRIMARIO*/
+        0 0 0 3px red;
+    /*TODO COLOR PRIMARIO*/
 }
 
-.ui-radiobutton .ui-radiobutton-box {
- 
-}
-.ui-radiobutton.ui-widget{
+.ui-radiobutton .ui-radiobutton-box {}
+
+.ui-radiobutton.ui-widget {
     padding: 2px;
 }
-.ui-radiobutton {    
+
+.ui-radiobutton {
     border-radius: 15px;
 }
 
@@ -421,10 +422,44 @@
     border-top: 21px solid #FFFFFF;
     border-right: 21px solid #FFFFFF;
     border-left: 21px solid #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnTab {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+.btnTabNext {
+    left: auto;
+    right: 20px;
+    background-image: url(../media/icon-next-hover.svg);
+}
+
+.btnTabNext:hover {
+    background-image: url(../media/icon-next-hover.svg);
+}
+
+.btnTabBefore {
+    background-image: url(../media/icon-prev-hover.svg);
+}
+
+.btnTabBefore:hover {
+    background-image: url(../media/icon-prev-hover.svg);
 }
 
 #availTabMenu>.tabs-menu-main-page {
     height: 75px;
+    border-radius: 0px 75px 0px 0px;
+    overflow: hidden;
 }
 
 #avail-container {
@@ -434,10 +469,10 @@
     margin: 0 0 60px 0;
     background: #FFFFFF;
     border-radius: 0px 100px;
+    max-width: 1200px;
 }
 
 #avail-form {
-    /*padding: 0 .2em .2em;*/
     background-color: #FFFFFF;
     border-radius: 0px 0px 0px 100px;
     padding: 12px;
@@ -464,12 +499,15 @@
     justify-content: left;
     align-items: center;
     padding: 0px;
+    width: 1700px;
+
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
     margin: 0;
     height: 100%;
-    background-color: #E44049;/*TODO color PRIMARY*/
+    background-color: #E44049;
+    /*TODO color PRIMARY*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,115 +516,296 @@
 
 
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link{
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
     padding: 0.5em 1.2em;
     color: #ffffff !important;
-    background-color: #E44049;/*TODO color-primary*/
+    background-color: #E44049;
+    /*TODO color-primary*/
     display: flex;
     align-items: center;
 }
 
 /*no van*/
-.ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a{
-    background-color: #E44049 !important;/*TODO color-primary*/
+.ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a {
+    background-color: #E44049 !important;
+    /*TODO color-primary*/
 }
+
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
-    background-color: #FFFFFF !important;   
+    background-color: #FFFFFF !important;
 }
+
 /*FIN no van*/
 /*MENU TAB*/
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link ,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover {
     height: 100%;
     background-color: #FFFFFF !important;
     color: #000000 !important;
 }
+
 /*ICONOS DEL TAB FALTAN SERVICIOS*/
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon{    
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon {
     background-repeat: no-repeat !important;
     background-position-x: center !important;
     background-position-y: center !important;
     background-size: 30px !important;
     width: 40px;
+    overflow: hidden;
+    min-width: 40px;
 }
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane{
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(../media/icon-flights.svg) !important;
 }
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane, 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-plane{
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(../media/icon-flights-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train{
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
     background-image: url(../media/icon-trains.svg) !important;
 }
+
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-train{
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
     background-image: url(../media/icon-trains-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel{
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
     background-image: url(../media/icon-hotels.svg) !important;
 }
+
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover > .ui-menuitem-icon.ui-icon.fa.fa-hotel{
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
     background-image: url(../media/icon-hotels-hover.svg) !important;
 }
+
+/*nuevo tabmenu*/
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+    background-image: url(../media/icon-hotel_flight.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+    background-image: url(../media/icon-hotel_flight-hover.svg) !important;
+}
+
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
+    background-image: url(../media/icon-cruises.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-cruises {
+    background-image: url(../media/icon-cruises-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+    background-image: url(../media/icon-digital_signature.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+    background-image: url(../media/icon-digital_signature-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
+    background-image: url(../media/icon-activities.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-activities {
+    background-image: url(../media/icon-activities-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+    background-image: url(../media/icon-bookroad.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+    background-image: url(../media/icon-bookroad-hover.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
+    background-image: url(../media/icon-busway.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-busway {
+    background-image: url(../media/icon-busway-hover.svg) !important;
+}
+
 form {
     width: 100%;
     box-sizing: border-box;
-    
+
 }
 
 /*#endregion */
 
+
+/*#region TABMENU-CARRUCEL */
+
 /*#region deshabilitaciones generales*/
-.ui-state-default .ui-icon, .ui-messages .ui-icon, .ui-sidebar-close .ui-icon, .ui-datepicker-header .ui-icon, .ui-dialog-titlebar-icon .ui-icon, .ui-selectcheckboxmenu-filter-container .ui-icon
-{
-    background-image: none!important;
+.ui-state-default .ui-icon,
+.ui-messages .ui-icon,
+.ui-sidebar-close .ui-icon,
+.ui-datepicker-header .ui-icon,
+.ui-dialog-titlebar-icon .ui-icon,
+.ui-selectcheckboxmenu-filter-container .ui-icon {
+    background-image: none !important;
 }
 
-.ui-button-text.ui-c:before{
-    content: none!important;
+.ui-button-text.ui-c:before {
+    content: none !important;
 }
+
 /*endregion*/
 
 /*#region header incluye algunos responsivess*/
-#menu-sticky{
-    background-color: white!important;
+#menu-sticky {
+    background-color: white !important;
 }
-.ui-g.menu-container{
+
+.ui-g.menu-container {
     margin: 0px;
 }
+
 /*endregion*/
 
 /*#region responsives */
 @media only screen and (max-width: 991px) {
     body {
-      background-color: lightblue;
+        background-color: lightblue;
     }
-    .cb-slideshow{
+
+    .cb-slideshow {
         display: none;
     }
-    #avail-container{
+
+    #header,
+    #body {
+        overflow: hidden;
+    }
+
+    #avail-container {
         border-radius: inherit;
     }
-    #availTabMenu{
+
+    #availTabMenu {
         border-radius: inherit;
+        border-top: 0px solid #FFFFFF;
+        border-right: 0px solid #FFFFFF;
+        border-left: 0px solid #FFFFFF;
     }
-    .ui-g.menu-responsive{
-        display: none!important;
+
+    .ui-g.menu-responsive {
+        display: none !important;
     }
+
     .menu {
         display: flex !important;
     }
-    .ui-g.menu{
+
+    .ui-g.menu {
         height: 75px;
     }
-    #availabilityForm button[type=submit]{
-        width: auto!important;
-    }
-  }
 
-  
+    #availabilityForm button[type=submit] {
+        width: auto !important;
+    }
+
+    .adaptable-container {
+        width: 100%;
+    }
+
+    #availTabMenu>.tabs-menu-main-page {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem,
+    .ui-tabmenu .ui-menuitem-link,
+    .ui-tabmenu .ui-menuitem-icon,
+    #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link {
+        display: flex !important;
+        margin: 0px;
+    }
+    #console tbody,
+    #console,
+    #console tbody tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #console tbody tr td {
+        display: flex;
+        padding: 5px;
+    }
+    /*#region MUNU RESPONSIVE*/
+    #header {
+        height: 60px;
+        position: relative;
+    }
+    #header-container,
+    .ui-menu.ui-menu-dynamic,
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done
+     {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100%;
+        background-color: #E44049;
+        z-index: 100;        
+    }
+    .ui-menu.ui-menu-dynamic,
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done{
+        display: none;
+    }
+    .header-left form, .header-right{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-left: 0px !important;        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 36px;
+        letter-spacing: 0.38px;
+        color: #FFFFFF;
+        position: relative;
+    }
+    .header-left form .ui-menubutton.ui-widget, 
+    .header-right .header-item,
+    .ui-menu.ui-menu-dynamic ul li a,
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a
+    {
+        color: #FFFFFF !important;
+        border-bottom: #FFFFFF 1px solid;
+        margin: 0px;
+        margin-left: 0px !important;
+        padding: 17px 23px !important;
+        font-weight: 400 !important;
+    }
+    .header-left form .ui-menubutton.ui-widget button{
+        font-weight: 400 !important;
+        padding: 0px;
+        margin: 0px !important;
+    }
+    /*#endregion*/
+}
+
+
 /*endregion*/
