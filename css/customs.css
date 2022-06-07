@@ -2,28 +2,32 @@
     --main-font: sans-serif;
     --main-font-two: 16px "DM Sans", sans-serif;
 }
+
 /*#region footer*/
-.footer{
-    border-radius: 75px 0px 0px 0px;    
+.footer {
+    border-radius: 75px 0px 0px 0px;
     width: 90%;
     margin: auto;
-    
+
     padding: 0;
     height: 106px;
     max-width: 1199px;
     flex: 0 0 100%;
 }
-.footer-container{
+
+.footer-container {
     background-color: white;
 }
-.footer .footer-container .footer-logo img{
+
+.footer .footer-container .footer-logo img {
     filter: none;
 }
 
 .footer .footer-container .footer-info .footer-company {
     margin: 0;
-    margin-left: 15px!important;
+    margin-left: 15px !important;
 }
+
 /*#endregion*/
 /*FLECHA DE LOS SELECS*/
 /*#region IMPUT/SElects*/
@@ -701,6 +705,37 @@ form {
 }
 
 /*endregion*/
+.ui-menu.ui-menu-dynamic {
+    width: 12.5em;
+    padding: 0px;
+    position: relative;
+    outline: 0 none;
+    overflow: hidden;
+    width: 240px;
+}
+
+.ui-menu.ui-menu-dynamic .menu-item-close, .btnCloseMenu {
+    display: none;
+}
+
+.header-left form .ui-menubutton.ui-widget,
+.header-right .header-item,
+.ui-menu.ui-menu-dynamic ul li a,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
+    border-bottom: #b4b2b2 1px solid;
+    margin: 0px;
+    margin-left: 0px !important;
+    padding: 17px 10px !important;
+    font-weight: 400 !important;
+}
+
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a::after {
+    content: ">";
+    margin: 0px 5px;
+    font-weight: bold;
+    float: right;
+    color: #b4b2b2
+}
 
 /*#region responsives */
 @media only screen and (max-width: 991px) {
@@ -759,6 +794,7 @@ form {
         display: flex !important;
         margin: 0px;
     }
+
     #console tbody,
     #console,
     #console tbody tr {
@@ -766,19 +802,21 @@ form {
         flex-direction: column;
         width: 100%;
     }
+
     #console tbody tr td {
         display: flex;
         padding: 5px;
     }
+
     /*#region MUNU RESPONSIVE*/
     #header {
         height: 60px;
         position: relative;
     }
+
     #header-container,
     .ui-menu.ui-menu-dynamic,
-    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done
-     {
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
         display: flex;
         position: fixed;
         flex-direction: column;
@@ -789,17 +827,25 @@ form {
         right: 0 !important;
         width: 100%;
         background-color: #E44049;
-        z-index: 100;        
+        z-index: 1010;
+        transform: translateX(-100%);
+        transition: all 0.6s;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+    }
+    .menu-active {
+        transform: translateX(0%) !important;
     }
     .ui-menu.ui-menu-dynamic,
-    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done{
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
         display: none;
     }
-    .header-left form, .header-right{
+
+    .header-left form,
+    .header-right {
         display: flex;
         flex-direction: column;
         margin: 0px;
-        margin-left: 0px !important;        
+        margin-left: 0px !important;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -808,11 +854,12 @@ form {
         color: #FFFFFF;
         position: relative;
     }
-    .header-left form .ui-menubutton.ui-widget, 
+
+    .header-left form .ui-menubutton.ui-widget,
     .header-right .header-item,
+    .btnCloseMenu,
     .ui-menu.ui-menu-dynamic ul li a,
-    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a
-    {
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
         color: #FFFFFF !important;
         border-bottom: #FFFFFF 1px solid;
         margin: 0px;
@@ -820,20 +867,67 @@ form {
         padding: 17px 23px !important;
         font-weight: 400 !important;
     }
-    .header-left form .ui-menubutton.ui-widget button{
+
+    .header-left form .ui-menubutton.ui-widget button {
         font-weight: 400 !important;
         padding: 0px;
         margin: 0px !important;
     }
+
+    .ui-menu.ui-menu-dynamic .menu-item-close, .btnCloseMenu {
+        display: block;
+    }
+    .btnCloseMenu{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header .header-container .header-left .ui-menubutton .ui-button .ui-icon {
+        background-image: url(../media/icon-menumobile-next.svg) !important;
+        background-size: 6px 12px !important;
+        background-position: 95% 50%;
+        background-repeat: no-repeat !important;
+        content: "" !important;
+        background-position: 0 0 !important;
+        width: 6px !important;
+        height: 12px !important;
+        z-index: 9999999 !important;
+        /* border: 3px solid lime; */
+        right: 20px !important;
+        top: 10px !important;
+        left: auto !important;
+        bottom: auto !important;
+        position: absolute !important;
+        transform: none !important;
+    }
+
+    .menu-toggle {
+        padding: 0px;
+        margin: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #e44049 !important;
+        /*TODO color primary*/
+        background-image: url("../media/icon-menu.svg") !important;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 28px 20px;
+        width: 28px;
+        height: 20px;
+        overflow: hidden;
+    }
+
     /*#endregion*/
 
-    
+
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+
     /*#region footer*/
-    .footer{
-        border-radius: 0px 0px 0px 0px;    
+    .footer {
+        border-radius: 0px 0px 0px 0px;
         margin-right: auto;
         margin-left: auto;
         padding-left: 12px;
@@ -841,17 +935,21 @@ form {
         width: auto;
         height: auto;
     }
+
     /*#endregion*/
-    .footer-container{
+    .footer-container {
         flex-direction: column;
         align-items: center;
     }
-    .footer-logo>img{
+
+    .footer-logo>img {
         margin: auto;
         display: block;
     }
-    .footer-container>a, .footer-container>div{
-        margin-bottom: 20px!important;
+
+    .footer-container>a,
+    .footer-container>div {
+        margin-bottom: 20px !important;
     }
 }
 

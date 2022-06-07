@@ -19,8 +19,27 @@ window.addEventListener("load", () => {
         }
         Tab.append(btnTabBefore, btnTabNext);
     }
+    //HEADER MENU
+    const Menu = document.querySelector("#header-container");
+    const btnCloseMenu = document.createElement("spam");
+    btnCloseMenu.className = "btnCloseMenu";
+    btnCloseMenu.innerHTML = "X"
+    btnCloseMenu.onclick = () => {
+        Menu.className = "ui-g header-container"
+    }
+    Menu.insertBefore(btnCloseMenu, Menu.firstChild);
+    const MenuToggle = document.querySelector("#menu-toggle");
+    MenuToggle.onclick = () => {
+        console.log(Menu.className);
+        console.log(Menu.className.includes("menu-active"));
+        if (Menu.className.includes("menu-active")) {
+            Menu.className = "ui-g header-container"
+        }else {
+            Menu.className = "ui-g header-container menu-active"
+        }        
+    }
 })
-myFunctionNext = (slider, btnTabBefore, count) => {
+const myFunctionNext = (slider, btnTabBefore, count) => {
     Index++;
     if (Index == count) Index = 0;
     const { widthAnimation, LastCard, firstCard } = SlideElements(btnTabBefore, slider);
@@ -31,7 +50,7 @@ myFunctionNext = (slider, btnTabBefore, count) => {
         LastCard.parentNode.insertBefore(firstCard, LastCard.nextSibling);
     }, 400);
 }
-myFunctionPrev = (slider, btnTabBefore, count) => {
+const myFunctionPrev = (slider, btnTabBefore, count) => {
     Index--;
     if (Index == count) Index = 0;
     const { widthAnimation, LastCard, firstCard } = SlideElements(btnTabBefore, slider);
@@ -42,7 +61,6 @@ myFunctionPrev = (slider, btnTabBefore, count) => {
         slider.insertBefore(LastCard, slider.firstChild);
     }, 400);
 }
-
 function SlideElements(btnTabBefore, slider) {
     if (Index == 0)
         btnTabBefore.style.display = "none";
@@ -54,3 +72,5 @@ function SlideElements(btnTabBefore, slider) {
     slider.style.transition = "all 0.5s";
     return { widthAnimation, LastCard, firstCard };
 }
+//--->
+
