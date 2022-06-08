@@ -1,4 +1,9 @@
 /*#region responsives */
+@media (min-width: 1200px) {
+    #header-container, .menu-container, .footer-container {
+        width: 100% !important;
+    }
+}
 @media only screen and (max-width: 1000px) {   
     #top {
         display: none;
@@ -215,7 +220,7 @@
         width: 100%;       
     }
     #header-container, .menu-container, .footer-container {
-        width: 100%;
+        width: 100%!important;
     }
 
     /*#endregion*/
