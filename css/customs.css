@@ -3,18 +3,49 @@
     --main-font-two: 16px "DM Sans", sans-serif;
 }
 
+body{
+    position: relative;
+    height: initial;
+}
+#body{
+    padding-bottom: 100px;
+}
 /*#region footer*/
 .footer {
-    border-radius: 75px 0px 0px 0px;
+    border-radius: 100px 0px 0px 0px;
     width: 90%;
     margin: auto;
-
     padding: 0;
     height: 106px;
     max-width: 1199px;
+    display: flex;
     flex: 0 0 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: inherit;
+    overflow: hidden;
+}
+.footer .footer-container .footer-logo {
+    width: 195px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 96px;
 }
 
+.footer .footer-container .footer-links {
+    display: flex;
+    margin: auto;
+    width: calc(100% - 440px);
+    justify-content: flex-end;
+    margin-right:10px;
+}
+.footer .footer-container .footer-info {
+    display: flex;
+    margin: auto 40px;
+    align-items: center;
+}
 .footer-container {
     background-color: white;
 }
@@ -68,7 +99,7 @@
     height: 30px;
     display: block;
     margin-top: 0px !important;
-    background-image: url(../media/icon-select.svg);
+    background-image: url(../media/icon-select.svg) !important;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 0px;
@@ -132,12 +163,14 @@
     color: #838383;
     width: 40px;
     height: 40px;
-
-    background-image: url(/media/icon-date.svg);
+    background-image: url(/media/icon-date.svg) !important;
     background-size: 20px 20.57px;
     background-position: calc(100% - 0px) 50%;
     background-repeat: no-repeat;
 
+}
+.fa-calendar-alt:before {
+    content: "" !important;
 }
 
 /*datepicker*/
@@ -270,8 +303,7 @@
 .ui-selectonebutton .ui-button {
     color: #ffff;
     /* width: 20px; */
-    /* height: 40px; */
-    background-image: url(../media/icon-precio.svg);
+    /* height: 40px; */   
     background-size: 20px 20.57px;
     /* background-position: calc(100% - 0px) 50%; */
     background-repeat: no-repeat;
@@ -313,7 +345,7 @@
 }
 
 #availabilityForm button[type=submit]::after {
-    background-image: url(/media/icon-btn-next.svg);
+    background-image: url(/media/icon-btn-next.svg) !important;
     background-repeat: no-repeat;
     background-size: 5.04px 9.33px;
     width: 5.04px;
@@ -330,11 +362,11 @@
 }
 
 #availabilityForm button[type=submit]:hover::after {
-    background-image: url(/media/icon-btn-next-hover.svg);
+    background-image: url(/media/icon-btn-next-hover.svg) !important;
 }
 
 #availabilityForm button[type=submit]::before {
-    background-image: url(/media/icon-flights-hover.svg);
+    background-image: url(/media/icon-flights-hover.svg) !important;
     background-repeat: no-repeat;
     background-size: 24px 24px;
     width: 24px;
@@ -348,7 +380,7 @@
 }
 
 #availabilityForm button[type=submit]:hover::before {
-    background-image: url(/media/icon-flights.svg);
+    background-image: url(/media/icon-flights.svg) !important;
 }
 
 /*#endregion*/
@@ -362,8 +394,6 @@
         0 0 0 3px red;
     /*TODO COLOR PRIMARIO*/
 }
-
-.ui-radiobutton .ui-radiobutton-box {}
 
 .ui-radiobutton.ui-widget {
     padding: 2px;
@@ -466,19 +496,19 @@
 .btnTabNext {
     left: auto;
     right: 20px;
-    background-image: url(../media/icon-next-hover.svg);
+    background-image: url(../media/icon-next-hover.svg) !important;
 }
 
 .btnTabNext:hover {
-    background-image: url(../media/icon-next-hover.svg);
+    background-image: url(../media/icon-next-hover.svg) !important;
 }
 
 .btnTabBefore {
-    background-image: url(../media/icon-prev-hover.svg);
+    background-image: url(../media/icon-prev-hover.svg) !important;
 }
 
 .btnTabBefore:hover {
-    background-image: url(../media/icon-prev-hover.svg);
+    background-image: url(../media/icon-prev-hover.svg) !important;
 }
 
 #availTabMenu>.tabs-menu-main-page {
@@ -539,8 +569,6 @@
     top: 0px;
 }
 
-
-
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
     padding: 0.5em 1.2em;
     color: #ffffff !important;
@@ -579,7 +607,11 @@
     overflow: hidden;
     min-width: 40px;
 }
-
+.fa-train:before, .fa-plane:before, .fa-hotel:before, .fa-hotels-flights:before,
+.fa-cruises:before, .fa-digital-signature:before, .fa-activities:before, .fa-bookroad:before,
+.fa-busway:before {
+    content: "" !important;
+}
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(../media/icon-flights.svg) !important;
 }
@@ -714,7 +746,8 @@ form {
     width: 240px;
 }
 
-.ui-menu.ui-menu-dynamic .menu-item-close, .btnCloseMenu {
+.ui-menu.ui-menu-dynamic .menu-item-close,
+.btnCloseMenu {
     display: none;
 }
 
@@ -808,7 +841,7 @@ form {
         padding: 5px;
     }
 
-    /*#region MUNU RESPONSIVE*/
+    /*#region MENU RESPONSIVE*/
     #header {
         height: 60px;
         position: relative;
@@ -827,14 +860,21 @@ form {
         right: 0 !important;
         width: 100%;
         background-color: #E44049;
-        z-index: 1010;
+        z-index: 1010 !important;
         transform: translateX(-100%);
         transition: all 0.6s;
         box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
     }
+
+    .ui-menu.ui-menu-dynamic,
+    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
+        transform: translateX(0%);
+    }
+
     .menu-active {
         transform: translateX(0%) !important;
     }
+
     .ui-menu.ui-menu-dynamic,
     .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
         display: none;
@@ -866,6 +906,7 @@ form {
         margin-left: 0px !important;
         padding: 17px 23px !important;
         font-weight: 400 !important;
+        cursor: pointer;
     }
 
     .header-left form .ui-menubutton.ui-widget button {
@@ -874,10 +915,12 @@ form {
         margin: 0px !important;
     }
 
-    .ui-menu.ui-menu-dynamic .menu-item-close, .btnCloseMenu {
+    .ui-menu.ui-menu-dynamic .menu-item-close,
+    .btnCloseMenu {
         display: block;
     }
-    .btnCloseMenu{
+
+    .btnCloseMenu {
         display: flex;
         justify-content: flex-end;
     }
@@ -907,7 +950,7 @@ form {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #e44049 !important;
+        background-color:  transparent !important;
         /*TODO color primary*/
         background-image: url("../media/icon-menu.svg") !important;
         background-position: 0 0;
@@ -917,9 +960,79 @@ form {
         height: 20px;
         overflow: hidden;
     }
+    .menu-toggle.down-icon{
+        background-image: url("../media/icon-menu.svg") !important;
+    }
+    
+    #menu-sticky.scrollStyle{
+        background-color: #E44049 !important; /*TODO COLOR PRIMARY*/
+        height: 60px !important;
+    }
+    #menu-sticky.scrollStyle #menu-logo{
+        filter: brightness(100);
+        height: 50px !important;
+        margin: 5px;
+    }
+   
+    .footer {
+        width: 100%;       
+    }
+    #header-container, .menu-container, .footer-container {
+        width: 100%;
+    }
 
     /*#endregion*/
 
+    .footer .footer-container .footer-logo {
+        width: 195px;
+        height: 80px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .footer .footer-container .footer-links {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        margin-right:0px;
+    }
+    .footer .footer-container .footer-info {
+        display: flex;
+        margin: auto 0px;
+        align-items: center;
+    }
+    
+    /*date*/
+    .month-wrapper {
+        width: 100% !important;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px 16px 16px 16px !important;
+        padding: 0px !important;
+        overflow: hidden;
+    }
+    .month-wrapper .gap {
+        display: none;
+    }
+    .date-picker-wrapper .month-wrapper table {
+        margin: 5px;
+        width: calc(100% - 10px) !important;
+    }
+    .date-picker-wrapper.no-shortcuts {
+        padding-bottom: 0;
+        background-color: #fff !important;
+        margin-left: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .date-picker-wrapper .drp_top-bar .default-top{
+        display: none;
+    }
+    .date-range-picker-from .input-icon, .date-range-picker-from-single .input-icon, .date-range-picker-to .input-icon {
+        bottom: 15%;
+    }
 
 }
 
@@ -930,9 +1043,8 @@ form {
         border-radius: 0px 0px 0px 0px;
         margin-right: auto;
         margin-left: auto;
-        padding-left: 12px;
-        padding-right: 12px;
-        width: auto;
+        padding-left: 0px;
+        padding-right: 0px;
         height: auto;
     }
 
