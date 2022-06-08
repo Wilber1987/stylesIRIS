@@ -2,28 +2,63 @@
     --main-font: sans-serif;
     --main-font-two: 16px "DM Sans", sans-serif;
 }
+
+body{
+    position: relative;
+    height: initial;
+}
+#body{
+    padding-bottom: 100px;
+}
 /*#region footer*/
-.footer{
-    border-radius: 75px 0px 0px 0px;    
+.footer {
+    border-radius: 100px 0px 0px 0px;
     width: 90%;
     margin: auto;
-    
     padding: 0;
     height: 106px;
     max-width: 1199px;
+    display: flex;
     flex: 0 0 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: inherit;
+    overflow: hidden;
 }
-.footer-container{
+.footer .footer-container .footer-logo {
+    width: 195px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 96px;
+}
+
+.footer .footer-container .footer-links {
+    display: flex;
+    margin: auto;
+    width: calc(100% - 440px);
+    justify-content: flex-end;
+    margin-right:10px;
+}
+.footer .footer-container .footer-info {
+    display: flex;
+    margin: auto 40px;
+    align-items: center;
+}
+.footer-container {
     background-color: white;
 }
-.footer .footer-container .footer-logo img{
+
+.footer .footer-container .footer-logo img {
     filter: none;
 }
 
 .footer .footer-container .footer-info .footer-company {
     margin: 0;
-    margin-left: 15px!important;
+    margin-left: 15px !important;
 }
+
 /*#endregion*/
 /*FLECHA DE LOS SELECS*/
 /*#region IMPUT/SElects*/
@@ -64,7 +99,7 @@
     height: 30px;
     display: block;
     margin-top: 0px !important;
-    background-image: url(../media/icon-select.svg);
+    background-image: url(../media/icon-select.svg) !important;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 0px;
@@ -128,12 +163,14 @@
     color: #838383;
     width: 40px;
     height: 40px;
-
-    background-image: url(/media/icon-date.svg);
+    background-image: url(/media/icon-date.svg) !important;
     background-size: 20px 20.57px;
     background-position: calc(100% - 0px) 50%;
     background-repeat: no-repeat;
 
+}
+.fa-calendar-alt:before {
+    content: "" !important;
 }
 
 /*datepicker*/
@@ -247,29 +284,19 @@
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
 
     background: #e44049;
-    /*TODO color primary*/
-    /*color: #FFFFFF;
-    padding: 10px 30px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;*/
+    /*TODO color primary*/   
 }
 
 .ui-selectonebutton .ui-button.ui-state-default {
     background: #EBEBEB;
     border: 0px solid #297DB5 !important;
     border: inherit;
-    padding: 7px 30px;
-    /*border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;*/
+    padding: 7px 30px;   
 }
 
 .ui-selectonebutton .ui-button {
-    color: #ffff;
-    /* width: 20px; */
-    /* height: 40px; */
-    background-image: url(../media/icon-precio.svg);
-    background-size: 20px 20.57px;
-    /* background-position: calc(100% - 0px) 50%; */
+    color: #ffff;    
+    background-size: 20px 20.57px;   
     background-repeat: no-repeat;
 }
 
@@ -309,7 +336,7 @@
 }
 
 #availabilityForm button[type=submit]::after {
-    background-image: url(/media/icon-btn-next.svg);
+    background-image: url(/media/icon-btn-next.svg) !important;
     background-repeat: no-repeat;
     background-size: 5.04px 9.33px;
     width: 5.04px;
@@ -326,11 +353,11 @@
 }
 
 #availabilityForm button[type=submit]:hover::after {
-    background-image: url(/media/icon-btn-next-hover.svg);
+    background-image: url(/media/icon-btn-next-hover.svg) !important;
 }
 
 #availabilityForm button[type=submit]::before {
-    background-image: url(/media/icon-flights-hover.svg);
+    background-image: url(/media/icon-flights-hover.svg) !important;
     background-repeat: no-repeat;
     background-size: 24px 24px;
     width: 24px;
@@ -344,7 +371,7 @@
 }
 
 #availabilityForm button[type=submit]:hover::before {
-    background-image: url(/media/icon-flights.svg);
+    background-image: url(/media/icon-flights.svg) !important;
 }
 
 /*#endregion*/
@@ -358,8 +385,6 @@
         0 0 0 3px red;
     /*TODO COLOR PRIMARIO*/
 }
-
-.ui-radiobutton .ui-radiobutton-box {}
 
 .ui-radiobutton.ui-widget {
     padding: 2px;
@@ -462,19 +487,19 @@
 .btnTabNext {
     left: auto;
     right: 20px;
-    background-image: url(../media/icon-next-hover.svg);
+    background-image: url(../media/icon-next-hover.svg) !important;
 }
 
 .btnTabNext:hover {
-    background-image: url(../media/icon-next-hover.svg);
+    background-image: url(../media/icon-next-hover.svg) !important;
 }
 
 .btnTabBefore {
-    background-image: url(../media/icon-prev-hover.svg);
+    background-image: url(../media/icon-prev-hover.svg) !important;
 }
 
 .btnTabBefore:hover {
-    background-image: url(../media/icon-prev-hover.svg);
+    background-image: url(../media/icon-prev-hover.svg) !important;
 }
 
 #availTabMenu>.tabs-menu-main-page {
@@ -535,8 +560,6 @@
     top: 0px;
 }
 
-
-
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
     padding: 0.5em 1.2em;
     color: #ffffff !important;
@@ -575,7 +598,11 @@
     overflow: hidden;
     min-width: 40px;
 }
-
+.fa-train:before, .fa-plane:before, .fa-hotel:before, .fa-hotels-flights:before,
+.fa-cruises:before, .fa-digital-signature:before, .fa-activities:before, .fa-bookroad:before,
+.fa-busway:before, .fa-bars::before {
+    content: "" !important;
+}
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(../media/icon-flights.svg) !important;
 }
@@ -701,159 +728,36 @@ form {
 }
 
 /*endregion*/
-
-/*#region responsives */
-@media only screen and (max-width: 991px) {
-    body {
-        background-color: lightblue;
-    }
-
-    .cb-slideshow {
-        display: none;
-    }
-
-    #header,
-    #body {
-        overflow: hidden;
-    }
-
-    #avail-container {
-        border-radius: inherit;
-    }
-
-    #availTabMenu {
-        border-radius: inherit;
-        border-top: 0px solid #FFFFFF;
-        border-right: 0px solid #FFFFFF;
-        border-left: 0px solid #FFFFFF;
-    }
-
-    .ui-g.menu-responsive {
-        display: none !important;
-    }
-
-    .menu {
-        display: flex !important;
-    }
-
-    .ui-g.menu {
-        height: 75px;
-    }
-
-    #availabilityForm button[type=submit] {
-        width: auto !important;
-    }
-
-    .adaptable-container {
-        width: 100%;
-    }
-
-    #availTabMenu>.tabs-menu-main-page {
-        border-radius: 0px 0px 0px 0px;
-    }
-
-    #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem,
-    .ui-tabmenu .ui-menuitem-link,
-    .ui-tabmenu .ui-menuitem-icon,
-    #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link {
-        display: flex !important;
-        margin: 0px;
-    }
-    #console tbody,
-    #console,
-    #console tbody tr {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #console tbody tr td {
-        display: flex;
-        padding: 5px;
-    }
-    /*#region MUNU RESPONSIVE*/
-    #header {
-        height: 60px;
-        position: relative;
-    }
-    #header-container,
-    .ui-menu.ui-menu-dynamic,
-    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done
-     {
-        display: flex;
-        position: fixed;
-        flex-direction: column;
-        justify-content: flex-start;
-        top: 0 !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100%;
-        background-color: #E44049;
-        z-index: 100;        
-    }
-    .ui-menu.ui-menu-dynamic,
-    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done{
-        display: none;
-    }
-    .header-left form, .header-right{
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        margin-left: 0px !important;        
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 36px;
-        letter-spacing: 0.38px;
-        color: #FFFFFF;
-        position: relative;
-    }
-    .header-left form .ui-menubutton.ui-widget, 
-    .header-right .header-item,
-    .ui-menu.ui-menu-dynamic ul li a,
-    .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a
-    {
-        color: #FFFFFF !important;
-        border-bottom: #FFFFFF 1px solid;
-        margin: 0px;
-        margin-left: 0px !important;
-        padding: 17px 23px !important;
-        font-weight: 400 !important;
-    }
-    .header-left form .ui-menubutton.ui-widget button{
-        font-weight: 400 !important;
-        padding: 0px;
-        margin: 0px !important;
-    }
-    /*#endregion*/
-
-    
+.ui-menu.ui-menu-dynamic {
+    width: 12.5em;
+    padding: 0px;
+    position: relative;
+    outline: 0 none;
+    overflow: hidden;
+    width: 240px;
 }
 
-@media only screen and (max-width: 768px){
-    /*#region footer*/
-    .footer{
-        border-radius: 0px 0px 0px 0px;    
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 12px;
-        padding-right: 12px;
-        width: auto;
-        height: auto;
-    }
-    /*#endregion*/
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-logo>img{
-        margin: auto;
-        display: block;
-    }
-    .footer-container>a, .footer-container>div{
-        margin-bottom: 20px!important;
-    }
+.ui-menu.ui-menu-dynamic .menu-item-close,
+.btnCloseMenu {
+    display: none;
 }
 
+.header-left form .ui-menubutton.ui-widget,
+.header-right .header-item,
+.ui-menu.ui-menu-dynamic ul li a,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
+    border-bottom: #b4b2b2 1px solid;
+    margin: 0px;
+    margin-left: 0px !important;
+    padding: 17px 10px !important;
+    font-weight: 400 !important;
+}
 
-/*endregion*/
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a::after {
+    content: ">";
+    margin: 0px 5px;
+    font-weight: bold;
+    float: right;
+    color: #b4b2b2
+}
+
