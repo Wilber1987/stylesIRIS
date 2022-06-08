@@ -36,8 +36,7 @@ window.addEventListener("load", () => {
     }
     let scrollV = 0
     const MenuSticky = document.querySelector("#menu-sticky");    
-    window.addEventListener("scroll", (e)=>{
-        console.log(scrollV)
+    window.addEventListener("scroll", (e)=>{        
         if(scrollV <= 75 ) {
             MenuSticky.className = 'ui-outputpanel ui-widget';
         }else {

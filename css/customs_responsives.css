@@ -19,9 +19,9 @@
 
     #availTabMenu {
         border-radius: inherit;
-        border-top: 0px solid #FFFFFF;
-        border-right: 0px solid #FFFFFF;
-        border-left: 0px solid #FFFFFF;
+        border-top: 0px solid $color-white;
+        border-right: 0px solid $color-white;
+        border-left: 0px solid $color-white;
     }
 
     .ui-g.menu-responsive {
@@ -40,6 +40,9 @@
         width: auto !important;
     }
 
+    .menu-bar{
+        display: none !important;
+    }
     .adaptable-container {
         width: 100%;
     }
@@ -87,7 +90,7 @@
         left: 0 !important;
         right: 0 !important;
         width: 100%;
-        background-color: #E44049;
+        background-color: $color-primary;
         z-index: 1010 !important;
         transform: translateX(-100%);
         transition: all 0.6s;
@@ -119,7 +122,7 @@
         font-size: 15px;
         line-height: 36px;
         letter-spacing: 0.38px;
-        color: #FFFFFF;
+        color: $color-white;
         position: relative;
     }
 
@@ -128,8 +131,8 @@
     .btnCloseMenu,
     .ui-menu.ui-menu-dynamic ul li a,
     .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
-        color: #FFFFFF !important;
-        border-bottom: #FFFFFF 1px solid;
+        color: $color-white !important;
+        border-bottom: $color-white 1px solid;
         margin: 0px;
         margin-left: 0px !important;
         padding: 17px 23px !important;
@@ -154,7 +157,7 @@
     }
 
     .header .header-container .header-left .ui-menubutton .ui-button .ui-icon {
-        background-image: url(../media/icon-menumobile-next.svg) !important;
+        background-image: url(/resources/media/icon-menumobile-next.svg) !important;
         background-size: 6px 12px !important;
         background-position: 95% 50%;
         background-repeat: no-repeat !important;
@@ -180,7 +183,7 @@
         left: 0;
         background-color:  transparent !important;
         /*TODO color primary*/
-        background-image: url("../media/icon-menu.svg") !important;
+        background-image: url(/resources/media/icon-menu.svg) !important;
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: 28px 20px;
@@ -189,11 +192,11 @@
         overflow: hidden;
     }
     .menu-toggle.down-icon{
-        background-image: url("../media/icon-menu.svg") !important;
+        background-image: url(/resources/media/icon-menu.svg) !important;
     }
     
     #menu-sticky.scrollStyle{
-        background-color: #E44049 !important; /*TODO COLOR PRIMARY*/
+        background-color: $color-primary !important; /*TODO COLOR PRIMARY*/
         height: 60px !important;
     }
     #menu-sticky.scrollStyle #menu-logo{
@@ -250,7 +253,7 @@
     }
     .date-picker-wrapper.no-shortcuts {
         padding-bottom: 0;
-        background-color: #fff !important;
+        background-color: $color-white !important;
         margin-left: 10px;
         text-align: center;
         border-radius: 5px;

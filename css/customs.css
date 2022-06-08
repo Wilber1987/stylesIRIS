@@ -284,28 +284,19 @@ body{
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
 
     background: #e44049;
-    /*TODO color primary*/
-    /*color: #FFFFFF;
-    padding: 10px 30px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;*/
+    /*TODO color primary*/   
 }
 
 .ui-selectonebutton .ui-button.ui-state-default {
     background: #EBEBEB;
     border: 0px solid #297DB5 !important;
     border: inherit;
-    padding: 7px 30px;
-    /*border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;*/
+    padding: 7px 30px;   
 }
 
 .ui-selectonebutton .ui-button {
-    color: #ffff;
-    /* width: 20px; */
-    /* height: 40px; */   
-    background-size: 20px 20.57px;
-    /* background-position: calc(100% - 0px) 50%; */
+    color: #ffff;    
+    background-size: 20px 20.57px;   
     background-repeat: no-repeat;
 }
 
@@ -609,7 +600,7 @@ body{
 }
 .fa-train:before, .fa-plane:before, .fa-hotel:before, .fa-hotels-flights:before,
 .fa-cruises:before, .fa-digital-signature:before, .fa-activities:before, .fa-bookroad:before,
-.fa-busway:before {
+.fa-busway:before, .fa-bars::before {
     content: "" !important;
 }
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
