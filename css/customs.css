@@ -314,7 +314,7 @@ body{
 
 /*boton de buscar tipo submit*/
 #availabilityForm button[type=submit]:hover {
-    background-color: #e44049;
+    background-color: #e44049;/*TODO COLOR PRIMARY*/
     border: inherit;
     color: white !important;
     /*todo $color-white variable*/
@@ -761,3 +761,26 @@ form {
     color: #b4b2b2
 }
 
+/*#region boton flotante flecha*/
+#top-row{
+    position: fixed;
+    bottom: 59px;
+    right: 150px;
+    height: 60px;
+    width: 60px;
+}    
+#top-row a:hover {
+    background-image: url(/resources/media/icon-up-hover.svg);
+}
+#top-row a{
+    background-image: url(/resources/media/icon-up.svg);
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.fa-arrow-alt-circle-up:before {
+    content: ""!important;
+}
+
+/*#endregion*/
