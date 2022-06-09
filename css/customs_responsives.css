@@ -8,7 +8,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    #top {
+    #top-row {
         display: none;
     }
 }
