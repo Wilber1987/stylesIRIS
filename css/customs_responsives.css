@@ -1,10 +1,13 @@
 /*#region responsives */
 @media (min-width: 1200px) {
-    #header-container, .menu-container, .footer-container {
+    #header-container,
+    .menu-container,
+    .footer-container {
         width: 100% !important;
     }
 }
-@media only screen and (max-width: 1000px) {   
+
+@media only screen and (max-width: 1000px) {
     #top {
         display: none;
     }
@@ -30,9 +33,9 @@
 
     #availTabMenu {
         border-radius: inherit;
-        border-top: 0px solid $color-white;
-        border-right: 0px solid $color-white;
-        border-left: 0px solid $color-white;
+        border-top: 0px solid var(--color-white);
+        border-right: 0px solid var(--color-white);
+        border-left: 0px solid var(--color-white);
     }
 
     .ui-g.menu-responsive {
@@ -51,9 +54,10 @@
         width: auto !important;
     }
 
-    .menu-bar{
+    .menu-bar {
         display: none !important;
     }
+
     .adaptable-container {
         width: 100%;
     }
@@ -101,7 +105,7 @@
         left: 0 !important;
         right: 0 !important;
         width: 100%;
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         z-index: 1010 !important;
         transform: translateX(-100%);
         transition: all 0.6s;
@@ -113,13 +117,13 @@
         transform: translateX(0%);
     }
 
-    .menu-active {
-        transform: translateX(0%) !important;
-    }
-
     .ui-menu.ui-menu-dynamic,
     .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
         display: none;
+    }
+
+    .menu-active {
+        transform: translateX(0%) !important;
     }
 
     .header-left form,
@@ -133,7 +137,7 @@
         font-size: 15px;
         line-height: 36px;
         letter-spacing: 0.38px;
-        color: $color-white;
+        color: var(--color-white);
         position: relative;
     }
 
@@ -141,14 +145,17 @@
     .header-right .header-item,
     .btnCloseMenu,
     .ui-menu.ui-menu-dynamic ul li a,
+    .ui-menuitem-link.ui-corner-all,
     .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
-        color: $color-white !important;
-        border-bottom: $color-white 1px solid;
+        color: var(--color-white) !important;
+        border-bottom: var(--color-white) 1px solid;
         margin: 0px;
         margin-left: 0px !important;
         padding: 17px 23px !important;
         font-weight: 400 !important;
         cursor: pointer;
+        display: flex;
+        font-size: 0.9rem !important;
     }
 
     .header-left form .ui-menubutton.ui-widget button {
@@ -165,6 +172,18 @@
     .btnCloseMenu {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .menu-item-close::before {
+        content: "<";
+        width: 25px;
+        margin: 0px 5px;
+        font-weight: 600;
+        float: left;
+        color: var(--color-white);
+    }
+    .menu-item-close::after {
+        content: "" !important;
     }
 
     .header .header-container .header-left .ui-menubutton .ui-button .ui-icon {
@@ -186,13 +205,14 @@
         transform: none !important;
     }
 
-    .menu-toggle {
+    .menu-toggle,
+    .notificationsSpan {
         padding: 0px;
         margin: 15px;
         position: absolute;
         top: 0;
         left: 0;
-        background-color:  transparent !important;
+        background-color: transparent !important;
         /*TODO color primary*/
         background-image: url(/resources/media/icon-menu.svg) !important;
         background-position: 0 0;
@@ -202,25 +222,44 @@
         height: 20px;
         overflow: hidden;
     }
-    .menu-toggle.down-icon{
+
+    .menu-toggle.down-icon {
         background-image: url(/resources/media/icon-menu.svg) !important;
     }
-    
-    #menu-sticky.scrollStyle{
-        background-color: $color-primary !important; /*TODO COLOR PRIMARY*/
+
+    .notificationsSpan {
+        content: "";
+        right: 0;
+        left: inherit;
+        height: 30px;
+        width: 30px;
+        background-image: url(/resources/media/icon-bell.svg) !important;
+        float: left;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 23px 28.53px;
+    }
+
+    #menu-sticky.scrollStyle {
+        background-color: var(--color-primary) !important;
+        /*TODO COLOR PRIMARY*/
         height: 60px !important;
     }
-    #menu-sticky.scrollStyle #menu-logo{
+
+    #menu-sticky.scrollStyle #menu-logo {
         filter: brightness(100);
         height: 50px !important;
         margin: 5px;
     }
-   
+
     .footer {
-        width: 100%;       
+        width: 100%;
     }
-    #header-container, .menu-container, .footer-container {
-        width: 100%!important;
+
+    #header-container,
+    .menu-container,
+    .footer-container {
+        width: 100% !important;
     }
 
     /*#endregion*/
@@ -231,20 +270,21 @@
         margin-top: 0px;
         margin-left: 0px;
     }
-    
+
     .footer .footer-container .footer-links {
         display: flex;
         margin: auto;
         width: 100%;
         justify-content: center;
-        margin-right:0px;
+        margin-right: 0px;
     }
+
     .footer .footer-container .footer-info {
         display: flex;
         margin: auto 0px;
         align-items: center;
     }
-    
+
     /*date*/
     .month-wrapper {
         width: 100% !important;
@@ -255,26 +295,34 @@
         padding: 0px !important;
         overflow: hidden;
     }
+
     .month-wrapper .gap {
         display: none;
     }
+
     .date-picker-wrapper .month-wrapper table {
         margin: 5px;
         width: calc(100% - 10px) !important;
     }
+
     .date-picker-wrapper.no-shortcuts {
         padding-bottom: 0;
-        background-color: $color-white !important;
+        background-color: var(--color-white) !important;
         margin-left: 10px;
         text-align: center;
         border-radius: 5px;
     }
-    .date-picker-wrapper .drp_top-bar .default-top{
+
+    .date-picker-wrapper .drp_top-bar .default-top {
         display: none;
     }
-    .date-range-picker-from .input-icon, .date-range-picker-from-single .input-icon, .date-range-picker-to .input-icon {
+
+    .date-range-picker-from .input-icon,
+    .date-range-picker-from-single .input-icon,
+    .date-range-picker-to .input-icon {
         bottom: 15%;
     }
+
 
 }
 

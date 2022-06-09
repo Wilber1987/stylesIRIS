@@ -1,15 +1,23 @@
 :root {
     --main-font: sans-serif;
     --main-font-two: 16px "DM Sans", sans-serif;
+    --color-primary: rgb(173, 58, 58);
+    --color-white: #fff;
 }
 
-body{
+body {
     position: relative;
     height: initial;
 }
-#body{
-    padding-bottom: 100px;
+
+#body {
+    padding-bottom: 140px;
 }
+
+#header {
+    background-color: var(--color-primary);
+}
+
 /*#region footer*/
 .footer {
     border-radius: 100px 0px 0px 0px;
@@ -27,6 +35,7 @@ body{
     justify-content: inherit;
     overflow: hidden;
 }
+
 .footer .footer-container .footer-logo {
     width: 195px;
     height: 80px;
@@ -39,13 +48,15 @@ body{
     margin: auto;
     width: calc(100% - 440px);
     justify-content: flex-end;
-    margin-right:10px;
+    margin-right: 10px;
 }
+
 .footer .footer-container .footer-info {
     display: flex;
     margin: auto 40px;
     align-items: center;
 }
+
 .footer-container {
     background-color: white;
 }
@@ -63,7 +74,7 @@ body{
 /*FLECHA DE LOS SELECS*/
 /*#region IMPUT/SElects*/
 .ui-selectonemenu {
-    display: flex;
+    display: flex !important;
     align-items: center;
     position: relative;
     width: auto;
@@ -99,7 +110,7 @@ body{
     height: 30px;
     display: block;
     margin-top: 0px !important;
-    background-image: url(../media/icon-select.svg) !important;
+    background-image: url(/resources/media/icon-select.svg) !important;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 0px;
@@ -163,12 +174,13 @@ body{
     color: #838383;
     width: 40px;
     height: 40px;
-    background-image: url(/media/icon-date.svg) !important;
+    background-image: url(/resources/media/icon-date.svg) !important;
     background-size: 20px 20.57px;
     background-position: calc(100% - 0px) 50%;
     background-repeat: no-repeat;
 
 }
+
 .fa-calendar-alt:before {
     content: "" !important;
 }
@@ -183,10 +195,9 @@ body{
 }
 
 .month-wrapper::before {
-    background-color: #e44049 !important;
-    /*TODO COLOR PRIMARY*/
+    background-color: var(--color-primary) !important;
     display: flex;
-    color: #FFFFFF;
+    color: var(--color-white);
     justify-content: center;
     align-items: center;
     content: "Por favor selecciona un rango de fechas";
@@ -201,7 +212,7 @@ body{
     background-color: #F3F2EB;
     height: calc(100% - 60px);
     width: calc(50% - 10px) !important;
-    border: 5px solid #ffffff;
+    border: 5px solid var(--color-white);
     /*todo color white*/
     padding: 30px;
     margin: 5px;
@@ -213,8 +224,7 @@ body{
 }
 
 .date-picker-wrapper .month-wrapper table .day.checked {
-    background-color: #e44049 !important;
-    /*TODO COLOR PRIMARY*/
+    background-color: var(--color-primary) !important;
 }
 
 .date-picker-wrapper .month-wrapper table .day.first-date-selected {
@@ -222,14 +232,12 @@ body{
 }
 
 .date-picker-wrapper .month-wrapper table .day.last-date-selected {
-    background-color: #e44049 !important;
-    /*TODO COLOR PRIMARY*/
+    background-color: var(--color-primary) !important;
     border-radius: 0px 10px 10px 0px;
 }
 
 .date-picker-wrapper .month-wrapper table .day.real-today {
-    background-color: #e44049 !important;
-    /*TODO COLOR PRIMARY*/
+    background-color: var(--color-primary) !important;
 }
 
 .date-picker-wrapper {
@@ -244,7 +252,7 @@ body{
 /*BOTONES precio horario*/
 
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type {
-    background-image: url(../media/icon-precio-hover.svg) !important;
+    background-image: url(/resources/media/icon-precio-hover.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
@@ -253,7 +261,7 @@ body{
 }
 
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type span:first-of-type {
-    background-image: url(../media/icon-precio.svg) !important;
+    background-image: url(/resources/media/icon-precio.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
@@ -262,7 +270,7 @@ body{
 }
 
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2).ui-state-active span:nth-of-type(1) {
-    background-image: url(../media/icon-horario-hover.svg) !important;
+    background-image: url(/resources/media/icon-horario-hover.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
@@ -271,7 +279,7 @@ body{
 }
 
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2) span:nth-of-type(1) {
-    background-image: url(../media/icon-horario.svg) !important;
+    background-image: url(/resources/media/icon-horario.svg) !important;
     background-repeat: no-repeat;
     background-repeat: no-repeat !important;
     background-position-x: left !important;
@@ -283,20 +291,19 @@ body{
 
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
 
-    background: #e44049;
-    /*TODO color primary*/   
+    background: var(--color-primary) !important;
 }
 
 .ui-selectonebutton .ui-button.ui-state-default {
-    background: #EBEBEB;
+    background: var(--color-white);
     border: 0px solid #297DB5 !important;
     border: inherit;
-    padding: 7px 30px;   
+    padding: 7px 30px;
 }
 
 .ui-selectonebutton .ui-button {
-    color: #ffff;    
-    background-size: 20px 20.57px;   
+    color: #ffff;
+    background-size: 20px 20.57px;
     background-repeat: no-repeat;
 }
 
@@ -314,10 +321,10 @@ body{
 
 /*boton de buscar tipo submit*/
 #availabilityForm button[type=submit]:hover {
-    background-color: #e44049;/*TODO COLOR PRIMARY*/
+    background-color: var(--color-primary) !important;
     border: inherit;
-    color: white !important;
-    /*todo $color-white variable*/
+    color: var(--color-white) !important;
+    /*todo var(--color-white) variable*/
 }
 
 #availabilityForm button[type=submit] {
@@ -330,13 +337,13 @@ body{
     border-radius: 100px;
     padding-left: 43px;
     padding: 1px 30px 10px 40px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 #availabilityForm button[type=submit]::after {
-    background-image: url(/media/icon-btn-next.svg) !important;
+    background-image: url(/resources/media/icon-btn-next.svg) !important;
     background-repeat: no-repeat;
     background-size: 5.04px 9.33px;
     width: 5.04px;
@@ -353,11 +360,11 @@ body{
 }
 
 #availabilityForm button[type=submit]:hover::after {
-    background-image: url(/media/icon-btn-next-hover.svg) !important;
+    background-image: url(/resources/media/icon-btn-next-hover.svg) !important;
 }
 
 #availabilityForm button[type=submit]::before {
-    background-image: url(/media/icon-flights-hover.svg) !important;
+    background-image: url(/resources/media/icon-flights-hover.svg) !important;
     background-repeat: no-repeat;
     background-size: 24px 24px;
     width: 24px;
@@ -371,7 +378,7 @@ body{
 }
 
 #availabilityForm button[type=submit]:hover::before {
-    background-image: url(/media/icon-flights.svg) !important;
+    background-image: url(/resources/media/icon-flights.svg) !important;
 }
 
 /*#endregion*/
@@ -379,10 +386,10 @@ body{
 
 /*#region CHECKS y RADIOS*/
 .ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
-    background-color: red !important;
+    background-color: var(--color-primary) !important;
 
-    box-shadow: 0 0 0 2px #ffffff,
-        0 0 0 3px red;
+    box-shadow: 0 0 0 2px var(--color-white),
+        0 0 0 3px var(--color-primary) !important;
     /*TODO COLOR PRIMARIO*/
 }
 
@@ -416,7 +423,7 @@ body{
 }
 
 .ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
-    background-color: #E44049 !important;
+    background-color: var(--color-primary) !important;
 }
 
 .ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default:before {
@@ -434,7 +441,7 @@ body{
 }
 
 .ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active:before {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
 }
 
 .ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active:before {
@@ -460,14 +467,13 @@ body{
 
 /*#region TABMENU */
 #availTabMenu {
-    background: #E44049;
-    /*TODO $color-primary*/
+    background: var(--color-primary) !important;
     border-radius: 0px 100px 0px 0px;
     padding: 0;
     margin: 0 0 0 0;
-    border-top: 21px solid #FFFFFF;
-    border-right: 21px solid #FFFFFF;
-    border-left: 21px solid #FFFFFF;
+    border-top: 21px solid var(--color-white);
+    border-right: 21px solid var(--color-white);
+    border-left: 21px solid var(--color-white);
     position: relative;
     cursor: pointer;
     width: 100%;
@@ -487,19 +493,19 @@ body{
 .btnTabNext {
     left: auto;
     right: 20px;
-    background-image: url(../media/icon-next-hover.svg) !important;
+    background-image: url(/resources/media/icon-next-hover.svg) !important;
 }
 
 .btnTabNext:hover {
-    background-image: url(../media/icon-next-hover.svg) !important;
+    background-image: url(/resources/media/icon-next-hover.svg) !important;
 }
 
 .btnTabBefore {
-    background-image: url(../media/icon-prev-hover.svg) !important;
+    background-image: url(/resources/media/icon-prev-hover.svg) !important;
 }
 
 .btnTabBefore:hover {
-    background-image: url(../media/icon-prev-hover.svg) !important;
+    background-image: url(/resources/media/icon-prev-hover.svg) !important;
 }
 
 #availTabMenu>.tabs-menu-main-page {
@@ -513,13 +519,13 @@ body{
     /*padding: 3px;
     border-radius: 5px;*/
     margin: 0 0 60px 0;
-    background: #FFFFFF;
+    background: var(--color-white);
     border-radius: 0px 100px;
     max-width: 1200px;
 }
 
 #avail-form {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border-radius: 0px 0px 0px 100px;
     padding: 12px;
 }
@@ -552,8 +558,7 @@ body{
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
     margin: 0;
     height: 100%;
-    background-color: #E44049;
-    /*TODO color PRIMARY*/
+    background-color: var(--color-primary) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -562,8 +567,8 @@ body{
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
     padding: 0.5em 1.2em;
-    color: #ffffff !important;
-    background-color: #E44049;
+    color: var(--color-white) !important;
+    background-color: var(--color-primary) !important;
     /*TODO color-primary*/
     display: flex;
     align-items: center;
@@ -571,12 +576,12 @@ body{
 
 /*no van*/
 .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a {
-    background-color: #E44049 !important;
+    background-color: var(--color-primary) !important;
     /*TODO color-primary*/
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
-    background-color: #FFFFFF !important;
+    background-color: var(--color-white) !important;
 }
 
 /*FIN no van*/
@@ -584,7 +589,7 @@ body{
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover {
     height: 100%;
-    background-color: #FFFFFF !important;
+    background-color: var(--color-white) !important;
     color: #000000 !important;
 }
 
@@ -598,97 +603,106 @@ body{
     overflow: hidden;
     min-width: 40px;
 }
-.fa-train:before, .fa-plane:before, .fa-hotel:before, .fa-hotels-flights:before,
-.fa-cruises:before, .fa-digital-signature:before, .fa-activities:before, .fa-bookroad:before,
-.fa-busway:before, .fa-bars::before {
+
+.fa-train:before,
+.fa-plane:before,
+.fa-hotel:before,
+.fa-hotels-flights:before,
+.fa-cruises:before,
+.fa-digital-signature:before,
+.fa-activities:before,
+.fa-bookroad:before,
+.fa-busway:before,
+.fa-bars::before {
     content: "" !important;
 }
+
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
-    background-image: url(../media/icon-flights.svg) !important;
+    background-image: url(/resources/media/icon-flights.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
-    background-image: url(../media/icon-flights-hover.svg) !important;
+    background-image: url(/resources/media/icon-flights-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
-    background-image: url(../media/icon-trains.svg) !important;
+    background-image: url(/resources/media/icon-trains.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
-    background-image: url(../media/icon-trains-hover.svg) !important;
+    background-image: url(/resources/media/icon-trains-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
-    background-image: url(../media/icon-hotels.svg) !important;
+    background-image: url(/resources/media/icon-hotels.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
-    background-image: url(../media/icon-hotels-hover.svg) !important;
+    background-image: url(/resources/media/icon-hotels-hover.svg) !important;
 }
 
 /*nuevo tabmenu*/
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
-    background-image: url(../media/icon-hotel_flight.svg) !important;
+    background-image: url(/resources/media/icon-hotel_flight.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
-    background-image: url(../media/icon-hotel_flight-hover.svg) !important;
+    background-image: url(/resources/media/icon-hotel_flight-hover.svg) !important;
 }
 
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
-    background-image: url(../media/icon-cruises.svg) !important;
+    background-image: url(/resources/media/icon-cruises.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-cruises {
-    background-image: url(../media/icon-cruises-hover.svg) !important;
+    background-image: url(/resources/media/icon-cruises-hover.svg) !important;
 }
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
-    background-image: url(../media/icon-digital_signature.svg) !important;
+    background-image: url(/resources/media/icon-digital_signature.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
-    background-image: url(../media/icon-digital_signature-hover.svg) !important;
+    background-image: url(/resources/media/icon-digital_signature-hover.svg) !important;
 }
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
-    background-image: url(../media/icon-activities.svg) !important;
+    background-image: url(/resources/media/icon-activities.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-activities {
-    background-image: url(../media/icon-activities-hover.svg) !important;
+    background-image: url(/resources/media/icon-activities-hover.svg) !important;
 }
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
-    background-image: url(../media/icon-bookroad.svg) !important;
+    background-image: url(/resources/media/icon-bookroad.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-bookroad {
-    background-image: url(../media/icon-bookroad-hover.svg) !important;
+    background-image: url(/resources/media/icon-bookroad-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
-    background-image: url(../media/icon-busway.svg) !important;
+    background-image: url(/resources/media/icon-busway.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-busway {
-    background-image: url(../media/icon-busway-hover.svg) !important;
+    background-image: url(/resources/media/icon-busway-hover.svg) !important;
 }
 
 form {
@@ -699,9 +713,7 @@ form {
 
 /*#endregion */
 
-
 /*#region TABMENU-CARRUCEL */
-
 /*#region deshabilitaciones generales*/
 .ui-state-default .ui-icon,
 .ui-messages .ui-icon,
@@ -718,7 +730,7 @@ form {
 
 /*endregion*/
 
-/*#region header incluye algunos responsivess*/
+/*#region header*/
 #menu-sticky {
     background-color: white !important;
 }
@@ -753,26 +765,20 @@ form {
     font-weight: 400 !important;
 }
 
-.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a::after {
-    content: ">";
-    margin: 0px 5px;
-    font-weight: bold;
-    float: right;
-    color: #b4b2b2
-}
-
 /*#region boton flotante flecha*/
-#top-row{
+#top-row {
     position: fixed;
     bottom: 59px;
     right: 150px;
     height: 60px;
     width: 60px;
-}    
+}
+
 #top-row a:hover {
     background-image: url(/resources/media/icon-up-hover.svg);
 }
-#top-row a{
+
+#top-row a {
     background-image: url(/resources/media/icon-up.svg);
     height: 60px;
     width: 60px;
@@ -780,7 +786,31 @@ form {
 }
 
 .fa-arrow-alt-circle-up:before {
-    content: ""!important;
+    content: "" !important;
+}
+
+.date-picker-wrapper .footer {
+    display: none;
 }
 
 /*#endregion*/
+
+.notificationsBTN::before {
+    content: "";
+    height: 25px;
+    width: 20px;
+    background-image: url(/resources/media/icon-bell.svg);
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.ui-outputlabel.ui-widget.fa.fa-user::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: left;
+    background-image: url(/resources/media/icon-menumobile-profile-notificacion.svg) !important;
+}

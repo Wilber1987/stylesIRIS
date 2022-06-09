@@ -4339,11 +4339,6 @@ button[type=submit] {
       width: 25px;
       color: #297DB5; }
 
-#header {
-  /*background: $color-primary !important;*/
-  justify-content: center;
-  background: #E44049;
-  /*TODO $color-primary*/ }
 
 #header-container {
   justify-content: space-between;
