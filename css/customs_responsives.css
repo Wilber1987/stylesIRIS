@@ -85,6 +85,7 @@
     #console tbody tr td {
         display: flex;
         padding: 5px;
+        align-items: center;
     }
 
     /*#region MENU RESPONSIVE*/
@@ -145,7 +146,6 @@
     .header-right .header-item,
     .btnCloseMenu,
     .ui-menu.ui-menu-dynamic ul li a,
-    .ui-menuitem-link.ui-corner-all,
     .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
         color: var(--color-white) !important;
         border-bottom: var(--color-white) 1px solid;
@@ -206,7 +206,7 @@
     }
 
     .menu-toggle,
-    .notificationsSpan {
+    .notifications-toggle {
         padding: 0px;
         margin: 15px;
         position: absolute;
@@ -227,7 +227,7 @@
         background-image: url(/resources/media/icon-menu.svg) !important;
     }
 
-    .notificationsSpan {
+    .notifications-toggle {
         content: "";
         right: 0;
         left: inherit;
@@ -238,8 +238,23 @@
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: 23px 28.53px;
+        display: inherit;
     }
-
+    .notifications-toggle a{
+        height: 13px;
+        width: 13px;
+        background-color: var(--color-white);
+        font-size: 11px;
+        padding: 1px;
+        float: right;
+        margin-right: 3px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--color-primary);
+    }
     #menu-sticky.scrollStyle {
         background-color: var(--color-primary) !important;
         /*TODO COLOR PRIMARY*/

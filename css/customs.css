@@ -7,6 +7,7 @@
 
 body {
     position: relative;
+    min-height: 100%;
     height: initial;
 }
 
@@ -765,6 +766,11 @@ form {
     font-weight: 400 !important;
 }
 
+.header-right .header-item,
+.header-left form .ui-menubutton.ui-widget {
+    border-bottom: none;
+}
+
 /*#region boton flotante flecha*/
 #top-row {
     position: fixed;
@@ -805,6 +811,10 @@ form {
     margin-top: 5px;
 }
 
+.notifications-toggle {
+    display: none;
+}
+
 .ui-outputlabel.ui-widget.fa.fa-user::before {
     content: "";
     height: 20px;
@@ -812,5 +822,9 @@ form {
     margin-right: 10px;
     margin-top: 5px;
     float: left;
-    background-image: url(/resources/media/icon-menumobile-profile-notificacion.svg) !important;
+    background-image: url(/resources/media/icon-profile.svg) !important;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0px;
+
 }
