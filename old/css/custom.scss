@@ -1,0 +1,112 @@
+$custom_color:#E44049;
+
+
+
+
+
+
+.header-hotels{
+    background-image: url('/media/header-hotels.jpg');
+}
+
+.header-flights{
+    background-image: url('/media/header-flights.jpg');
+}
+
+
+
+#header-top,
+#header-mobile,
+.box-nav {
+    background-color: $custom_color;
+}
+
+#header-top ul li.icon-notification a .notification-count,
+#header-top ul li a:hover,
+#header-mobile ul li.icon-notification a .notification-count{
+    color: $custom_color;    
+}
+
+#header-top ul li.icon-notification ul li a:hover{
+    color: $custom_color !important;    
+}
+
+
+
+
+
+/*Formularios*/
+
+.ui-state-active, .ui-widget-content .ui-state-active{
+    background-color: $custom_color;
+    border: 1px solid $custom_color;
+}
+
+.ui-widget-header {
+    background-color: $custom_color;
+}
+
+
+.date-picker-wrapper .month-wrapper table .day.valid.checked.first-date-selected, .date-picker-wrapper .month-wrapper table .day.valid.checked.last-date-selected {
+    background: $custom_color !important;
+    border-color: $custom_color !important;
+}
+
+.date-picker-wrapper .month-wrapper table .day.checked,
+.date-picker-wrapper .drp_top-bar,
+.date-picker-wrapper .last-date-selected {
+    background-color: $custom_color !important;
+}
+
+.modal-footer h3,
+.modal-content .modal-footer h3{
+    color: $custom_color;   
+}
+
+
+input[type='radio']:checked:after {
+    background-color: $custom_color !important;
+}
+
+input:checked + .slider {
+    background-color: $custom_color !important;
+  }
+  
+  .box-form ul li .mas-info a{
+    color: $custom_color;  
+  }
+ 
+
+/*Botones*/
+
+.btn:hover{     
+    border: 2px solid $custom_color !important;
+    background: $custom_color !important;
+}
+
+/*Modal*/
+
+.modal-header{
+    background-color: $custom_color;
+}
+
+/*Menu responsive*/
+
+.mm-menu{
+    background-color: $custom_color;
+    --mm-color-background:$custom_color;
+}
+
+.mm-listitem__text:hover{
+    color: $custom_color !important;
+}
+
+.mm-listitem__text .notification-badge .notification-count {
+    color: $custom_color !important;
+  }
+
+
+#header-mobile ul li.icon-notification a:hover .notification-count,
+.mm-listitem__text:hover .notification-badge .notification-count {
+    color: #FFFFFF !important;
+  }

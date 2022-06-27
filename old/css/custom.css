@@ -1,0 +1,106 @@
+.header-hotels {
+  background-image: url("/media/header-hotels.jpg");
+}
+
+.header-flights {
+  background-image: url("/media/header-flights.jpg");
+}
+
+#header-top,
+#header-mobile,
+.box-nav {
+  background-color: #E44049;
+}
+
+#header-top ul li:hover a,
+#header-top ul li.icon-notification a .notification-count,
+#header-top ul li a:hover,
+#header-mobile ul li.icon-notification a .notification-count {
+  color: #E44049;
+}
+
+#header-top ul li.icon-notification ul li a:hover,
+#header-top ul li:hover a,
+#header-top ul li ul li a:hover {
+  color: #E44049 !important;
+}
+
+/*Formularios*/
+input[type=radio] {
+  accent-color: #E44049;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+  background-color: #E44049;
+  border: 1px solid #E44049;
+}
+
+.ui-widget-header {
+  background-color: #E44049;
+}
+
+.date-picker-wrapper .month-wrapper table .day.valid.checked.first-date-selected, .date-picker-wrapper .month-wrapper table .day.valid.checked.last-date-selected {
+  background: #E44049 !important;
+  border-color: #E44049 !important;
+}
+
+.date-picker-wrapper .month-wrapper table .day.checked,
+.date-picker-wrapper .drp_top-bar,
+.date-picker-wrapper .last-date-selected {
+  background-color: #E44049 !important;
+}
+
+.date-picker-wrapper .footer a {
+  color: #E44049 !important;
+}
+
+.date-picker-wrapper .month-wrapper table .day.real-today {
+  background-color: #E44049 !important;
+}
+
+.modal-footer h3,
+.modal-content .modal-footer h3 {
+  color: #E44049;
+}
+
+input[type=radio]:checked:after {
+  background-color: #E44049 !important;
+}
+
+input:checked + .slider {
+  background-color: #E44049 !important;
+}
+
+.box-form ul li .mas-info a {
+  color: #E44049;
+}
+
+/*Botones*/
+.btn:hover {
+  border: 2px solid #E44049 !important;
+  background: #E44049 !important;
+}
+
+/*Modal*/
+.modal-header {
+  background-color: #E44049;
+}
+
+/*Menu responsive*/
+.mm-menu {
+  background-color: #E44049;
+  --mm-color-background:$custom_color;
+}
+
+.mm-listitem__text:hover {
+  color: #E44049 !important;
+}
+
+.mm-listitem__text .notification-badge .notification-count {
+  color: #E44049 !important;
+}
+
+#header-mobile ul li.icon-notification a:hover .notification-count,
+.mm-listitem__text:hover .notification-badge .notification-count {
+  color: #FFFFFF !important;
+}

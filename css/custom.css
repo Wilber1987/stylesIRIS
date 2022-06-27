@@ -1,106 +1,113 @@
-.header-hotels {
-  background-image: url("/media/header-hotels.jpg");
-}
-
-.header-flights {
-  background-image: url("/media/header-flights.jpg");
-}
-
-#header-top,
-#header-mobile,
-.box-nav {
-  background-color: #E44049;
-}
-
 #header-top ul li:hover a,
 #header-top ul li.icon-notification a .notification-count,
 #header-top ul li a:hover,
 #header-mobile ul li.icon-notification a .notification-count {
-  color: #E44049;
+  color: #05A5C7;
 }
 
 #header-top ul li.icon-notification ul li a:hover,
 #header-top ul li:hover a,
 #header-top ul li ul li a:hover {
-  color: #E44049 !important;
+  color: #05A5C7 !important;
 }
 
 /*Formularios*/
 input[type=radio] {
-  accent-color: #E44049;
+  accent-color: #05A5C7;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active {
-  background-color: #E44049;
-  border: 1px solid #E44049;
+  background-color: #05A5C7;
+  border: 1px solid #05A5C7;
 }
 
 .ui-widget-header {
-  background-color: #E44049;
+  background-color: #05A5C7;
 }
 
 .date-picker-wrapper .month-wrapper table .day.valid.checked.first-date-selected, .date-picker-wrapper .month-wrapper table .day.valid.checked.last-date-selected {
-  background: #E44049 !important;
-  border-color: #E44049 !important;
+  background: #05A5C7 !important;
+  border-color: #05A5C7 !important;
 }
 
 .date-picker-wrapper .month-wrapper table .day.checked,
 .date-picker-wrapper .drp_top-bar,
 .date-picker-wrapper .last-date-selected {
-  background-color: #E44049 !important;
+  background-color: #05A5C7 !important;
 }
 
 .date-picker-wrapper .footer a {
-  color: #E44049 !important;
+  color: #05A5C7 !important;
 }
 
 .date-picker-wrapper .month-wrapper table .day.real-today {
-  background-color: #E44049 !important;
+  background-color: #05A5C7 !important;
 }
 
 .modal-footer h3,
 .modal-content .modal-footer h3 {
-  color: #E44049;
+  color: #05A5C7;
 }
 
 input[type=radio]:checked:after {
-  background-color: #E44049 !important;
+  background-color: #05A5C7 !important;
 }
 
 input:checked + .slider {
-  background-color: #E44049 !important;
+  background-color: #05A5C7 !important;
 }
 
 .box-form ul li .mas-info a {
-  color: #E44049;
+  color: #05A5C7;
+}
+
+.box-form ul li .input-list-button li .button.active,
+.box-form ul li .input-list-button li .button:hover {
+  background-color: #05A5C7;
 }
 
 /*Botones*/
-.btn:hover {
-  border: 2px solid #E44049 !important;
-  background: #E44049 !important;
+.btn {
+  border: 2px solid #05A5C7 !important;
+  background: #05A5C7 !important;
+}
+
+.btn-featured {
+  border-color: #05A5C7;
+  background-color: #05A5C7;
+}
+
+.btn-featured:hover {
+  color: #002333 !important;
+  border-color: #002333 !important;
+  background-color: #FFFFFF !important;
 }
 
 /*Modal*/
 .modal-header {
-  background-color: #E44049;
+  background-color: #05A5C7;
 }
 
 /*Menu responsive*/
 .mm-menu {
-  background-color: #E44049;
+  background-color: #05A5C7;
   --mm-color-background:$custom_color;
 }
 
 .mm-listitem__text:hover {
-  color: #E44049 !important;
+  color: #05A5C7 !important;
 }
 
 .mm-listitem__text .notification-badge .notification-count {
-  color: #E44049 !important;
+  color: #05A5C7 !important;
 }
 
 #header-mobile ul li.icon-notification a:hover .notification-count,
 .mm-listitem__text:hover .notification-badge .notification-count {
   color: #FFFFFF !important;
+}
+
+/*Tablas*/
+.table-responsive table .table-info-header a.icon-open {
+  background-color: #05A5C7;
 }
