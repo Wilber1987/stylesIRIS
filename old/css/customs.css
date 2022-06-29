@@ -1,0 +1,815 @@
+:root {
+    --main-font: sans-serif;
+    --main-font-two: 16px "DM Sans", sans-serif;
+    --color-primary: rgb(173, 58, 58);
+    --color-white: #fff;
+}
+
+body {
+    position: relative;
+    height: initial;
+}
+
+#body {
+    padding-bottom: 140px;
+}
+
+#header {
+    background-color: var(--color-primary);
+}
+
+/*#region footer*/
+.footer {
+    border-radius: 100px 0px 0px 0px;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    height: 106px;
+    max-width: 1199px;
+    display: flex;
+    flex: 0 0 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: inherit;
+    overflow: hidden;
+}
+
+.footer .footer-container .footer-logo {
+    width: 195px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 96px;
+}
+
+.footer .footer-container .footer-links {
+    display: flex;
+    margin: auto;
+    width: calc(100% - 440px);
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.footer .footer-container .footer-info {
+    display: flex;
+    margin: auto 40px;
+    align-items: center;
+}
+
+.footer-container {
+    background-color: white;
+}
+
+.footer .footer-container .footer-logo img {
+    filter: none;
+}
+
+.footer .footer-container .footer-info .footer-company {
+    margin: 0;
+    margin-left: 15px !important;
+}
+
+/*#endregion*/
+/*FLECHA DE LOS SELECS*/
+/*#region IMPUT/SElects*/
+.ui-selectonemenu {
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    width: auto;
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    cursor: pointer;
+    padding-right: 22px;
+    vertical-align: top;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger {
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    cursor: pointer;
+    /* width: 16px; */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-top: 0px !important;
+    background-image: url(../../old/resources/media/icon-select.svg) !important;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-size: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/*CHECKS*/
+.box-form ul li .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.box-form ul li .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    top: 3px;
+    background-color: #B5B5B5;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.box-form ul li .slider,
+.ui-chkbox-icon .ui-icon .ui-c ui-icon-check {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EBEBEB;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/*#endregion */
+
+/*ICONO CALENDARIO*/
+
+/*#region Calendario y fechas*/
+
+.date-range-picker-from,
+.date-range-picker-to {
+    position: relative;
+}
+
+.date-range-picker-from .input-icon,
+.date-range-picker-from-single .input-icon,
+.date-range-picker-to .input-icon {
+    bottom: 25%;
+    right: 10px;
+    position: absolute;
+    z-index: 2;
+    color: #838383;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../old/resources/media/icon-date.svg) !important;
+    background-size: 20px 20.57px;
+    background-position: calc(100% - 0px) 50%;
+    background-repeat: no-repeat;
+
+}
+
+.fa-calendar-alt:before {
+    content: "" !important;
+}
+
+/*datepicker*/
+.month-wrapper {
+    width: 584px !important;
+    height: 380px;
+    border-radius: 16px 16px 16px 16px !important;
+    padding: 0px !important;
+    overflow: hidden;
+}
+
+.month-wrapper::before {
+    background-color: var(--color-primary) !important;
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    content: "Por favor selecciona un rango de fechas";
+    /*TODO CAMBIAR POR LENGUAJE*/
+    width: 100% !important;
+    height: 50px;
+    font-size: 16px;
+    font: var(--main-font-two);
+}
+
+.date-picker-wrapper .month-wrapper table {
+    background-color: #F3F2EB;
+    height: calc(100% - 60px);
+    width: calc(50% - 10px) !important;
+    border: 5px solid var(--color-white);
+    /*todo color white*/
+    padding: 30px;
+    margin: 5px;
+}
+
+.month-wrapper .gap {
+    margin: 0;
+    width: 0px;
+}
+
+.date-picker-wrapper .month-wrapper table .day.checked {
+    background-color: var(--color-primary) !important;
+}
+
+.date-picker-wrapper .month-wrapper table .day.first-date-selected {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.date-picker-wrapper .month-wrapper table .day.last-date-selected {
+    background-color: var(--color-primary) !important;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.date-picker-wrapper .month-wrapper table .day.real-today {
+    background-color: var(--color-primary) !important;
+}
+
+.date-picker-wrapper {
+    background-color: inherit !important;
+}
+
+/*#endregion*/
+
+
+/*#region BOTONES*/
+
+/*BOTONES precio horario*/
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type {
+    background-image: url(../../old/resources/media/icon-precio-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type span:first-of-type {
+    background-image: url(../../old/resources/media/icon-precio.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2).ui-state-active span:nth-of-type(1) {
+    background-image: url(../../old/resources/media/icon-horario-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;
+}
+
+#requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:nth-of-type(2) span:nth-of-type(1) {
+    background-image: url(../../old/resources/media/icon-horario.svg) !important;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+    width: 100%;
+}
+
+
+
+.ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
+
+    background: var(--color-primary) !important;
+}
+
+.ui-selectonebutton .ui-button.ui-state-default {
+    background: var(--color-white);
+    border: 0px solid #297DB5 !important;
+    border: inherit;
+    padding: 7px 30px;
+}
+
+.ui-selectonebutton .ui-button {
+    color: #ffff;
+    background-size: 20px 20.57px;
+    background-repeat: no-repeat;
+}
+
+.ui-selectonebutton .ui-button:first-of-type,
+.ui-selectonebutton .lowcost-contract .generate-document-button:first-of-type,
+.lowcost-contract .ui-selectonebutton .generate-document-button:first-of-type {
+    border-radius: 25px 0 0 25px;
+}
+
+.ui-selectonebutton .ui-button:last-of-type,
+.ui-selectonebutton .lowcost-contract .generate-document-button:last-of-type,
+.lowcost-contract .ui-selectonebutton .generate-document-button:last-of-type {
+    border-radius: 0 25px 25px 0;
+}
+
+/*boton de buscar tipo submit*/
+#availabilityForm button[type=submit]:hover {
+    background-color: var(--color-primary) !important;
+    border: inherit;
+    color: var(--color-white) !important;
+    /*todo var(--color-white) variable*/
+}
+
+#availabilityForm button[type=submit] {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #002333;
+    border: 2px solid #002333;
+    border-radius: 100px;
+    padding-left: 43px;
+    padding: 1px 30px 10px 40px;
+    background-color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#availabilityForm button[type=submit]::after {
+    background-image: url(../../old/resources/media/icon-btn-next.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 5.04px 9.33px;
+    width: 5.04px;
+    height: 9.33px;
+    background-size: 6px 12px;
+    width: 6px;
+    height: 12px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#availabilityForm button[type=submit]:hover::after {
+    background-image: url(../../old/resources/media/icon-btn-next-hover.svg) !important;
+}
+
+#availabilityForm button[type=submit]::before {
+    background-image: url(../../old/resources/media/icon-flights-hover.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+}
+
+#availabilityForm button[type=submit]:hover::before {
+    background-image: url(../../old/resources/media/icon-flights.svg) !important;
+}
+
+/*#endregion*/
+
+
+/*#region CHECKS y RADIOS*/
+.ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
+    background-color: var(--color-primary) !important;
+
+    box-shadow: 0 0 0 2px var(--color-white),
+        0 0 0 3px var(--color-primary) !important;
+    /*TODO COLOR PRIMARIO*/
+}
+
+.ui-radiobutton.ui-widget {
+    padding: 2px;
+}
+
+.ui-radiobutton {
+    border-radius: 15px;
+}
+
+
+.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 34px;
+}
+
+.ui-chkbox-icon.ui-icon.ui-c.ui-icon-blank {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EBEBEB;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
+    background-color: var(--color-primary) !important;
+}
+
+.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    top: 3px;
+    background-color: #B5B5B5;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active:before {
+    background-color: var(--color-white);
+}
+
+.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.ui-chkbox-icon.ui-icon.ui-c.ui-icon-blank {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/*#endregion*/
+
+
+/*#region TABMENU */
+#availTabMenu {
+    background: var(--color-primary) !important;
+    border-radius: 0px 100px 0px 0px;
+    padding: 0;
+    margin: 0 0 0 0;
+    border-top: 21px solid var(--color-white);
+    border-right: 21px solid var(--color-white);
+    border-left: 21px solid var(--color-white);
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnTab {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+.btnTabNext {
+    left: auto;
+    right: 20px;
+    background-image: url(../../old/resources/media/icon-next-hover.svg) !important;
+}
+
+.btnTabNext:hover {
+    background-image: url(../../old/resources/media/icon-next-hover.svg) !important;
+}
+
+.btnTabBefore {
+    background-image: url(../../old/resources/media/icon-prev-hover.svg) !important;
+}
+
+.btnTabBefore:hover {
+    background-image: url(../../old/resources/media/icon-prev-hover.svg) !important;
+}
+
+#availTabMenu>.tabs-menu-main-page {
+    height: 75px;
+    border-radius: 0px 75px 0px 0px;
+    overflow: hidden;
+}
+
+#avail-container {
+    /*margin: 0 auto;*/
+    /*padding: 3px;
+    border-radius: 5px;*/
+    margin: 0 0 60px 0;
+    background: var(--color-white);
+    border-radius: 0px 100px;
+    max-width: 1200px;
+}
+
+#avail-form {
+    background-color: var(--color-white);
+    border-radius: 0px 0px 0px 100px;
+    padding: 12px;
+}
+
+#avail-form>form>div.ui-panel,
+#avail-form>form>div.ui-panel div.ui-panel-content {
+    padding: 0;
+}
+
+#avail-form>form#availabilityForm {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#avail-form h4 {
+    margin: 10px 0;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    width: 1700px;
+
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
+    margin: 0;
+    height: 100%;
+    background-color: var(--color-primary) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
+    padding: 0.5em 1.2em;
+    color: var(--color-white) !important;
+    background-color: var(--color-primary) !important;
+    /*TODO color-primary*/
+    display: flex;
+    align-items: center;
+}
+
+/*no van*/
+.ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a {
+    background-color: var(--color-primary) !important;
+    /*TODO color-primary*/
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color: var(--color-white) !important;
+}
+
+/*FIN no van*/
+
+/*MENU TAB*/
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover {
+    height: 100%;
+    background-color: var(--color-white) !important;
+    color: #000000 !important;
+}
+
+/*ICONOS DEL TAB FALTAN SERVICIOS*/
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon {
+    background-repeat: no-repeat !important;
+    background-position-x: center !important;
+    background-position-y: center !important;
+    background-size: 30px !important;
+    width: 40px;
+    overflow: hidden;
+    min-width: 40px;
+}
+
+.fa-train:before,
+.fa-plane:before,
+.fa-hotel:before,
+.fa-hotels-flights:before,
+.fa-cruises:before,
+.fa-digital-signature:before,
+.fa-activities:before,
+.fa-bookroad:before,
+.fa-busway:before,
+.fa-bars::before {
+    content: "" !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
+    background-image: url(../../old/resources/media/icon-flights.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
+    background-image: url(../../old/resources/media/icon-flights-hover.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
+    background-image: url(../../old/resources/media/icon-trains.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
+    background-image: url(../../old/resources/media/icon-trains-hover.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
+    background-image: url(../../old/resources/media/icon-hotels.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
+    background-image: url(../../old/resources/media/icon-hotels-hover.svg) !important;
+}
+
+/*nuevo tabmenu*/
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+    background-image: url(../../old/resources/media/icon-hotel_flight.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+    background-image: url(../../old/resources/media/icon-hotel_flight-hover.svg) !important;
+}
+
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
+    background-image: url(../../old/resources/media/icon-cruises.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-cruises {
+    background-image: url(../../old/resources/media/icon-cruises-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+    background-image: url(../../old/resources/media/icon-digital_signature.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+    background-image: url(../../old/resources/media/icon-digital_signature-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
+    background-image: url(../../old/resources/media/icon-activities.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-activities {
+    background-image: url(../../old/resources/media/icon-activities-hover.svg) !important;
+}
+
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+    background-image: url(../../old/resources/media/icon-bookroad.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+    background-image: url(../../old/resources/media/icon-bookroad-hover.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
+    background-image: url(../../old/resources/media/icon-busway.svg) !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-busway {
+    background-image: url(../../old/resources/media/icon-busway-hover.svg) !important;
+}
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/*#endregion */
+
+/*#region TABMENU-CARRUCEL */
+/*#region deshabilitaciones generales*/
+.ui-state-default .ui-icon,
+.ui-messages .ui-icon,
+.ui-sidebar-close .ui-icon,
+.ui-datepicker-header .ui-icon,
+.ui-dialog-titlebar-icon .ui-icon,
+.ui-selectcheckboxmenu-filter-container .ui-icon {
+    background-image: none !important;
+}
+
+.ui-button-text.ui-c:before {
+    content: none !important;
+}
+
+/*endregion*/
+
+/*#region header*/
+#menu-sticky {
+    background-color: white !important;
+}
+
+.ui-g.menu-container {
+    margin: 0px;
+}
+
+/*endregion*/
+.ui-menu.ui-menu-dynamic {
+    width: 12.5em;
+    padding: 0px;
+    position: relative;
+    outline: 0 none;
+    overflow: hidden;
+    width: 240px;
+}
+
+.ui-menu.ui-menu-dynamic .menu-item-close,
+.btnCloseMenu {
+    display: none;
+}
+
+.header-left form .ui-menubutton.ui-widget,
+.header-right .header-item,
+.ui-menu.ui-menu-dynamic ul li a,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
+    border-bottom: #b4b2b2 1px solid;
+    margin: 0px;
+    margin-left: 0px !important;
+    padding: 17px 10px !important;
+    font-weight: 400 !important;
+}
+
+/*#region boton flotante flecha*/
+#top-row {
+    position: fixed;
+    bottom: 59px;
+    right: 150px;
+    height: 60px;
+    width: 60px;
+}
+
+#top-row a:hover {
+    background-image: url(../../old/resources/media/icon-up-hover.svg);
+}
+
+#top-row a {
+    background-image: url(../../old/resources/media/icon-up.svg);
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.fa-arrow-alt-circle-up:before {
+    content: "" !important;
+}
+
+.date-picker-wrapper .footer {
+    display: none;
+}
+
+/*#endregion*/
+
+.notificationsBTN::before {
+    content: "";
+    height: 25px;
+    width: 20px;
+    background-image: url(../../old/resources/media/icon-bell.svg);
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.ui-outputlabel.ui-widget.fa.fa-user::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: left;
+    background-image: url(../../old/resources/media/icon-menumobile-profile-notificacion.svg) !important;
+}
