@@ -422,6 +422,29 @@ input.ui-inputfield {
 
 /*#region tab menu*/
 
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    color: #000000!important;/*TODO COLOR BLACK PRIMARY*/
+    padding-bottom: 0px!important;
+}
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link::after{
+    background-image: url(/media/icon-nav-active.svg);
+    background-position: 7px 0;
+    background-repeat: no-repeat;
+    transform: translateX(-0%);
+    left: 50%;
+    width: 60px;
+    height: 22px;
+    content: "";
+}
+.ui-tabmenu .ui-menuitem-icon{
+    margin-right: 0px!important;
+}
+
+
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon {
     background-repeat: no-repeat !important;
     background-position-x: center !important;
@@ -429,7 +452,7 @@ input.ui-inputfield {
     background-size: 30px !important;
     width: 40px;
     overflow: hidden;
-    min-width: 40px;
+    min-width: 40px;    
 }
 
 .fa-train:before,
@@ -455,7 +478,7 @@ input.ui-inputfield {
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
-    background-image: url(/media/icon-trains.svg) !important;
+    background-image: url(/media/icon-trains-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
@@ -464,7 +487,7 @@ input.ui-inputfield {
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
-    background-image: url(/media/icon-hotels.svg) !important;
+    background-image: url(/media/icon-hotels-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
@@ -482,8 +505,6 @@ input.ui-inputfield {
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
     background-image: url(../../old/resources/media/icon-hotel_flight-hover.svg) !important;
 }
-
-
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
     background-image: url(../../old/resources/media/icon-cruises.svg) !important;
