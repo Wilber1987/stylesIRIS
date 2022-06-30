@@ -4,13 +4,21 @@
     --color-primary: #05A5C7;
     --color-white: #fff;
 }
+body{
+    /*TODO BORRAR*/
+    background-color: #F3F2EB;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url(/resources/media/header.jpg);
+    background-size: 100% 100%;
+}
 #body {
     padding-bottom: 140px;
-    background-color: #FFFFFF;
+    background-color: initial;
 }
 
 #avail-container {
-    background: inherit !important;
+    background: initial !important;
     max-width: 1200px;
 }
 
@@ -66,7 +74,7 @@ input.ui-inputfield {
 
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
     background: var(--color-primary) !important;
-    border: inherit !important;
+    border: initial !important;
 }
 
 .ui-selectonebutton .ui-button.ui-state-default {
@@ -207,7 +215,7 @@ input.ui-inputfield {
 /*#region menu de acceso a diferentes sistemas y HEADRS*/
 .ui-tabmenu li.ui-state-active a,
 .ui-tabmenu a.ui-menuitem-link {
-    background-color: inherit !important;
+    background-color: initial !important;
 }
 .menu .menu-container {
     justify-content: center;
@@ -216,7 +224,7 @@ input.ui-inputfield {
 
 #header,
 #menu-sticky {
-    background: inherit !important;
+    background: initial !important;
     position: relative !important;
 }
 
@@ -448,6 +456,7 @@ input.ui-inputfield {
     width: 100%;
     top: 0;
     z-index: -100;
+    display: none;/*TODO BORRAR*/
 }
 
 /*#endregion*/
@@ -671,7 +680,7 @@ input.ui-inputfield {
 }
 
 .date-picker-wrapper {
-    background-color: inherit !important;
+    background-color: initial !important;
 }
 
 /*#endregion*/
