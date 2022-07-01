@@ -1,23 +1,37 @@
 :root {
     --main-font: sans-serif;
-    --main-font-two: 16px "DM Sans", sans-serif;
+    --main-font-two: 100% "DM Sans", sans-serif;
     --color-primary: #05A5C7;
     --color-white: #fff;
 }
+body{
+    /*TODO BORRAR*/
+    background-color: #F3F2EB;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url(/resources/media/header.jpg);
+    background-size: 100% 100%;
+}
+#body {
+    padding-bottom: 140px;
+    background-color: initial;
+}
 
 #avail-container {
-    background: inherit!important;
-    max-width: 1200px;        
+    background: initial !important;
+    max-width: 1200px;
 }
+
 /*#region formulario */
-#avail-form > form#availabilityForm{
+#avail-form>form#availabilityForm {
     border-radius: 10px;
 }
+
 /*#endregion*/
 /*#region inputs generales*/
 
 input.ui-inputfield {
-    padding: 24px 12px!important;
+    padding: 24px 12px !important;
     background: #FFFFFF;
     /*border: 4px solid #EBEBEB;*/
     border: 1px solid #C2C2C2;
@@ -32,13 +46,14 @@ input.ui-inputfield {
 }
 
 .ui-selectonemenu {
-    transform: none !important;    
+    transform: none !important;
     height: 50px;
     border: 1px solid #C2C2C2;
     display: flex !important;
     align-items: center;
     position: relative;
 }
+
 .ui-chips .ui-chips-container {
     border: 1px solid #C2C2C2;
     height: 50px;
@@ -46,11 +61,12 @@ input.ui-inputfield {
 
 .ui-autocomplete .ui-autocomplete-multiple-container .ui-autocomplete-input-token input {
     margin: 0px;
-    padding: 24px 12px;    
+    padding: 24px 12px;
     border: 1px solid #C2C2C2;
     box-sizing: border-box;
-    width: 100%;    
+    width: 100%;
 }
+
 /*#endregion*/
 
 
@@ -58,8 +74,9 @@ input.ui-inputfield {
 
 .ui-selectonebutton .ui-button.ui-state-default.ui-state-active {
     background: var(--color-primary) !important;
-    border: inherit!important;
+    border: initial !important;
 }
+
 .ui-selectonebutton .ui-button.ui-state-default {
     background: var(--color-white);
     border: 0px solid #297DB5 !important;
@@ -68,6 +85,7 @@ input.ui-inputfield {
     border-radius: 5px 0px 0px 5px;
     background-color: #EBEBEB;
 }
+
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type {
     background-image: url(../media/icon-precio-hover.svg) !important;
     background-repeat: no-repeat;
@@ -76,6 +94,7 @@ input.ui-inputfield {
     background-position-y: center !important;
     width: 100%;
 }
+
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type {
     background-image: url(../media/icon-precio-hover.svg) !important;
     background-repeat: no-repeat;
@@ -125,6 +144,7 @@ input.ui-inputfield {
 .ui-button-text.ui-c:before {
     content: none !important;
 }
+
 /*#endregion*/
 
 /*boton de buscar tipo submit*/
@@ -134,7 +154,7 @@ input.ui-inputfield {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 26px;       
+    line-height: 26px;
     border-radius: 100px;
     padding-left: 43px;
     padding: 1px 30px 10px 40px;
@@ -146,7 +166,7 @@ input.ui-inputfield {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column;
     margin-left: auto;
 
 }
@@ -167,13 +187,14 @@ input.ui-inputfield {
     right: 20px;
     transform: translateY(-50%);
 }
+
 #availabilityForm button[type=submit]:hover::after {
     transform: translate(5px, -50%);
     transition: all 0.3s ease;
 }
 
 #availabilityForm button[type=submit]::before {
-    background-image: url(/media/icon-flights.svg) !important;
+    background-image: url(/resources/media/icon-flights.svg) !important;
     background-repeat: no-repeat;
     background-size: 24px 24px;
     width: 24px;
@@ -183,15 +204,259 @@ input.ui-inputfield {
     position: absolute;
     top: 50%;
     left: 15px;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
 }
+
 #availabilityForm button[type=submit]::after {
-    background-image: url(/media/icon-btn-next-hover.svg) !important;
+    background-image: url(/resources/media/icon-btn-next-hover.svg) !important;
 }
+
 /*#endregion*/
-/*#region menu de acceso a diferentes sistemas*/
-.ui-tabmenu li.ui-state-active a, .ui-tabmenu a.ui-menuitem-link{
-    background-color: inherit!important;
+/*#region menu de acceso a diferentes sistemas y HEADRS*/
+.ui-tabmenu li.ui-state-active a,
+.ui-tabmenu a.ui-menuitem-link {
+    background-color: initial !important;
+}
+.menu .menu-container {
+    justify-content: center;
+    margin: 5px;
+}
+
+#header,
+#menu-sticky {
+    background: initial !important;
+    position: relative !important;
+}
+
+#header {
+    padding: 57px 0 6px 0;
+    height: 100px;
+}
+
+/*HEADER MENU*/
+.notificationsBTN::before {
+    content: "";
+    height: 25px;
+    width: 20px;
+    background-image: url(/resources/media/icon-bell.svg);
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.ui-outputlabel.ui-widget.fa.fa-user::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: left;
+    background-image: url(/resources/media/icon-menumobile-profile.svg) !important;
+}
+#header-container,
+.ui-menu.ui-menu-dynamic,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 330px;
+    background-color: var(--color-primary);
+    z-index: 1010 !important;
+    transform: translateX(-100%);
+    transition: all 0.6s;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.header-left form,
+.header-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-left: 0px !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.38px;
+    color: var(--color-white);
+    position: relative;
+}
+
+.header-left form .ui-menubutton.ui-widget,
+.header-right .header-item,
+.ui-menu.ui-menu-dynamic ul li a,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
+    padding: 12px 20px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.38px;
+    color: #FFFFFF !important;
+    position: relative;
+}
+
+.ui-menu.ui-menu-dynamic,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
+    transform: translateX(0%);
+}
+
+.ui-menu.ui-menu-dynamic,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
+    display: none;
+}
+
+.menu-active {
+    transform: translateX(0%) !important;
+}
+/*BOTONES DE MENU*/
+.header-left form .ui-menubutton.ui-widget,
+.header-right .header-item,
+.btnCloseMenu,
+.ui-menu.ui-menu-dynamic ul li a,
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
+    color: var(--color-white) !important;
+    border-bottom: var(--color-white) 1px solid;
+    margin: 0px;
+    margin-left: 0px !important;
+    padding: 17px 23px !important;
+    font-weight: 400 !important;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.9rem !important;
+    align-items: center;
+}
+
+.header-left form .ui-menubutton.ui-widget button {
+    font-weight: 400 !important;
+    padding: 0px;
+    margin: 0px !important;
+    width: 100%;
+}
+
+.ui-menu.ui-menu-dynamic .menu-item-close,
+.btnCloseMenu {
+    display: block;
+    cursor: pointer;
+}
+
+.btnCloseMenu {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.menu-item-close::before {
+    content: "<";
+    width: 25px;
+    margin: 0px 5px;
+    font-weight: 600;
+    float: left;
+    color: var(--color-white);
+    cursor: pointer;
+}
+.menu-item-close::after {
+    content: "" !important;
+    cursor: pointer;
+}
+
+.header .header-container .header-left .ui-menubutton .ui-button .ui-icon {
+    background-image: url(/resources/media/icon-menumobile-next.svg) !important;
+    background-size: 6px 12px !important;
+    background-position: 95% 50%;
+    background-repeat: no-repeat !important;
+    content: "" !important;
+    background-position: 0 0 !important;
+    width: 6px !important;
+    height: 12px !important;
+    z-index: 9999999 !important;
+    /* border: 3px solid lime; */
+    right: 20px !important;
+    top: 10px !important;
+    left: auto !important;
+    bottom: auto !important;
+    position: absolute !important;
+    transform: none !important;
+}
+
+.menu-toggle,
+.notifications-toggle {
+    padding: 0px;
+    margin: 15px;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    background-color: transparent !important;
+    /*TODO color primary*/
+    background-image: url(/resources/media/icon-menu.svg) !important;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 40px 25px;
+    width: 40px;
+    height: 25px;
+    overflow: hidden;
+    display: block  !important;
+    cursor: pointer;
+}
+.notifications-toggle {
+    display: none !important;
+}
+.menu-toggle.down-icon {
+    background-image: url(/resources/media/icon-menu.svg) !important;
+}
+
+.notifications-toggle {
+    content: "";
+    right: 0;
+    left: inherit;
+    height: 30px;
+    width: 30px;
+    background-image: url(/resources/media/icon-bell.svg) !important;
+    float: left;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 23px 28.53px;
+    display: inherit;
+}
+.notifications-toggle a{
+    height: 13px;
+    width: 13px;
+    background-color: var(--color-white);
+    font-size: 11px;
+    padding: 1px;
+    margin-right: 3px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--color-primary);
+    position: absolute;
+    right: 0;
+}
+
+/*HEADER LOGO*/
+
+.menu-container #menu-logo {
+    width: initial;
+    height: 92px;
+    background-size: auto 92px;
+    background-repeat: no-repeat;
+}
+
+.cb-slideshow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -100;
+    display: none;/*TODO BORRAR*/
 }
 
 /*#endregion*/
@@ -199,18 +464,18 @@ input.ui-inputfield {
 
 /*#region CHECKS y RADIOS*/
 .ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
-    background-color: var(--color-primary) !important;  
+    background-color: var(--color-primary) !important;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;    
+    -webkit-box-sizing: border-box;
     border: 2px solid black;
     background: #00f;
 }
 
 
 .ui-radiobutton.ui-widget {
-    padding: 0px!important;
-    margin: 0px!important;
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .ui-radiobutton {
@@ -278,7 +543,7 @@ input.ui-inputfield {
     transition: 0.4s;
 }
 
-.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default{
+.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default {
     background-color: rgb(235, 235, 235);
 }
 
@@ -323,7 +588,7 @@ input.ui-inputfield {
     height: 30px;
     display: block;
     margin-top: 0px !important;
-    background-image: url(/media/icon-select.svg) !important;
+    background-image: url(/resources/media/icon-select.svg) !important;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 0px;
@@ -349,7 +614,7 @@ input.ui-inputfield {
     color: #838383;
     width: 40px;
     height: 40px;
-    background-image: url(/media/icon-date.svg) !important;
+    background-image: url(/resources/media/icon-date.svg) !important;
     background-size: 20px 20.57px;
     background-position: calc(100% - 0px) 50%;
     background-repeat: no-repeat;
@@ -387,7 +652,7 @@ input.ui-inputfield {
     background-color: #F3F2EB;
     height: calc(100% - 60px);
     width: calc(50% - 10px) !important;
-    border: 5px solid var(--color-white);    
+    border: 5px solid var(--color-white);
     padding: 30px;
     margin: 5px;
 }
@@ -415,12 +680,62 @@ input.ui-inputfield {
 }
 
 .date-picker-wrapper {
-    background-color: inherit !important;
+    background-color: initial !important;
 }
 
 /*#endregion*/
 
 /*#region tab menu*/
+
+#avail-container .ui-tabmenu {
+    display: flex;
+    width: 100%;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    color: #000000 !important;
+    /*TODO COLOR BLACK PRIMARY*/
+    padding-bottom: 0px !important;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-text {
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 26px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link::after {
+    background-image: url(/resources/media/icon-nav-active.svg);
+    background-position: 7px 0;
+    background-repeat: no-repeat;
+    transform: translateX(-0%);
+    left: 50%;
+    width: 60px;
+    height: 22px;
+    content: "";
+}
+
+.ui-tabmenu .ui-menuitem-icon {
+    margin-right: 0px !important;
+}
+
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon {
     background-repeat: no-repeat !important;
@@ -443,95 +758,98 @@ input.ui-inputfield {
 .fa-busway:before,
 .fa-bars::before {
     content: "" !important;
+    background-size: 30px 30px;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
-    background-image: url(/media/icon-flights.svg) !important;
+    background-image: url(/resources/media/icon-flights.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
-    background-image: url(/media/icon-flights-hover.svg) !important;
+    background-image: url(/resources/media/icon-flights-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
-    background-image: url(/media/icon-trains.svg) !important;
+    background-image: url(/resources/media/icon-trains-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
-    background-image: url(/media/icon-trains-hover.svg) !important;
+    background-image: url(/resources/media/icon-trains-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
-    background-image: url(/media/icon-hotels.svg) !important;
+    background-image: url(/resources/media/icon-hotels-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
-    background-image: url(/media/icon-hotels-hover.svg) !important;
+    background-image: url(/resources/media/icon-hotels-hover.svg) !important;
 }
 
 /*nuevo tabmenu*/
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
-    background-image: url(../../old/resources/media/icon-hotel_flight.svg) !important;
+    background-image: url(/resources/media/icon-hotel_flight.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
-    background-image: url(../../old/resources/media/icon-hotel_flight-hover.svg) !important;
+    background-image: url(/resources/media/icon-hotel_flight-hover.svg) !important;
 }
 
-
-
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
-    background-image: url(../../old/resources/media/icon-cruises.svg) !important;
+    background-image: url(/resources/media/icon-cruises.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-cruises {
-    background-image: url(../../old/resources/media/icon-cruises-hover.svg) !important;
+    background-image: url(/resources/media/icon-cruises-hover.svg) !important;
 }
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
-    background-image: url(../../old/resources/media/icon-digital_signature.svg) !important;
+    background-image: url(/resources/media/icon-digital_signature.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
-    background-image: url(../../old/resources/media/icon-digital_signature-hover.svg) !important;
+    background-image: url(/resources/media/icon-digital_signature-hover.svg) !important;
 }
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
-    background-image: url(../../old/resources/media/icon-activities.svg) !important;
+    background-image: url(/resources/media/icon-activities.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-activities {
-    background-image: url(../../old/resources/media/icon-activities-hover.svg) !important;
+    background-image: url(/resources/media/icon-activities-hover.svg) !important;
 }
 
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
-    background-image: url(../../old/resources/media/icon-bookroad.svg) !important;
+    background-image: url(/resources/media/icon-bookroad.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-bookroad {
-    background-image: url(../../old/resources/media/icon-bookroad-hover.svg) !important;
+    background-image: url(/resources/media/icon-bookroad-hover.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
-    background-image: url(../../old/resources/media/icon-busway.svg) !important;
+    background-image: url(/resources/media/icon-busway.svg) !important;
 }
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-busway {
-    background-image: url(../../old/resources/media/icon-busway-hover.svg) !important;
+    background-image: url(/resources/media/icon-busway-hover.svg) !important;
 }
 
 
 /*#endregion*/
+/*
+cuando es autoreserva poner el menu desplegable
+organizar los input para que cubran mas espacio (nombre y pasajero)
+*/
