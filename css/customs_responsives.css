@@ -1,0 +1,288 @@
+/*#region responsives */
+@media (min-width: 1200px) {
+    #header-container,
+    .menu-container,
+    .footer-container {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #top-row {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .cb-slideshow {
+        display: none;
+    }
+
+    #header,
+    #body {
+        overflow: hidden;
+    }
+
+    #avail-container {
+        border-radius: inherit;
+    }
+
+    #availTabMenu {
+        border-radius: inherit;
+        border-top: 0px solid var(--color-white);
+        border-right: 0px solid var(--color-white);
+        border-left: 0px solid var(--color-white);
+    }
+
+    .ui-g.menu-responsive {
+        display: none !important;
+    }
+
+    .menu {
+        display: flex !important;
+    }
+
+    .ui-g.menu {
+        height: 75px;
+    }
+
+    #availabilityForm button[type=submit] {
+        width: auto !important;
+    }
+
+    .menu-bar {
+        display: none !important;
+    }
+
+    .adaptable-container {
+        width: 100%;
+    }
+
+    #availTabMenu>.tabs-menu-main-page {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem,
+    .ui-tabmenu .ui-menuitem-link,
+    .ui-tabmenu .ui-menuitem-icon,
+    #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link {
+        display: flex !important;
+        margin: 0px;
+    }
+
+    #console tbody,
+    #console,
+    #console tbody tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #console tbody tr td {
+        display: flex;
+        padding: 5px;
+        align-items: center;
+    }
+
+    /*#region MENU RESPONSIVE*/
+    #header {
+        height: 60px;
+        position: relative;
+    }
+   
+    .menu-item-close::before {
+        content: "<";
+        width: 25px;
+        margin: 0px 5px;
+        font-weight: 600;
+        float: left;
+        color: var(--color-white);
+    }
+    .menu-item-close::after {
+        content: "" !important;
+    }
+
+    .header .header-container .header-left .ui-menubutton .ui-button .ui-icon {
+        background-image: url(/resources/media/icon-menumobile-next.svg) !important;
+        background-size: 6px 12px !important;
+        background-position: 95% 50%;
+        background-repeat: no-repeat !important;
+        content: "" !important;
+        background-position: 0 0 !important;
+        width: 6px !important;
+        height: 12px !important;
+        z-index: 9999999 !important;
+        /* border: 3px solid lime; */
+        right: 20px !important;
+        top: 10px !important;
+        left: auto !important;
+        bottom: auto !important;
+        position: absolute !important;
+        transform: none !important;
+    }
+
+    .menu-toggle,
+    .notifications-toggle {
+        top: 20px;
+    }
+    .ui-selectoneradio label {
+        padding: 10px;
+    }
+    .menu-toggle.down-icon {
+        background-image: url(/resources/media/icon-menu.svg) !important;
+    }
+
+    .notifications-toggle {
+        content: "";
+        right: 0;
+        left: inherit;
+        height: 30px;
+        width: 30px;
+        background-image: url(/resources/media/icon-bell.svg) !important;
+        float: left;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 23px 28.53px;
+        display: inherit;
+    }
+    .notifications-toggle a{
+        height: 13px;
+        width: 13px;
+        background-color: var(--color-white);
+        font-size: 11px;
+        padding: 1px;
+        margin-right: 3px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--color-primary);
+        position: absolute;
+        right: 0;
+    }
+    #menu-sticky {
+        height: 120px;
+        padding-top: 70px;
+    }
+    #menu-sticky.scrollStyle {
+        background-color: var(--color-primary) !important;
+        /*TODO COLOR PRIMARY*/
+        height: 60px !important;
+    }
+
+    #menu-sticky.scrollStyle #menu-logo {
+        filter: brightness(100);
+        height: 50px !important;
+        margin: 5px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    #header-container,
+    .menu-container,
+    .footer-container {
+        width: 100% !important;
+    }
+
+    /*#endregion*/
+
+    .footer .footer-container .footer-logo {
+        width: 195px;
+        height: 80px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .footer .footer-container .footer-links {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .footer .footer-container .footer-info {
+        display: flex;
+        margin: auto 0px;
+        align-items: center;
+    }
+
+    /*date*/
+    .month-wrapper {
+        width: 100% !important;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px 16px 16px 16px !important;
+        padding: 0px !important;
+        overflow: hidden;
+    }
+
+    .month-wrapper .gap {
+        display: none;
+    }
+
+    .date-picker-wrapper .month-wrapper table {
+        margin: 5px;
+        width: calc(100% - 10px) !important;
+    }
+
+    .date-picker-wrapper.no-shortcuts {
+        padding-bottom: 0;
+        background-color: var(--color-white) !important;
+        margin-left: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .date-picker-wrapper .drp_top-bar .default-top {
+        display: none;
+    }
+
+    .date-range-picker-from .input-icon,
+    .date-range-picker-from-single .input-icon,
+    .date-range-picker-to .input-icon {
+        bottom: 15%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*#region footer*/
+    .footer {
+        border-radius: 0px 0px 0px 0px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: auto;
+    }
+
+    /*#endregion*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo>img {
+        margin: auto;
+        display: block;
+    }
+
+    .footer-container>a,
+    .footer-container>div {
+        margin-bottom: 20px !important;
+    }
+}
+
+
+/*endregion*/
