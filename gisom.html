@@ -1,0 +1,2972 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost:8080/trains/trainSearch.xhtml -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="j_idt5">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./a_gisom/primeicons.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./a_gisom/primeflex.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./a_gisom/theme.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./a_gisom/components.css"
+    />
+    <script
+      type="text/javascript"
+      src="./a_gisom/jquery.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/jquery-plugins.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/core.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/components.js"
+      nonce=""
+    ></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./a_gisom/clock.css"
+    />
+    <script
+      type="text/javascript"
+      src="./a_gisom/raphael.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/clock.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/touchswipe.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/inputmask.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/datepicker.js"
+      nonce=""
+    ></script>
+    <script type="text/javascript" nonce="">
+      if (window.PrimeFaces) {
+        PrimeFaces.settings.locale = "es_ES";
+        PrimeFaces.settings.viewId = "/trains/trainSearch.xhtml";
+        PrimeFaces.settings.contextPath = "";
+        PrimeFaces.settings.cookiesSecure = false;
+      }
+    </script>
+    <script type="text/javascript" nonce="">
+      $(function () {
+        if (window.PrimeFaces) {
+          PrimeFaces.csp.init(
+            "MTg4YzJiN2ItMjdkNS00ZjVjLTljYjUtZjdjODk3MjZiMzY0"
+          );
+        }
+      });
+    </script>
+    <title>Sistema de reservas - 22.09.00-SNAPSHOT (2022-06-27 16:48)</title>
+    <link
+      href="./a_gisom/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="./a_gisom/moment-with-locales.min.js.descarga"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/jquery.daterangepicker.min.js.descarga"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/sidebar.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/custom.js"
+      nonce=""
+    ></script>
+    <link
+      rel="icon"
+      href="https://public.grupoiris.net/apps/pst/favicon.png"
+      sizes="16x16"
+    />
+
+    <!--css personalizado-->
+    <link type="text/css" rel="stylesheet" href="./css/customs.css" />
+    <link type="text/css" rel="stylesheet" href="./css/customs_responsives.css" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body cz-shortcut-listen="true">
+    <div id="header" class="ui-g header">
+      <div id="header-container" class="ui-g header-container">
+        <spam class="btnCloseMenu">X</spam>
+        <div class="header-left">
+          <form
+            id="j_idt17"
+            name="j_idt17"
+            method="post"
+            action="http://localhost:8080/trains/trainSearch.xhtml"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <input type="hidden" name="j_idt17" value="j_idt17" />
+            <span id="j_idt17:j_idt18" class="ui-menubutton ui-widget"
+              ><button
+                id="j_idt17:j_idt18_button"
+                name="j_idt17:j_idt18_button"
+                type="button"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                role="button"
+                aria-disabled="false"
+              >
+                <span
+                  class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"
+                ></span
+                ><span class="ui-button-text ui-c">Reservas</span>
+              </button></span
+            ><span id="j_idt17:j_idt26" class="ui-menubutton ui-widget"
+              ><button
+                id="j_idt17:j_idt26_button"
+                name="j_idt17:j_idt26_button"
+                type="button"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                role="button"
+                aria-disabled="false"
+              >
+                <span
+                  class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"
+                ></span
+                ><span class="ui-button-text ui-c">Utilidades</span>
+              </button></span
+            ><span id="j_idt17:j_idt31" class="ui-menubutton ui-widget"
+              ><button
+                id="j_idt17:j_idt31_button"
+                name="j_idt17:j_idt31_button"
+                type="button"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                role="button"
+                aria-disabled="false"
+              >
+                <span
+                  class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"
+                ></span
+                ><span class="ui-button-text ui-c">Mi cuenta</span>
+              </button></span
+            ><span
+              id="j_idt17:notificationsBTN"
+              class="ui-menubutton ui-widget notificationsBTN"
+              ><button
+                id="j_idt17:notificationsBTN_button"
+                name="j_idt17:notificationsBTN_button"
+                type="button"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                role="button"
+                aria-disabled="false"
+              >
+                <span
+                  class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"
+                ></span
+                ><span class="ui-button-text ui-c">Notificaciones</span>
+              </button></span
+            ><input
+              type="hidden"
+              name="javax.faces.ViewState"
+              id="j_id1:javax.faces.ViewState:0"
+              value="-4121684122148096542:5215334036572919693"
+              autocomplete="off"
+            />
+            <input
+              name="primefaces.nonce"
+              type="hidden"
+              value="MTg4YzJiN2ItMjdkNS00ZjVjLTljYjUtZjdjODk3MjZiMzY0"
+            />
+          </form>
+        </div>
+        <div class="header-right">
+          <span class="header-item"
+            ><label id="j_idt49" class="ui-outputlabel ui-widget fa fa-user"
+              >1806 (es.viajes.callcenter@grupoiris.com) - Agencia socio
+              desarrollo perfiles</label
+            ></span
+          ><span class="header-item">
+            <span class="fas fa-clock"></span
+            ><span
+              id="j_idt52"
+              class="ui-clock ui-widget ui-widget-header ui-corner-all"
+              >01/07/2022 19:50</span
+            ></span
+          ><span class="header-item"
+            ><a
+              id="j_idt54"
+              href="http://localhost:8080/trains/trainSearch.xhtml#"
+              class="ui-commandlink ui-widget fas fa-sign-out-alt"
+              >| Salir</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <div id="menu-sticky" class="ui-outputpanel ui-widget">
+      <div class="ui-g menu">
+        <div class="ui-g menu-container">
+          <a
+            id="menu-logo"
+            href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+            class="menu-logo-container"
+          >
+            <div class="logoMenu"></div>
+          </a>
+
+          <div id="menu-toggle" class="menu-toggle" layout="block">
+            <a class="fa fa-bars fa-2x"></a>
+          </div>
+          <div
+            id="notifications-toggle"
+            class="notifications-toggle"
+            layout="block"
+          >
+            <a>11</a>
+          </div>
+        </div>
+        <script nonce="">
+          $("div#menu-responsive\\:menu-bar").hide();
+
+          $(document).ready(function () {
+            if (
+              $(".menu-owner").length == 0 &&
+              $(".menu-company").length == 0 &&
+              $(".menu-group").length == 0
+            ) {
+              $(".menu-bar").remove();
+            }
+          });
+        </script>
+      </div>
+    </div>
+    <div class="ui-g menu-responsive">
+      <div class="ui-g menu-container">
+        <a
+          id="menu-logo"
+          href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+          class="menu-logo-container"
+        >
+          <div class="logoMenu"></div>
+        </a>
+
+        <div id="menu-toggle" class="menu-toggle" layout="block">
+          <a class="fa fa-bars fa-2x"></a>
+        </div>
+        <div
+          id="notifications-toggle"
+          class="notifications-toggle"
+          layout="block"
+        >
+          <a>11</a>
+        </div>
+      </div>
+      <script nonce="">
+        $("div#menu-responsive\\:menu-bar").hide();
+
+        $(document).ready(function () {
+          if (
+            $(".menu-owner").length == 0 &&
+            $(".menu-company").length == 0 &&
+            $(".menu-group").length == 0
+          ) {
+            $(".menu-bar").remove();
+          }
+        });
+      </script>
+    </div>
+    <div id="j_idt171"></div>
+    <div
+      id="globalMessages"
+      class="ui-messages ui-widget"
+      aria-live="polite"
+    ></div>
+    <div id="j_idt173"></div>
+    <div
+      id="j_idt174"
+      class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container loading"
+      role="dialog"
+      aria-describedby="j_idt174_content"
+      aria-hidden="true"
+      aria-modal="true"
+      aria-labelledby="j_idt174_title"
+      style="width: auto; height: auto"
+    >
+      <div
+        class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"
+        style=""
+      >
+        <span id="j_idt174_title" class="ui-dialog-title"></span>
+      </div>
+      <div
+        class="ui-dialog-content ui-widget-content"
+        id="j_idt174_content"
+        style="height: auto"
+      >
+        <img
+          id="j_idt175"
+          src="./a_gisom/loading.gif"
+          alt=""
+          class="loading-content"
+          width="280"
+        />
+      </div>
+    </div>
+    <div id="body" class="ui-g body-main-page" style="position: relative">
+      <div class="cb-slideshow">
+        <div id="background-slide-1"></div>
+        <div id="background-slide-2"></div>
+        <div id="background-slide-3"></div>
+        <div id="background-slide-4"></div>
+      </div>
+      <div id="" class="adaptable-container">
+        <div id="avail-container">
+          <form
+            id="availTabMenu"
+            name="availTabMenu"
+            method="post"
+            action="http://localhost:8080/trains/trainSearch.xhtml"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <input type="hidden" name="availTabMenu" value="availTabMenu" />
+            <div
+              id="availTabMenu:j_idt177"
+              class="ui-tabmenu ui-widget ui-widget-content ui-corner-all tabs-menu-main-page"
+            >
+              <ul
+                class="ui-tabmenu-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"
+                role="tablist"
+              >
+                <li
+                  class="ui-tabmenuitem ui-state-default ui-corner-top ui-tabmenuitem-hasicon"
+                  role="tab"
+                  aria-expanded="false"
+                  aria-selected="false"
+                  tabindex="0"
+                >
+                  <a
+                    tabindex="-1"
+                    role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/trains/trainSearch.xhtml#"
+                    id="a-27d8d0f5-7040-4129-a05c-1c3a7dbe8f06"
+                    ><span
+                      class="ui-menuitem-icon ui-icon fa fa-plane"
+                      aria-hidden="true"
+                    ></span
+                    ><span class="ui-menuitem-text">Vuelos</span></a
+                  >
+                </li>
+                <li
+                  class="ui-tabmenuitem ui-state-default ui-state-active ui-corner-top ui-tabmenuitem-hasicon"
+                  role="tab"
+                  aria-expanded="true"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <a
+                    tabindex="-1"
+                    role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/trains/trainSearch.xhtml#"
+                    id="a-1f3ff55b-c03d-4f2c-9af0-3b324eca542e"
+                    ><span
+                      class="ui-menuitem-icon ui-icon fa fa-train"
+                      aria-hidden="true"
+                    ></span
+                    ><span class="ui-menuitem-text">Trenes</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <input
+              type="hidden"
+              name="javax.faces.ViewState"
+              id="j_id1:javax.faces.ViewState:1"
+              value="-4121684122148096542:5215334036572919693"
+              autocomplete="off"
+            />
+            <input
+              name="primefaces.nonce"
+              type="hidden"
+              value="MTg4YzJiN2ItMjdkNS00ZjVjLTljYjUtZjdjODk3MjZiMzY0"
+            />
+          </form>
+          <div id="avail-form">
+            <form
+              id="availabilityForm"
+              name="availabilityForm"
+              method="post"
+              action="http://localhost:8080/trains/trainSearch.xhtml"
+              class="train"
+              enctype="application/x-www-form-urlencoded"
+            >
+              <input
+                type="hidden"
+                name="availabilityForm"
+                value="availabilityForm"
+              />
+              <div class="ui-g">
+                <div class="ui-lg-8 ui-md-8 ui-sm-12">
+                  <table
+                    id="j_idt194"
+                    role="presentation"
+                    class="ui-selectoneradio ui-widget"
+                  >
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="ui-radiobutton ui-widget">
+                            <div class="ui-helper-hidden-accessible">
+                              <input
+                                id="j_idt194:0"
+                                name="j_idt194"
+                                type="radio"
+                                value="IDAVUELTA"
+                                checked="checked"
+                              />
+                            </div>
+                            <div
+                              class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active"
+                            >
+                              <span
+                                class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"
+                              ></span>
+                            </div>
+                          </div>
+                          <label for="j_idt194:0">Ida y vuelta</label>
+                        </td>
+                        <td>
+                          <div class="ui-radiobutton ui-widget">
+                            <div class="ui-helper-hidden-accessible">
+                              <input
+                                id="j_idt194:1"
+                                name="j_idt194"
+                                type="radio"
+                                value="IDA"
+                              />
+                            </div>
+                            <div
+                              class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default"
+                            >
+                              <span
+                                class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"
+                              ></span>
+                            </div>
+                          </div>
+                          <label for="j_idt194:1">Solo ida</label>
+                        </td>
+                        <td>
+                          <div class="ui-radiobutton ui-widget">
+                            <div class="ui-helper-hidden-accessible">
+                              <input
+                                id="j_idt194:2"
+                                name="j_idt194"
+                                type="radio"
+                                value="GOLDEN_CARD"
+                              />
+                            </div>
+                            <div
+                              class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default"
+                            >
+                              <span
+                                class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"
+                              ></span>
+                            </div>
+                          </div>
+                          <label for="j_idt194:2">Tarjeta dorada</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  id="requestType"
+                  class="ui-lg-4 ui-md-4 ui-sm-12 standar-request-type-selector"
+                >
+                  <div
+                    id="j_idt196"
+                    class="ui-selectonebutton ui-buttonset ui-widget ui-corner-all ui-buttonset-2"
+                  >
+                    <div
+                      class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left ui-state-active"
+                      tabindex="0"
+                    >
+                      <input
+                        id="j_idt196:0"
+                        name="j_idt196"
+                        type="radio"
+                        value="PRICE"
+                        class="ui-helper-hidden-accessible"
+                        tabindex="-1"
+                        aria-label="Precio"
+                        checked="checked"
+                      /><span class="ui-button-text ui-c">Precio</span>
+                    </div>
+                    <div
+                      class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right"
+                      tabindex="0"
+                    >
+                      <input
+                        id="j_idt196:1"
+                        name="j_idt196"
+                        type="radio"
+                        value="SCHEDULE"
+                        class="ui-helper-hidden-accessible"
+                        tabindex="-1"
+                        aria-label="Horario"
+                      /><span class="ui-button-text ui-c">Horario</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="trainSearches" class="ui-g">
+                <div id="standard" class="ui-g">
+                  <div class="ui-g">
+                    <div class="ui-lg-12 ui-md- ui-sm-12">
+                      <div class="ui-g">
+                        <div
+                          id="departureContainer"
+                          class="ui-g ui-lg-4 ui-md-6 ui-sm-12 field required"
+                          style=""
+                        >
+                          <label
+                            for="departure"
+                            title=""
+                            class=""
+                            style="
+                              opacity: 0;
+                              transition: opacity 0.5s linear 0s;
+                            "
+                            >Origen</label
+                          ><span
+                            id="departure"
+                            class="ui-autocomplete"
+                            role="application"
+                            ><input
+                              id="departure_input"
+                              name="departure_input"
+                              type="text"
+                              class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all"
+                              autocomplete="off"
+                              aria-required="true"
+                              placeholder="Origen*"
+                              value=""
+                              role="textbox"
+                              aria-readonly="false"
+                              aria-disabled="false"
+                              aria-autocomplete="list" /><input
+                              id="departure_hinput"
+                              name="departure_hinput"
+                              type="hidden"
+                              autocomplete="off"
+                              aria-hidden="true"
+                              placeholder="undefined*" /><span
+                              id="departure_panel"
+                              class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+                              role="listbox"
+                              tabindex="-1"
+                            ></span
+                            ><span
+                              role="status"
+                              aria-live="polite"
+                              class="ui-autocomplete-status ui-helper-hidden-accessible"
+                            ></span
+                          ></span>
+                          <div class="validation-error-container">
+                            <div
+                              id="departureMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          id="arrivalContainer"
+                          class="ui-g ui-lg-4 ui-md-6 ui-sm-12 field required"
+                          style=""
+                        >
+                          <label
+                            for="arrival"
+                            title=""
+                            class=""
+                            style="
+                              opacity: 0;
+                              transition: opacity 0.5s linear 0s;
+                            "
+                            >Destino</label
+                          ><span
+                            id="arrival"
+                            class="ui-autocomplete"
+                            role="application"
+                            ><input
+                              id="arrival_input"
+                              name="arrival_input"
+                              type="text"
+                              class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                              autocomplete="off"
+                              aria-required="true"
+                              disabled="disabled"
+                              aria-disabled="true"
+                              placeholder="Destino*"
+                              value=""
+                              role="textbox"
+                              aria-readonly="false"
+                              aria-autocomplete="list" /><input
+                              id="arrival_hinput"
+                              name="arrival_hinput"
+                              type="hidden"
+                              autocomplete="off"
+                              aria-hidden="true"
+                              disabled="disabled"
+                              aria-disabled="true"
+                              placeholder="undefined*" /><span
+                              id="arrival_panel"
+                              class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+                              role="listbox"
+                              tabindex="-1"
+                            ></span
+                            ><span
+                              role="status"
+                              aria-live="polite"
+                              class="ui-autocomplete-status ui-helper-hidden-accessible"
+                            ></span
+                          ></span>
+                          <div class="validation-error-container">
+                            <div
+                              id="arrivalMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          id="dates"
+                          class="input-date-range ui-g ui-lg-4 ui-md-12 ui-sm-12"
+                        >
+                          <div
+                            class="ui-g-6 ui-sm-12 ui-g-nopad date-range-picker-from"
+                          >
+                            <label
+                              for="datesfrom"
+                              title=""
+                              class=""
+                              style="
+                                opacity: 0;
+                                transition: opacity 0.5s linear 0s;
+                              "
+                              >Fecha de ida</label
+                            ><input
+                              id="datesfrom"
+                              name="datesfrom"
+                              type="text"
+                              class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
+                              aria-required="true"
+                              autocomplete="off"
+                              placeholder="Fecha de ida"
+                              role="textbox"
+                              aria-readonly="false"
+                              aria-disabled="false"
+                            />
+                            <span class="input-icon fa fa-calendar-alt"></span>
+                            <div class="validation-error-container">
+                              <div
+                                id="datesMessageFrom"
+                                class="ui-messages ui-widget"
+                                aria-live="polite"
+                              ></div>
+                            </div>
+                          </div>
+                          <div
+                            class="ui-g-6 ui-sm-12 ui-g-nopad date-range-picker-to"
+                          >
+                            <label
+                              for="datesto"
+                              title=""
+                              class=""
+                              style="
+                                opacity: 0;
+                                transition: opacity 0.5s linear 0s;
+                              "
+                              >Fecha de vuelta</label
+                            ><input
+                              id="datesto"
+                              name="datesto"
+                              type="text"
+                              class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
+                              aria-required="true"
+                              autocomplete="off"
+                              placeholder="Fecha de vuelta"
+                              role="textbox"
+                              aria-readonly="false"
+                              aria-disabled="false"
+                            />
+                            <span class="input-icon fa fa-calendar-alt"></span>
+                            <div class="validation-error-container">
+                              <div
+                                id="datesMessageTo"
+                                class="ui-messages ui-widget"
+                                aria-live="polite"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <script type="text/javascript" nonce="">
+                            var startDate =
+                              01 / 07 / 2022 ? "01/07/2022" : 01 / 07 / 2022;
+                            var endDate = false ? "false" : false;
+                            var format = false
+                              ? "DD/MM/YYYY HH:mm"
+                              : "DD/MM/YYYY";
+                            if (false) {
+                              $("#dates")
+                                .dateRangePicker({
+                                  autoClose: true,
+                                  startDate: startDate,
+                                  endDate: endDate,
+                                  singleDate: false,
+                                  startOfWeek: "monday",
+                                  format: format,
+                                  language: "es",
+                                  time: {
+                                    enabled: false,
+                                  },
+                                  customCloseAnimation: function (cb) {
+                                    $(this).fadeOut(400, cb);
+                                  },
+                                  getValue: function () {
+                                    return $(this).val();
+                                  },
+                                  setValue: function (s, s1, s2) {
+                                    if (
+                                      !$("#datesfrom").attr("readonly") &&
+                                      !$("#datesfrom").is(":disabled") &&
+                                      s != $("#datesfrom").val()
+                                    ) {
+                                      $("#datesfrom").val(s);
+                                    }
+                                  },
+                                })
+                                .bind(
+                                  "datepicker-change",
+                                  function (event, obj) {
+                                    if (null != null) {
+                                      null();
+                                    }
+                                  }
+                                );
+                            } else {
+                              $("#dates")
+                                .dateRangePicker({
+                                  selectForward: true,
+                                  autoClose: true,
+                                  startDate: startDate,
+                                  endDate: endDate,
+                                  singleDate: false,
+                                  startOfWeek: "monday",
+                                  //maxDays: false,
+                                  format: format,
+                                  language: "es",
+                                  time: {
+                                    enabled: false,
+                                  },
+                                  customCloseAnimation: function (cb) {
+                                    $(this).fadeOut(400, cb);
+                                  },
+                                  getValue: function () {
+                                    if (
+                                      $("#datesfrom").val() &&
+                                      $("#datesto").val()
+                                    )
+                                      return (
+                                        $("#datesfrom").val() +
+                                        " to " +
+                                        $("#datesto").val()
+                                      );
+                                    else return "";
+                                  },
+                                  setValue: function (s, s1, s2) {
+                                    $("#datesfrom").val(s1);
+                                    $("#datesto").val(s2);
+                                  },
+                                })
+                                .bind(
+                                  "datepicker-change",
+                                  function (event, obj) {
+                                    if (null != null) {
+                                      null();
+                                    }
+                                  }
+                                );
+                            }
+                          </script>
+                        </div>
+                      </div>
+                      <div class="ui-g">
+                        <div
+                          id="passengersContainer"
+                          class="ui-g ui-lg-4 ui-md-6 ui-sm-12 field required"
+                          style=""
+                        >
+                          <label for="passengers" title="" class=""
+                            >Pasajeros</label
+                          ><input
+                            id="passengers"
+                            name="passengers"
+                            type="text"
+                            value="1 adulto"
+                            class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-filled"
+                            readonly="readonly"
+                            aria-readonly="true"
+                            role="textbox"
+                            aria-disabled="false"
+                            aria-expanded="false"
+                            aria-controls="passengersOverlayPanel"
+                            placeholder="undefined*"
+                          />
+                          <div
+                            id="passengersOverlayPanel"
+                            class="ui-overlaypanel ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container passengers-input"
+                            style="width: 300px"
+                          >
+                            <div class="ui-overlaypanel-content">
+                              <span id="passengersOverlayPanelContainer"
+                                ><div id="adults" class="ui-g">
+                                  <div
+                                    class="ui-lg-1 ui-md-1 ui-sm-1 passenger-icon"
+                                  >
+                                    <span class="fas fa-male"></span>
+                                  </div>
+                                  <div class="ui-lg-6 ui-md-6 ui-sm-6">
+                                    <span class="passenger-type">Adulto</span
+                                    ><span class="passenger-type-description"
+                                      >Más de 13 años</span
+                                    >
+                                  </div>
+                                  <div class="ui-lg-5 ui-md-5 ui-sm-5">
+                                    <span
+                                      id="j_idt220"
+                                      class="ui-spinner ui-widget ui-corner-all gi-spinner ui-spinner-stacked ui-inputwrapper-filled"
+                                      ><input
+                                        id="j_idt220_input"
+                                        name="j_idt220_input"
+                                        type="text"
+                                        class="ui-spinner-input ui-inputfield ui-state-default ui-corner-all ui-state-filled"
+                                        autocomplete="off"
+                                        value="1"
+                                        role="textbox"
+                                        aria-multiline="false"
+                                        aria-valuenow="1"
+                                        aria-valuemin="0"
+                                        aria-valuemax="9"
+                                        aria-readonly="false"
+                                        aria-disabled="false"
+                                        placeholder="undefined*" /><a
+                                        class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only"
+                                        ><span class="ui-button-text"
+                                          ><span
+                                            class="ui-icon ui-c ui-icon-triangle-1-n"
+                                          ></span></span></a
+                                      ><a
+                                        class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only"
+                                        ><span class="ui-button-text"
+                                          ><span
+                                            class="ui-icon ui-c ui-icon-triangle-1-s"
+                                          ></span></span></a
+                                    ></span>
+                                  </div>
+                                </div>
+                                <div id="children" class="ui-g">
+                                  <div
+                                    class="ui-lg-1 ui-md-1 ui-sm-1 passenger-icon"
+                                  >
+                                    <span class="fas fa-child"></span>
+                                  </div>
+                                  <div class="ui-lg-6 ui-md-6 ui-sm-6">
+                                    <span class="passenger-type">Niño</span
+                                    ><span class="passenger-type-description"
+                                      >De 4 a 13 años</span
+                                    >
+                                  </div>
+                                  <div class="ui-lg-5 ui-md-5 ui-sm-5">
+                                    <span
+                                      id="j_idt224"
+                                      class="ui-spinner ui-widget ui-corner-all gi-spinner ui-spinner-stacked ui-inputwrapper-filled"
+                                      ><input
+                                        id="j_idt224_input"
+                                        name="j_idt224_input"
+                                        type="text"
+                                        class="ui-spinner-input ui-inputfield ui-state-default ui-corner-all ui-state-filled"
+                                        autocomplete="off"
+                                        value="0"
+                                        role="textbox"
+                                        aria-multiline="false"
+                                        aria-valuenow="0"
+                                        aria-valuemin="0"
+                                        aria-valuemax="9"
+                                        aria-readonly="false"
+                                        aria-disabled="false"
+                                        placeholder="undefined*" /><a
+                                        class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only"
+                                        ><span class="ui-button-text"
+                                          ><span
+                                            class="ui-icon ui-c ui-icon-triangle-1-n"
+                                          ></span></span></a
+                                      ><a
+                                        class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only"
+                                        ><span class="ui-button-text"
+                                          ><span
+                                            class="ui-icon ui-c ui-icon-triangle-1-s"
+                                          ></span></span></a
+                                    ></span>
+                                  </div>
+                                </div>
+                                <div id="babies" class="ui-g">
+                                  <div
+                                    class="ui-lg-1 ui-md-1 ui-sm-1 passenger-icon"
+                                  >
+                                    <span class="fas fa-baby"></span>
+                                  </div>
+                                  <div class="ui-lg-6 ui-md-6 ui-sm-6">
+                                    <span class="passenger-type">Bebé</span
+                                    ><span class="passenger-type-description"
+                                      >Menos de 4 años</span
+                                    ><br /><span
+                                      class="passenger-type-description"
+                                      >Sin ocupar plaza</span
+                                    >
+                                  </div>
+                                  <div class="ui-lg-5 ui-md-5 ui-sm-5">
+                                    <span
+                                      id="j_idt230"
+                                      class="ui-spinner ui-widget ui-corner-all gi-spinner ui-spinner-stacked ui-inputwrapper-filled"
+                                      ><input
+                                        id="j_idt230_input"
+                                        name="j_idt230_input"
+                                        type="text"
+                                        class="ui-spinner-input ui-inputfield ui-state-default ui-corner-all ui-state-filled"
+                                        autocomplete="off"
+                                        value="0"
+                                        role="textbox"
+                                        aria-multiline="false"
+                                        aria-valuenow="0"
+                                        aria-valuemin="0"
+                                        aria-valuemax="9"
+                                        aria-readonly="false"
+                                        aria-disabled="false"
+                                        placeholder="undefined*" /><a
+                                        class="ui-spinner-button ui-spinner-up ui-corner-tr ui-button ui-widget ui-state-default ui-button-text-only"
+                                        ><span class="ui-button-text"
+                                          ><span
+                                            class="ui-icon ui-c ui-icon-triangle-1-n"
+                                          ></span></span></a
+                                      ><a
+                                        class="ui-spinner-button ui-spinner-down ui-corner-br ui-button ui-widget ui-state-default ui-button-text-only"
+                                        ><span class="ui-button-text"
+                                          ><span
+                                            class="ui-icon ui-c ui-icon-triangle-1-s"
+                                          ></span></span></a
+                                    ></span>
+                                  </div></div
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="validation-error-container">
+                            <div
+                              id="passengersMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          id="tarjetaJovenContainer"
+                          class="ui-g ui-lg-4 ui-md-4 ui-sm-12 field noRequired"
+                          style=""
+                        >
+                          <label for="tarjetaJoven" title="" class=""
+                            >+ Renfe Joven 50</label
+                          >
+                          <div
+                            id="tarjetaJoven"
+                            class="ui-selectonemenu ui-widget ui-state-default ui-corner-all"
+                            aria-owns="tarjetaJoven_panel"
+                            role="combobox"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            style="min-width: 32px"
+                          >
+                            <div class="ui-helper-hidden-accessible">
+                              <input
+                                id="tarjetaJoven_focus"
+                                name="tarjetaJoven_focus"
+                                type="text"
+                                autocomplete="off"
+                              />
+                            </div>
+                            <div class="ui-helper-hidden-accessible">
+                              <select
+                                id="tarjetaJoven_input"
+                                name="tarjetaJoven_input"
+                                tabindex="-1"
+                                autocomplete="off"
+                                aria-hidden="true"
+                              >
+                                <option
+                                  value="0"
+                                  selected="selected"
+                                  data-escape="true"
+                                >
+                                  0
+                                </option>
+                                <option value="1" data-escape="true">1</option>
+                              </select>
+                            </div>
+                            <label
+                              id="tarjetaJoven_label"
+                              class="ui-selectonemenu-label ui-inputfield ui-corner-all"
+                              >0</label
+                            >
+                            <div
+                              class="ui-selectonemenu-trigger ui-state-default ui-corner-right"
+                            >
+                              <span
+                                class="ui-icon ui-icon-triangle-1-s ui-c"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="validation-error-container">
+                            <div
+                              id="tarjetaJovenMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          id="tarjetaDoradaContainer"
+                          class="ui-g ui-lg-2 ui-md-4 ui-sm-12 field noRequired"
+                          style=""
+                        >
+                          <label for="tarjetaDorada" title="" class=""
+                            >Tarjeta dorada</label
+                          >
+                          <div
+                            id="tarjetaDorada"
+                            class="ui-selectonemenu ui-widget ui-state-default ui-corner-all"
+                            aria-owns="tarjetaDorada_panel"
+                            role="combobox"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            style="min-width: 32px"
+                          >
+                            <div class="ui-helper-hidden-accessible">
+                              <input
+                                id="tarjetaDorada_focus"
+                                name="tarjetaDorada_focus"
+                                type="text"
+                                autocomplete="off"
+                              />
+                            </div>
+                            <div class="ui-helper-hidden-accessible">
+                              <select
+                                id="tarjetaDorada_input"
+                                name="tarjetaDorada_input"
+                                tabindex="-1"
+                                autocomplete="off"
+                                aria-hidden="true"
+                              >
+                                <option
+                                  value="0"
+                                  selected="selected"
+                                  data-escape="true"
+                                >
+                                  0
+                                </option>
+                                <option value="1" data-escape="true">1</option>
+                              </select>
+                            </div>
+                            <label
+                              id="tarjetaDorada_label"
+                              class="ui-selectonemenu-label ui-inputfield ui-corner-all"
+                              >0</label
+                            >
+                            <div
+                              class="ui-selectonemenu-trigger ui-state-default ui-corner-right"
+                            >
+                              <span
+                                class="ui-icon ui-icon-triangle-1-s ui-c"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="validation-error-container">
+                            <div
+                              id="tarjetaDoradaMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          id="classContainer"
+                          class="ui-g ui-lg-2 ui-md-4 ui-sm-12 field noRequired"
+                          style=""
+                        >
+                          <label for="class" title="" class="">Clase</label>
+                          <div
+                            id="class"
+                            class="ui-selectonemenu ui-widget ui-state-default ui-corner-all"
+                            aria-owns="class_panel"
+                            role="combobox"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            style="min-width: 87px"
+                          >
+                            <div class="ui-helper-hidden-accessible">
+                              <input
+                                id="class_focus"
+                                name="class_focus"
+                                type="text"
+                                autocomplete="off"
+                              />
+                            </div>
+                            <div class="ui-helper-hidden-accessible">
+                              <select
+                                id="class_input"
+                                name="class_input"
+                                tabindex="-1"
+                                autocomplete="off"
+                                aria-hidden="true"
+                              >
+                                <option
+                                  value=""
+                                  selected="selected"
+                                  data-escape="true"
+                                >
+                                  Todos
+                                </option>
+                                <option value="TOURIST" data-escape="true">
+                                  Turista
+                                </option>
+                                <option value="PREFERRED" data-escape="true">
+                                  Preferente
+                                </option>
+                                <option value="CLUB" data-escape="true">
+                                  Club
+                                </option>
+                              </select>
+                            </div>
+                            <label
+                              id="class_label"
+                              class="ui-selectonemenu-label ui-inputfield ui-corner-all"
+                              >Todos</label
+                            >
+                            <div
+                              class="ui-selectonemenu-trigger ui-state-default ui-corner-right"
+                            >
+                              <span
+                                class="ui-icon ui-icon-triangle-1-s ui-c"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="validation-error-container">
+                            <div
+                              id="classMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="profiles-panel" class="ui-g">
+                        <div
+                          id="customerContainer"
+                          class="ui-g ui-lg-6 ui-md-6 ui-sm-12 field noRequired"
+                          style=""
+                        >
+                          <label
+                            for="customer"
+                            title=""
+                            class=""
+                            style="
+                              opacity: 0;
+                              transition: opacity 0.5s linear 0s;
+                            "
+                            >Cliente</label
+                          ><span
+                            id="customer"
+                            class="ui-autocomplete"
+                            role="application"
+                            ><input
+                              id="customer_input"
+                              name="customer_input"
+                              type="text"
+                              class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all"
+                              autocomplete="off"
+                              placeholder="Cliente"
+                              value=""
+                              role="textbox"
+                              aria-readonly="false"
+                              aria-disabled="false"
+                              aria-autocomplete="list" /><input
+                              id="customer_hinput"
+                              name="customer_hinput"
+                              type="hidden"
+                              autocomplete="off"
+                              aria-hidden="true" /><span
+                              id="customer_panel"
+                              class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+                              role="listbox"
+                              tabindex="-1"
+                            ></span
+                            ><span
+                              role="status"
+                              aria-live="polite"
+                              class="ui-autocomplete-status ui-helper-hidden-accessible"
+                            ></span
+                          ></span>
+                          <div class="validation-error-container">
+                            <div
+                              id="customerMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          id="profilesPassengersContainer"
+                          class="ui-g ui-lg-6 ui-md-6 ui-sm-12 field noRequired"
+                          style=""
+                        >
+                          <label for="profilesPassengers" title="" class=""
+                            >Pasajeros</label
+                          ><input
+                            id="profilesPassengers"
+                            name="profilesPassengers"
+                            type="text"
+                            value=""
+                            class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
+                            readonly="readonly"
+                            aria-readonly="true"
+                            role="textbox"
+                            aria-disabled="false"
+                            aria-expanded="false"
+                            aria-controls="profilesPassengersOverlayPanel"
+                          />
+                          <div
+                            id="profilesPassengersOverlayPanel"
+                            class="ui-overlaypanel ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container profiles-passengers-input"
+                            style="width: 400px"
+                          >
+                            <div class="ui-overlaypanel-content">
+                              <span id="profilesPassengersOverlayPanelContainer"
+                                ><div
+                                  id="j_idt251:0:travelerContainer"
+                                  class="ui-g ui-lg-12 ui-md-12 ui-sm-12 field noRequired"
+                                  style=""
+                                >
+                                  <label
+                                    for="j_idt251:0:traveler"
+                                    title=""
+                                    class=""
+                                    >Adulto 1</label
+                                  ><span
+                                    id="j_idt251:0:traveler"
+                                    class="ui-autocomplete"
+                                    role="application"
+                                    ><input
+                                      id="j_idt251:0:traveler_input"
+                                      name="j_idt251:0:traveler_input"
+                                      type="text"
+                                      class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all"
+                                      autocomplete="off"
+                                      value=""
+                                      role="textbox"
+                                      aria-readonly="false"
+                                      aria-disabled="false"
+                                      aria-autocomplete="list" /><input
+                                      id="j_idt251:0:traveler_hinput"
+                                      name="j_idt251:0:traveler_hinput"
+                                      type="hidden"
+                                      autocomplete="off"
+                                      aria-hidden="true" /><span
+                                      id="j_idt251:0:traveler_panel"
+                                      class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+                                      role="listbox"
+                                      tabindex="-1"
+                                    ></span
+                                    ><span
+                                      role="status"
+                                      aria-live="polite"
+                                      class="ui-autocomplete-status ui-helper-hidden-accessible"
+                                    ></span
+                                  ></span>
+                                  <div class="validation-error-container">
+                                    <div
+                                      id="j_idt251:0:travelerMessage"
+                                      class="ui-messages ui-widget"
+                                      aria-live="polite"
+                                    ></div>
+                                  </div></div
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="validation-error-container">
+                            <div
+                              id="profilesPassengersMessage"
+                              class="ui-messages ui-widget"
+                              aria-live="polite"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ui-g">
+                        <div class="ui-lg-10 ui-md- ui-sm-12">
+                          <div class="ui-g">
+                            <div
+                              id="tourOperatorContainer"
+                              class="ui-g ui-lg-3 ui-md-4 ui-sm-12 checkField noRequired"
+                              style=""
+                            >
+                              <label
+                                for="tourOperator"
+                                style="margin-right: 0px"
+                                title=""
+                                >Incluir tarifas de tour operador.</label
+                              >
+                              <div
+                                id="tourOperator"
+                                class="ui-selectbooleancheckbox ui-chkbox ui-widget"
+                              >
+                                <div class="ui-helper-hidden-accessible">
+                                  <input
+                                    id="tourOperator_input"
+                                    name="tourOperator_input"
+                                    type="checkbox"
+                                    autocomplete="off"
+                                    aria-checked="false"
+                                  />
+                                </div>
+                                <div
+                                  class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"
+                                >
+                                  <span
+                                    class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"
+                                  ></span>
+                                </div>
+                              </div>
+                              <div class="validation-error-container">
+                                <div
+                                  id="tourOperatorMessage"
+                                  class="ui-messages ui-widget"
+                                  aria-live="polite"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                          <img
+                            id="j_idt259"
+                            width="1"
+                            height="20"
+                            alt=""
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                          />
+                          <div class="ui-g"></div>
+                        </div>
+                        <div class="ui-lg-1 ui-md-12 ui-sm-12">
+                          <button
+                            id="j_idt263"
+                            name="j_idt263"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                            type="submit"
+                            role="button"
+                            aria-disabled="false"
+                          >
+                            <span class="ui-button-text ui-c">Buscar</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                type="hidden"
+                name="javax.faces.ViewState"
+                id="j_id1:javax.faces.ViewState:2"
+                value="-4121684122148096542:5215334036572919693"
+                autocomplete="off"
+              />
+              <input
+                name="primefaces.nonce"
+                type="hidden"
+                value="MTg4YzJiN2ItMjdkNS00ZjVjLTljYjUtZjdjODk3MjZiMzY0"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-lg-6 ui-md- ui-sm-12">
+            <img
+              id="j_idt338"
+              src="./a_gisom/11"
+              alt=""
+              style="max-height: 120px; max-width: 500px"
+            />
+          </div>
+          <div class="ui-lg-6 ui-md- ui-sm-12 right-column">
+            <img
+              id="j_idt341"
+              src="./a_gisom/11(1)"
+              alt=""
+              style="max-height: 120px; max-width: 500px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="date-picker-wrapper no-shortcuts no-gap two-months"
+      unselectable="on"
+      style="display: none; top: 380.391px; left: 1023.59px; user-select: none"
+    >
+      <div class="drp_top-bar">
+        <div class="normal-top">
+          <span class="selection-top">Seleccionado: </span>
+          <b class="start-day">...</b> <span class="separator-day"> to </span>
+          <b class="end-day">...</b>
+          <i class="selected-days"
+            >(<span class="selected-days-num">3</span> Días)</i
+          >
+        </div>
+        <div class="error-top">error</div>
+        <div class="default-top">Por favor selecciona un rango de fechas.</div>
+        <input type="button" class="apply-btn disabled hide" value="Cerrar" />
+      </div>
+      <div class="month-wrapper" style="width: 415px">
+        <table class="month1" cellspacing="0" border="0" cellpadding="0">
+          <thead>
+            <tr class="caption">
+              <th><span class="prev">&lt; </span></th>
+              <th colspan="5" class="month-name">
+                <div class="month-element">julio</div>
+                <div class="month-element">2022</div>
+              </th>
+              <th><span class="next">&gt;</span></th>
+            </tr>
+            <tr class="week-name">
+              <th>lu</th>
+              <th>ma</th>
+              <th>mi</th>
+              <th>ju</th>
+              <th>vi</th>
+              <th>sa</th>
+              <th>do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div
+                  time="1656380879961"
+                  data-tooltip=""
+                  class="day lastMonth invalid"
+                >
+                  27
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1656467279961"
+                  data-tooltip=""
+                  class="day lastMonth invalid"
+                >
+                  28
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1656553679961"
+                  data-tooltip=""
+                  class="day lastMonth invalid"
+                >
+                  29
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1656640079961"
+                  data-tooltip=""
+                  class="day lastMonth invalid"
+                >
+                  30
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1656726479961"
+                  data-tooltip=""
+                  class="day toMonth valid real-today"
+                >
+                  1
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1656812879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  2
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1656899279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  3
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1656985679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  4
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657072079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  5
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657158479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  6
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657244879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  7
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657331279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  8
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657417679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  9
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657504079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  10
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1657590479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  11
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657676879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  12
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657763279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  13
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657849679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  14
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1657936079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  15
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658022479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  16
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658108879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  17
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1658195279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  18
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658281679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  19
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658368079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  20
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658454479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  21
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658540879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  22
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658627279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  23
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658713679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  24
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1658800079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  25
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658886479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  26
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1658972879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  27
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659059279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  28
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659145679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  29
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659232079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  30
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659318479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  31
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1659404879961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  1
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659491279961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  2
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659577679961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  3
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659664079961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  4
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659750479961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  5
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659836879961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  6
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659923279961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  7
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="gap" style="visibility: hidden; height: 10px">
+          <div class="gap-top-mask"></div>
+          <div class="gap-bottom-mask"></div>
+          <div class="gap-lines">
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+            <div class="gap-line">
+              <div class="gap-1"></div>
+              <div class="gap-2"></div>
+              <div class="gap-3"></div>
+            </div>
+          </div>
+        </div>
+        <table class="month2" cellspacing="0" border="0" cellpadding="0">
+          <thead>
+            <tr class="caption">
+              <th><span class="prev">&lt;</span></th>
+              <th colspan="5" class="month-name">
+                <div class="month-element">agosto</div>
+                <div class="month-element">2022</div>
+              </th>
+              <th><span class="next">&gt;</span></th>
+            </tr>
+            <tr class="week-name">
+              <th>lu</th>
+              <th>ma</th>
+              <th>mi</th>
+              <th>ju</th>
+              <th>vi</th>
+              <th>sa</th>
+              <th>do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div
+                  time="1659404879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  1
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659491279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  2
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659577679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  3
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659664079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  4
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659750479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  5
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659836879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  6
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1659923279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  7
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1660009679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  8
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660096079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  9
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660182479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  10
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660268879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  11
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660355279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  12
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660441679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  13
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660528079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  14
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1660614479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  15
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660700879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  16
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660787279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  17
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660873679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  18
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1660960079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  19
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661046479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  20
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661132879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  21
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1661219279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  22
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661305679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  23
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661392079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  24
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661478479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  25
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661564879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  26
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661651279961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  27
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661737679961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  28
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  time="1661824079961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  29
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661910479961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  30
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1661996879961"
+                  data-tooltip=""
+                  class="day toMonth valid"
+                >
+                  31
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1662083279961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  1
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1662169679961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  2
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1662256079961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  3
+                </div>
+              </td>
+              <td>
+                <div
+                  time="1662342479961"
+                  data-tooltip=""
+                  class="day nextMonth valid"
+                >
+                  4
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="dp-clearfix"></div>
+        <div class="time">
+          <div class="time1"></div>
+          <div class="time2"></div>
+        </div>
+        <div class="dp-clearfix"></div>
+      </div>
+      <div class="footer"></div>
+      <div class="date-range-length-tip"></div>
+    </div>
+    <div
+      id="dlgSessionExpired"
+      class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container session-expired-dialog"
+      role="dialog"
+      aria-describedby="dlgSessionExpired_content"
+      aria-hidden="true"
+      aria-modal="true"
+      aria-labelledby="dlgSessionExpired_title"
+      style="width: auto; height: auto"
+    >
+      <div
+        class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"
+      >
+        <span id="dlgSessionExpired_title" class="ui-dialog-title"></span
+        ><a
+          href="http://localhost:8080/trains/trainSearch.xhtml#"
+          class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"
+          aria-label="Cerrar"
+          role="button"
+          ><span class="ui-icon ui-icon-closethick"></span
+        ></a>
+      </div>
+      <div
+        class="ui-dialog-content ui-widget-content"
+        id="dlgSessionExpired_content"
+        style="height: auto"
+      >
+        <div class="ui-g">
+          <span
+            class="gi-icon fas gi-session-expired"
+            style="
+              margin: auto;
+              height: 115px;
+              width: 115px;
+              background-size: 115px;
+              font-size: 115px;
+            "
+          ></span>
+        </div>
+        <div class="ui-g">
+          <label
+            id="j_idt344"
+            class="ui-outputlabel ui-widget"
+            style="font-size: 1.5em; margin-top: 15px; color: #e44049"
+            >Se ha perdido la sesión con los sistemas externos</label
+          >
+        </div>
+        <div class="ui-g">
+          <label
+            id="j_idt345"
+            class="ui-outputlabel ui-widget"
+            style="font-size: 1.15em; margin: 5px auto; text-align: center"
+            >Por favor, vuelve a iniciar sesión.</label
+          >
+        </div>
+        <div class="buttons-container">
+          <button
+            id="j_idt347"
+            name="j_idt347"
+            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+            type="submit"
+            role="button"
+            aria-disabled="false"
+          >
+            <span class="ui-button-text ui-c">Cerrar sesión</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="j_idt348"
+      class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"
+      role="alertdialog"
+      aria-describedby="j_idt348_content"
+      aria-hidden="true"
+      aria-modal="true"
+      aria-labelledby="j_idt348_title"
+      style="width: auto; height: auto"
+    >
+      <div
+        class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"
+      >
+        <span id="j_idt348_title" class="ui-dialog-title"></span
+        ><a
+          href="http://localhost:8080/trains/trainSearch.xhtml#"
+          class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"
+          aria-label="Cerrar"
+          role="button"
+          ><span class="ui-icon ui-icon-closethick"></span
+        ></a>
+      </div>
+      <div
+        class="ui-dialog-content ui-widget-content"
+        id="j_idt348_content"
+        style="height: auto"
+      >
+        <span class="ui-icon ui-confirm-dialog-severity"></span
+        ><span class="ui-confirm-dialog-message"></span>
+      </div>
+      <div
+        class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix"
+      >
+        <button
+          id="j_idt349"
+          name="j_idt349"
+          class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-yes"
+          type="button"
+          role="button"
+          aria-disabled="false"
+        >
+          <span class="ui-button-icon-left ui-icon ui-c fa fa-check"></span
+          ><span class="ui-button-text ui-c">Sí</span></button
+        ><button
+          id="j_idt350"
+          name="j_idt350"
+          class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-no"
+          type="button"
+          role="button"
+          aria-disabled="false"
+        >
+          <span class="ui-button-icon-left ui-icon ui-c fa fa-times"></span
+          ><span class="ui-button-text ui-c">No</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-container">
+        <a
+          class="footer-logo"
+          href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+          ><img
+            id="j_idt354"
+            src="./a_gisom/iris_logo.svg"
+            alt=""
+          />
+        </a>
+        <div class="footer-links">
+          <a
+            href="http://localhost:8080/policy/cookies.xhtml"
+            class="ui-link ui-widget footer-company"
+            >Política de Cookies</a
+          >
+        </div>
+        <div class="footer-info">
+          <label id="j_idt358" class="ui-outputlabel ui-widget">©</label
+          ><span
+            id="j_idt359"
+            class="ui-clock ui-widget ui-widget-header ui-corner-all"
+            >2022</span
+          ><label id="j_idt360" class="ui-outputlabel ui-widget footer-company"
+            >Grupo Iris</label
+          >
+        </div>
+        <div id="top-row">
+          <a
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            class="fa fa-arrow-alt-circle-up fa-2x"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script nonce="">
+      PrimeFaces.csp.register("j_idt347", "onclick", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt347",
+          p: "j_idt347",
+          onco: function (xhr, status, args, data) {
+            PF("dlgSessionExpired").hide();
+          },
+        });
+        return false;
+      });
+      PrimeFaces.csp.register(
+        "a\-f20e74e1\-fbe5\-46bd\-9f58\-f77622e08087",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt20", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-1f3ff55b\-c03d\-4f2c\-9af0\-3b324eca542e",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "availTabMenu:j_idt181", f: "availTabMenu" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register("j_idt194:1", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt194",
+          e: "valueChange",
+          f: "availabilityForm",
+          p: "j_idt194",
+          u: "trainSearches requestType",
+        });
+      });
+      PrimeFaces.csp.register("j_idt194:0", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt194",
+          e: "valueChange",
+          f: "availabilityForm",
+          p: "j_idt194",
+          u: "trainSearches requestType",
+        });
+      });
+      PrimeFaces.csp.register(
+        "a\-cc8b3581\-99ce\-40c9\-a1d2\-1cc6b104b775",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt42", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register("arrival_input", "onclick", function (event) {
+        this.select();
+      });
+      PrimeFaces.csp.register("arrival_input", "onfocus", function (event) {
+        this.select();
+      });
+      PrimeFaces.csp.register("departure_input", "onclick", function (event) {
+        this.select();
+      });
+      PrimeFaces.csp.register("departure_input", "onfocus", function (event) {
+        this.select();
+      });
+      PrimeFaces.csp.register(
+        "a\-fafd47a2\-0952\-40e5\-ad5f\-34dd4adfe80d",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt22", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-647cf825\-3179\-4efa\-93af\-2ab49494735a",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt44", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register("j_idt263", "onclick", function (event) {
+        PrimeFaces.ab({ s: "j_idt263", f: "availabilityForm" });
+        return false;
+      });
+      PrimeFaces.csp.register("j_idt220_input", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt220",
+          e: "change",
+          f: "availabilityForm",
+          p: "j_idt220",
+          u: "children babies tarjetaJoven tarjetaDorada profiles-panel",
+        });
+      });
+      PrimeFaces.csp.register("j_idt220_input", "onkeypress", function (event) {
+        return false;
+      });
+      PrimeFaces.csp.register("j_idt230_input", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt230",
+          e: "change",
+          f: "availabilityForm",
+          p: "j_idt230",
+          u: "adults babies tarjetaJoven tarjetaDorada profiles-panel",
+        });
+      });
+      PrimeFaces.csp.register("j_idt230_input", "onkeypress", function (event) {
+        return false;
+      });
+      PrimeFaces.csp.register(
+        "j_idt251:0:traveler_input",
+        "onfocus",
+        function (event) {
+          this.select();
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-27d8d0f5\-7040\-4129\-a05c\-1c3a7dbe8f06",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "availTabMenu:j_idt178", f: "availTabMenu" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register("menu\-toggle", "onclick", function (event) {
+        $("div#menu-responsive\\:menu-bar").slideToggle("slow");
+      });
+      PrimeFaces.csp.register("j_idt54", "onclick", function (event) {
+        PrimeFaces.ab({ s: "j_idt54" });
+        return false;
+      });
+      PrimeFaces.csp.register(
+        "tarjetaJoven_input",
+        "onchange",
+        function (event) {
+          PrimeFaces.ab({
+            s: "tarjetaJoven",
+            e: "change",
+            f: "availabilityForm",
+            p: "tarjetaJoven",
+            u: "tarjetaDorada",
+          });
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-44b0d589\-c26e\-4cea\-ac9e\-da8e45749160",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt37", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-5b1d162b\-2812\-4337\-bf36\-712c478636b1",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt32", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register("customer_input", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "customer",
+          e: "change",
+          f: "availabilityForm",
+          p: "customer",
+          u: "profilesPassengersContainer",
+        });
+      });
+      PrimeFaces.csp.register("customer_input", "onfocus", function (event) {
+        this.select();
+      });
+      PrimeFaces.csp.register(
+        "tarjetaDorada_input",
+        "onchange",
+        function (event) {
+          PrimeFaces.ab({
+            s: "tarjetaDorada",
+            e: "change",
+            f: "availabilityForm",
+            p: "tarjetaDorada",
+            u: "tarjetaJoven",
+          });
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-9da52f6f\-44ae\-4c77\-a005\-c65e19608e8c",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt19", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-25f7d3d2\-0227\-4ad7\-ada0\-c44bdef9379c",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt27", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register(
+        "a\-e4c55263\-c77d\-4e6d\-96dd\-9873237552d7",
+        "onclick",
+        function (event) {
+          PrimeFaces.ab({ s: "j_idt17:j_idt43", f: "j_idt17" });
+          return false;
+        }
+      );
+      PrimeFaces.csp.register("j_idt194:2", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt194",
+          e: "valueChange",
+          f: "availabilityForm",
+          p: "j_idt194",
+          u: "trainSearches requestType",
+        });
+      });
+      PrimeFaces.csp.register("j_idt224_input", "onchange", function (event) {
+        PrimeFaces.ab({
+          s: "j_idt224",
+          e: "change",
+          f: "availabilityForm",
+          p: "j_idt224",
+          u: "adults babies tarjetaJoven tarjetaDorada profiles-panel",
+        });
+      });
+      PrimeFaces.csp.register("j_idt224_input", "onkeypress", function (event) {
+        return false;
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/theme.js"
+      nonce=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="./a_gisom/primeLocale.js"
+      nonce=""
+    ></script>
+    <div
+      id="textarea_simulator"
+      style="position: absolute; top: 0px; left: 0px; visibility: hidden"
+    ></div>
+    <div
+      id="j_idt17:j_idt18_menu"
+      class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+      role="menu"
+    >
+      <ul class="ui-menu-list ui-helper-reset">
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all menu-item-close"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-9da52f6f-44ae-4c77-a005-c65e19608e8c"
+            ><span class="ui-menuitem-text">Reservas</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-f20e74e1-fbe5-46bd-9f58-f77622e08087"
+            ><span
+              class="ui-menuitem-icon ui-icon fas fa-plane"
+              aria-hidden="true"
+            ></span
+            ><span class="ui-menuitem-text">Reservas Aéreo</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/air/bookingRetrieve/externalBooking/externalBookingForm.xhtml"
+            ><span
+              class="ui-menuitem-icon ui-icon fas fa-plane"
+              aria-hidden="true"
+            ></span
+            ><span class="ui-menuitem-text">Consultas externas</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-fafd47a2-0952-40e5-ad5f-34dd4adfe80d"
+            ><span
+              class="ui-menuitem-icon ui-icon fas fa-train"
+              aria-hidden="true"
+            ></span
+            ><span class="ui-menuitem-text">Reservas de tren</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      id="j_idt17:j_idt26_menu"
+      class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+      role="menu"
+    >
+      <ul class="ui-menu-list ui-helper-reset">
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all menu-item-close"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-25f7d3d2-0227-4ad7-ada0-c44bdef9379c"
+            ><span class="ui-menuitem-text">Utilidades</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/carriersmenu/carriers-menu.xhtml"
+            ><span class="ui-menuitem-text"
+              >Autocheckin e Info. equipaje</span
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      id="j_idt17:j_idt31_menu"
+      class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+      role="menu"
+    >
+      <ul class="ui-menu-list ui-helper-reset">
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all menu-item-close"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-5b1d162b-2812-4337-bf36-712c478636b1"
+            ><span class="ui-menuitem-text">Mi cuenta</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/air/report/reports.xhtml"
+            ><span class="ui-menuitem-text">Informes aéreo</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-44b0d589-c26e-4cea-ac9e-da8e45749160"
+            ><span class="ui-menuitem-text">Pagos aéreo/tren</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all"
+            href="http://localhost:8080/agencyadmin/main.xhtml"
+            ><span class="ui-menuitem-text">Configuración</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      id="j_idt17:notificationsBTN_menu"
+      class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+      role="menu"
+    >
+      <ul class="ui-menu-list ui-helper-reset">
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all menu-item-close"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-cc8b3581-99ce-40c9-a1d2-1cc6b104b775"
+            ><span class="ui-menuitem-text">Notificaciones</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all menu-item-plane"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-e4c55263-c77d-4e6d-96dd-9873237552d7"
+            ><span class="ui-menuitem-text">11 Mensajes sin leer</span></a
+          >
+        </li>
+        <li class="ui-menuitem ui-widget ui-corner-all" role="none">
+          <a
+            tabindex="-1"
+            role="menuitem"
+            class="ui-menuitem-link ui-corner-all menu-item-train"
+            href="http://localhost:8080/trains/trainSearch.xhtml#"
+            id="a-647cf825-3179-4efa-93af-2ab49494735a"
+            ><span class="ui-menuitem-text">0 Mensajes sin leer</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class="ui-tooltip ui-tooltip-global ui-widget ui-tooltip-right"
+      role="tooltip"
+    >
+      <div class="ui-tooltip-arrow"></div>
+      <div class="ui-tooltip-text ui-shadow ui-corner-all"></div>
+    </div>
+    <div class="ui-dialog-docking-zone"></div>
+    <div
+      id="tarjetaJoven_panel"
+      class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+    >
+      <div
+        class="ui-selectonemenu-items-wrapper"
+        style="max-height: 200px"
+      ></div>
+    </div>
+    <div
+      id="tarjetaDorada_panel"
+      class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+    >
+      <div
+        class="ui-selectonemenu-items-wrapper"
+        style="max-height: 200px"
+      ></div>
+    </div>
+    <div
+      id="class_panel"
+      class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+    >
+      <div
+        class="ui-selectonemenu-items-wrapper"
+        style="max-height: 200px"
+      ></div>
+    </div>
+  </body>
+</html>
