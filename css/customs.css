@@ -228,6 +228,7 @@ input.ui-inputfield {
 #menu-sticky {
     background: initial !important;
     position: relative !important;
+    z-index: 1;
 }
 
 #header {
@@ -267,7 +268,7 @@ input.ui-inputfield {
     bottom: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    width: 330px;
+    width: 330px !important;
     background-color: var(--color-primary);
     z-index: 1010 !important;
     transform: translateX(-100%);

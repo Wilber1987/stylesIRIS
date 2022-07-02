@@ -1,10 +1,11 @@
-
 let Index = 0;
 window.addEventListener("load", () => {
    
     //HEADER MENU
     const Menu = document.querySelector("#header-container");
-    const btnCloseMenu = document.querySelector(".btnCloseMenu");
+    const btnCloseMenu = document.createElement("spam");
+    btnCloseMenu.className = "btnCloseMenu";
+    btnCloseMenu.innerHTML = "X"
     btnCloseMenu.onclick = () => {
         Menu.className = "ui-g header-container"
     }
