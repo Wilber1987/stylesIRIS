@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
     btnCloseMenu.onclick = () => {
         Menu.className = "ui-g header-container"
     }
-    //Menu.insertBefore(btnCloseMenu, Menu.firstChild);
+    Menu.insertBefore(btnCloseMenu, Menu.firstChild);
     const MenuToggle = document.querySelector("#menu-toggle");
     MenuToggle.onclick = () => {
         if (Menu.className.includes("menu-active")) {
