@@ -1,5 +1,6 @@
 /*#region responsives */
 @media (max-width: 1200px) {
+
     #header-container,
     .menu-container,
     .footer-container {
@@ -14,17 +15,11 @@
 }
 
 @media only screen and (max-width: 991px) {
-    body {
-        background-color: lightblue;
-    }
-
-    .cb-slideshow {
-        display: none;
-    }
 
     #header,
     #body {
         overflow: hidden;
+        display: block;
     }
 
     #avail-container {
@@ -72,6 +67,8 @@
     #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link {
         display: flex !important;
         margin: 0px;
+        padding-top: 5px;
+        overflow: hidden;
     }
 
     #console tbody,
@@ -90,10 +87,11 @@
 
     /*#region MENU RESPONSIVE*/
     #header {
-        height: 60px;
+        height: 80px;
         position: relative;
+        margin: 10px 0px;
     }
-   
+
     .menu-item-close::before {
         content: "<";
         width: 25px;
@@ -102,6 +100,7 @@
         float: left;
         color: var(--color-white);
     }
+
     .menu-item-close::after {
         content: "" !important;
     }
@@ -125,13 +124,18 @@
         transform: none !important;
     }
 
-    .menu-toggle,
-    .notifications-toggle {
-        top: 20px;
+    .header-right {
+        top: 24px;
     }
+
     .ui-selectoneradio label {
         padding: 10px;
     }
+
+    .menu-toggle {
+        top: -63px;
+    }
+
     .menu-toggle.down-icon {
         background-image: url(/resources/media/icon-menu.svg) !important;
     }
@@ -149,7 +153,8 @@
         background-size: 23px 28.53px;
         display: inherit;
     }
-    .notifications-toggle a{
+
+    .notifications-toggle a {
         height: 13px;
         width: 13px;
         background-color: var(--color-white);
@@ -165,20 +170,28 @@
         position: absolute;
         right: 0;
     }
+
     #menu-sticky {
-        height: 120px;
-        padding-top: 70px;
-    }
-    #menu-sticky.scrollStyle {
-        background-color: var(--color-primary) !important;
-        /*TODO COLOR PRIMARY*/
-        height: 60px !important;
+        height: 90px;
+        padding-top: 0px;
     }
 
-    #menu-sticky.scrollStyle #menu-logo {
-        filter: brightness(100);
-        height: 50px !important;
-        margin: 5px;
+    #menu-sticky.scrollStyle {
+        display: none;
+    }
+
+    #availTabMenu.scrollStyle {
+        position: fixed;
+        top: 0%;
+        z-index: 1002;
+        background-color: var(--color-white);
+        box-shadow: 0 0 2px 0 rgb(0 0 0 / 50%);
+        overflow: hidden;
+    }
+
+    .column-button-form {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .footer {
@@ -240,6 +253,7 @@
         margin-left: 10px;
         text-align: center;
         border-radius: 5px;
+        width: calc(100% - 64px);
     }
 
     .date-picker-wrapper .drp_top-bar .default-top {
@@ -248,8 +262,11 @@
 
     .date-range-picker-from .input-icon,
     .date-range-picker-from-single .input-icon,
-    .date-range-picker-to .input-icon {
-        bottom: 15%;
+    .date-range-picker-to .input-icon {}
+
+    .footer .footer-container .footer-info .footer-company {
+        margin: 0px; 
+        margin-left: 15px;
     }
 
 

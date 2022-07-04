@@ -97,3 +97,22 @@ function SlideElements(btnTabBefore, slider) {
 }
 //--->
 
+
+function DisplayMenuNotifications() {
+    const btnNotifications = document.querySelector("#notifications-toggle");
+    btnNotifications.onclick = () => {
+        const nodes = document.querySelectorAll(".ui-menu.ui-menu-dynamic.ui-widget");
+        nodes.forEach(node => {
+            if (node.id.includes("notificationsBTN_menu")) {
+                if (node.className.includes("menu-active")) {
+                    node.style.display = "none";
+                    node.style.webkitTransform = "center top";
+                    node.className += " menu-active";
+                } else {
+                    node.style.display = "block";
+                    node.className.replace(" menu-active", "");
+                }
+            }
+        });
+    };
+}
