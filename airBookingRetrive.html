@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head id="j_idt5">
+        <link type="text/css" rel="stylesheet" href="/resource/primeicons.css" />
+        <link type="text/css" rel="stylesheet" href="/resource/primeflex.min.css" />
+        <link type="text/css" rel="stylesheet" href="/resource/theme.css" />
+        <link type="text/css" rel="stylesheet" href="/resource/components.css" />
+        <script type="text/javascript" src="/resource/jquery.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/jquery-plugins.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/core.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/components.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <link type="text/css" rel="stylesheet" href="/resource/clock.css" />
+        <script type="text/javascript" src="/resource/raphael.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/clock.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/touchswipe.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/keyfilter.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/watermark.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/inputmask.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/datepicker.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/inputnumber.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <link type="text/css" rel="stylesheet" href="/resource/inputnumber.css" />
+        <link type="text/css" rel="stylesheet" href="/css/customs.css" />  
+        <link type="text/css" rel="stylesheet" href="/css/customs_form.css" />
+        <link type="text/css" rel="stylesheet" href="/css/customs_responsives.css" />
+        <script src="./js/custom.js"></script>
+        <script type="text/javascript"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl">if (window.PrimeFaces) { PrimeFaces.settings.locale = 'es_ES'; PrimeFaces.settings.viewId = '/air/avail/availAirForm.xhtml'; PrimeFaces.settings.contextPath = ''; PrimeFaces.settings.cookiesSecure = false; }</script>
+        <script type="text/javascript"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl">$(function () { if (window.PrimeFaces) { PrimeFaces.csp.init('NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl'); };; });</script>
+        <title>
+            Sistema de reservas - 22.09.00-SNAPSHOT (2022-07-02 23:00)
+        </title>
+        <link href="https://public.grupoiris.net/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="/resource/moment-with-locales.min.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/jquery.daterangepicker.min.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/sidebar.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/custom.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <link rel="icon" href="/resource/favicon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </head>
+
+<body>
+    <div id="header" class="ui-g header">
+        <div id="header-container" class="ui-g header-container">
+            <spam class="btnCloseMenu">X</spam>
+            <div class="header-left">
+                <form id="j_idt15" name="j_idt15" method="post"
+                    action="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml"
+                    enctype="application/x-www-form-urlencoded">
+                    <input type="hidden" name="j_idt15" value="j_idt15">
+                    <span id="j_idt15:j_idt16" class="ui-menubutton ui-widget"><button id="j_idt15:j_idt16_button"
+                            name="j_idt15:j_idt16_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Reservas</span></button></span><span id="j_idt15:j_idt24"
+                        class="ui-menubutton ui-widget"><button id="j_idt15:j_idt24_button"
+                            name="j_idt15:j_idt24_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Utilidades</span></button></span><span id="j_idt15:j_idt29"
+                        class="ui-menubutton ui-widget"><button id="j_idt15:j_idt29_button"
+                            name="j_idt15:j_idt29_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Mi cuenta</span></button></span><span
+                        id="j_idt15:notificationsBTN" class="ui-menubutton ui-widget notificationsBTN"><button
+                            id="j_idt15:notificationsBTN_button" name="j_idt15:notificationsBTN_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Notificaciones</span></button></span><input type="hidden"
+                        name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0"
+                        value="4393768613724151503:-6124449109715830583" autocomplete="off">
+                    <input name="primefaces.nonce" type="hidden"
+                        value="MWM5MjQ4NjQtODJiMS00ZTk1LWEyMzctZDAzMWE1NzMyN2Ni">
+                </form>
+            </div>
+            <div class="header-left-2"><span class="header-item"><label id="j_idt47"
+                        class="ui-outputlabel ui-widget fa fa-user">1806</label></span></div>
+            <div class="header-left-button"><span class="header-item">
+                    <span class="fas fa-clock"></span><span id="j_idt51"
+                        class="ui-clock ui-widget ui-widget-header ui-corner-all">04/07/2022 18:28</span></span><span
+                    class="header-item"><a id="j_idt53"
+                        href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                        class="ui-commandlink ui-widget fas fa-sign-out-alt">| Salir</a></span></div>
+        </div>
+        <div class="header-right"><span class="header-item"><label id="j_idt58"
+                    class="ui-outputlabel ui-widget fa fa-user">1806</label></span><span class="header-item"><a
+                    id="j_idt60" href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    class="ui-commandlink ui-widget fas fa-sign-out-alt">| Salir</a></span></div>
+    </div>
+    <div id="menu-sticky" class="ui-outputpanel ui-widget">
+        <div class="ui-g menu">
+            <div class="ui-g menu-container">
+                <a id="menu-logo" href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+                    class="menu-logo-container">
+                    <div class="logoMenu"></div>
+                </a>
+
+                <div id="menu-toggle" class="menu-toggle" layout="block">
+                    <a class="fa fa-bars fa-2x"></a>
+                </div>
+            </div>
+            <script nonce="">
+                $('div#menu-responsive\\:menu-bar').hide();
+
+                $(document).ready(function () {
+                    if (
+                        $('.menu-owner').length == 0
+                        && $('.menu-company').length == 0
+                        && $('.menu-group').length == 0
+                    ) { $(".menu-bar").remove(); }
+                });   
+            </script>
+        </div>
+    </div>
+    <div class="ui-g menu-responsive">
+        <div class="ui-g menu-container">
+            <a id="menu-logo" href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+                class="menu-logo-container">
+                <div class="logoMenu"></div>
+            </a>
+
+            <div id="menu-toggle" class="menu-toggle" layout="block">
+                <a class="fa fa-bars fa-2x"></a>
+            </div>
+        </div>
+        <script nonce="">
+            $('div#menu-responsive\\:menu-bar').hide();
+
+            $(document).ready(function () {
+                if (
+                    $('.menu-owner').length == 0
+                    && $('.menu-company').length == 0
+                    && $('.menu-group').length == 0
+                ) { $(".menu-bar").remove(); }
+            });   
+        </script>
+    </div>
+    <div id="j_idt177"></div>
+    <div id="globalMessages" class="ui-messages ui-widget" aria-live="polite"></div>
+    <div id="j_idt179"></div>
+    <div id="body" class="ui-g">
+        <div id="body-container">
+            <div id="content">
+                <form id="j_idt182" name="j_idt182" method="post"
+                    action="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml"
+                    class="booking-retrieve-list" enctype="application/x-www-form-urlencoded">
+                    <input type="hidden" name="j_idt182" value="j_idt182">
+                    <div id="requestPanel" class="ui-panel ui-widget ui-widget-content ui-corner-all booking-search"
+                        data-widget="searchPanel">
+                        <div id="requestPanel_header"
+                            class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                                class="ui-panel-title">Buscar reservas</span><a id="requestPanel_toggler"
+                                href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                                class="ui-panel-titlebar-icon ui-corner-all ui-state-default"
+                                aria-label="Alternar panel"><span class="ui-icon ui-icon-minusthick"></span></a></div>
+                        <div id="requestPanel_content" class="ui-panel-content ui-widget-content">
+                            <div id="filtrosExclusivos"><span id="customRadioSearchCriterial" class="ui-helper-hidden">
+                                    <div class="ui-helper-hidden-accessible"><input id="customRadioSearchCriterial:0"
+                                            name="customRadioSearchCriterial" type="radio" value="BOOK_DATE"
+                                            checked="checked"></div>
+                                    <div class="ui-helper-hidden-accessible"><input id="customRadioSearchCriterial:1"
+                                            name="customRadioSearchCriterial" type="radio" value="LOCATOR"></div>
+                                    <div class="ui-helper-hidden-accessible"><input id="customRadioSearchCriterial:2"
+                                            name="customRadioSearchCriterial" type="radio" value="PASSENGER_NAME"></div>
+                                    <div class="ui-helper-hidden-accessible"><input id="customRadioSearchCriterial:3"
+                                            name="customRadioSearchCriterial" type="radio" value="TICKET_NUMBER"></div>
+                                    <div class="ui-helper-hidden-accessible"><input id="customRadioSearchCriterial:4"
+                                            name="customRadioSearchCriterial" type="radio"
+                                            value="TIME_LIMIT_TO_PURCHASE"></div>
+                                    <div class="ui-helper-hidden-accessible"><input id="customRadioSearchCriterial:5"
+                                            name="customRadioSearchCriterial" type="radio" value="DEPARTURE_DATE"></div>
+                                </span>
+                                <div class="ui-g ">
+                                    <div class="ui-lg-6 ui-md-12 ui-sm-12 ">
+                                        <div class="ui-g ">
+                                            <div class="ui-lg-4 ui-md-4 ui-sm-12 booking-retrieve-option">
+                                                <div id="searchByReservationDateRadio" class="ui-radiobutton ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="customRadioSearchCriterial:0_clone"
+                                                            name="customRadioSearchCriterial" type="radio"
+                                                            class="ui-radio-clone" data-itemindex="0" value="BOOK_DATE">
+                                                    </div>
+                                                    <div
+                                                        class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                        <span
+                                                            class="ui-radiobutton-icon ui-icon ui-c ui-icon-bullet"></span>
+                                                    </div>
+                                                </div><img id="j_idt189" width="1" height="10" alt=""
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><label
+                                                    for="searchByReservationDateRadio">Buscar por fecha de
+                                                    reserva</label>
+                                            </div>
+                                            <div id="bookingDateFromContainer"
+                                                class="ui-g ui-lg-4 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                                    for="bookingDateFrom" title="" class="">Desde</label><span
+                                                    id="bookingDateFrom"
+                                                    class="p-datepicker ui-calendar aright ui-inputwrapper-filled"
+                                                    style=""><input id="bookingDateFrom_input"
+                                                        name="bookingDateFrom_input" type="text" value="04/07/2022"
+                                                        class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-filled"
+                                                        autocomplete="off" placeholder="" role="textbox"
+                                                        aria-readonly="false" aria-disabled="false"
+                                                        inputmode="numeric"></span>
+                                                <div class="validation-error-container ">
+                                                    <div id="bookingDateFromMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                            <div id="bookingDateToContainer"
+                                                class="ui-g ui-lg-4 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                                    for="bookingDateTo" title="" class="">Hasta</label><span
+                                                    id="bookingDateTo"
+                                                    class="p-datepicker ui-calendar aright ui-inputwrapper-filled"
+                                                    style=""><input id="bookingDateTo_input" name="bookingDateTo_input"
+                                                        type="text" value="04/07/2022"
+                                                        class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-filled"
+                                                        autocomplete="off" placeholder="" role="textbox"
+                                                        aria-readonly="false" aria-disabled="false"
+                                                        inputmode="numeric"></span>
+                                                <div class="validation-error-container ">
+                                                    <div id="bookingDateToMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g ">
+                                            <div class="ui-lg-4 ui-md-4 ui-sm-12 booking-retrieve-option">
+                                                <div id="searchByLocatorRadio" class="ui-radiobutton ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="customRadioSearchCriterial:1_clone"
+                                                            name="customRadioSearchCriterial" type="radio"
+                                                            class="ui-radio-clone" data-itemindex="1" value="LOCATOR">
+                                                    </div>
+                                                    <div
+                                                        class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                        <span
+                                                            class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div><img id="j_idt197" width="1" height="10" alt=""
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><label
+                                                    for="searchByLocatorRadio">Buscar por localizador</label>
+                                            </div>
+                                            <div id="searchByLocatorInputContainer"
+                                                class="ui-g ui-lg-8 ui-md-8 ui-sm-12 field noRequired" style=""><label
+                                                    for="searchByLocatorInput" title=""
+                                                    class="">Localizador</label><input id="searchByLocatorInput"
+                                                    name="searchByLocatorInput" type="text"
+                                                    class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                    disabled="disabled" aria-disabled="true" role="textbox"
+                                                    aria-readonly="false">
+                                                <div class="validation-error-container ">
+                                                    <div id="searchByLocatorInputMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g ">
+                                            <div class="ui-lg-4 ui-md-4 ui-sm-12 booking-retrieve-option">
+                                                <div id="namePassangerRadio" class="ui-radiobutton ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="customRadioSearchCriterial:2_clone"
+                                                            name="customRadioSearchCriterial" type="radio"
+                                                            class="ui-radio-clone" data-itemindex="2"
+                                                            value="PASSENGER_NAME"></div>
+                                                    <div
+                                                        class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                        <span
+                                                            class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div><img id="j_idt202" width="1" height="10" alt=""
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><label
+                                                    for="namePassangerRadio">Mostrar sólo los pasajeros con
+                                                    nombre</label>
+                                            </div>
+                                            <div id="namePassangerInputContainer"
+                                                class="ui-g ui-lg-8 ui-md-8 ui-sm-12 field noRequired" style=""><label
+                                                    for="namePassangerInput" title="" class="">Nombre</label><input
+                                                    id="namePassangerInput" name="namePassangerInput" type="text"
+                                                    class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                    disabled="disabled" aria-disabled="true" role="textbox"
+                                                    aria-readonly="false">
+                                                <div class="validation-error-container ">
+                                                    <div id="namePassangerInputMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-lg-6 ui-md-12 ui-sm-12 ">
+                                        <div class="ui-g ">
+                                            <div class="ui-lg-4 ui-md-4 ui-sm-12 booking-retrieve-option">
+                                                <div id="searchByTicketRadio" class="ui-radiobutton ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="customRadioSearchCriterial:3_clone"
+                                                            name="customRadioSearchCriterial" type="radio"
+                                                            class="ui-radio-clone" data-itemindex="3"
+                                                            value="TICKET_NUMBER"></div>
+                                                    <div
+                                                        class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                        <span
+                                                            class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div><img id="j_idt207" width="1" height="10" alt=""
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><label
+                                                    for="searchByTicketRadio">Buscar por billete</label>
+                                            </div>
+                                            <div id="first-digits-ticketContainer"
+                                                class="ui-g ui-lg-2 ui-md-2 ui-sm-12 field noRequired" style=""><label
+                                                    for="first-digits-ticket" title="" class="">Billete</label><input
+                                                    id="first-digits-ticket" name="first-digits-ticket" type="text"
+                                                    class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                    disabled="disabled" aria-disabled="true" maxlength="3"
+                                                    role="textbox" aria-readonly="false">
+                                                <div class="validation-error-container ">
+                                                    <div id="first-digits-ticketMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                            <div id="second-digits-ticketContainer"
+                                                class="ui-g ui-lg-6 ui-md-6 ui-sm-12 fa fa-minus second-digits-ticket-search field noRequired"
+                                                style=""><label for="second-digits-ticket" title=""
+                                                    class=""></label><input id="second-digits-ticket"
+                                                    name="second-digits-ticket" type="text"
+                                                    class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                    disabled="disabled" aria-disabled="true" maxlength="10"
+                                                    role="textbox" aria-readonly="false">
+                                                <div class="validation-error-container ">
+                                                    <div id="second-digits-ticketMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g ">
+                                            <div class="ui-lg-4 ui-md-4 ui-sm-12 booking-retrieve-option">
+                                                <div id="searchByEmissionDateLimitRadio"
+                                                    class="ui-radiobutton ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="customRadioSearchCriterial:4_clone"
+                                                            name="customRadioSearchCriterial" type="radio"
+                                                            class="ui-radio-clone" data-itemindex="4"
+                                                            value="TIME_LIMIT_TO_PURCHASE"></div>
+                                                    <div
+                                                        class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                        <span
+                                                            class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div><img id="j_idt215" width="1" height="10" alt=""
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><label
+                                                    for="searchByEmissionDateLimitRadio">Buscar por fecha límite de
+                                                    emisión</label>
+                                            </div>
+                                            <div id="purchaseDateFromContainer"
+                                                class="ui-g ui-lg-4 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                                    for="purchaseDateFrom" title="" class="">Desde</label><span
+                                                    id="purchaseDateFrom"
+                                                    class="p-datepicker ui-calendar aright prime-datePicker-disabled"
+                                                    style=""><input id="purchaseDateFrom_input"
+                                                        name="purchaseDateFrom_input" type="text"
+                                                        class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                        autocomplete="off" placeholder="" disabled="disabled"
+                                                        aria-disabled="true" role="textbox"
+                                                        aria-readonly="false"></span>
+                                                <div class="validation-error-container ">
+                                                    <div id="purchaseDateFromMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                            <div id="purchaseDateToContainer"
+                                                class="ui-g ui-lg-4 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                                    for="purchaseDateTo" title="" class="">Hasta</label><span
+                                                    id="purchaseDateTo"
+                                                    class="p-datepicker ui-calendar aright prime-datePicker-disabled"
+                                                    style=""><input id="purchaseDateTo_input"
+                                                        name="purchaseDateTo_input" type="text"
+                                                        class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                        autocomplete="off" placeholder="" disabled="disabled"
+                                                        aria-disabled="true" role="textbox"
+                                                        aria-readonly="false"></span>
+                                                <div class="validation-error-container ">
+                                                    <div id="purchaseDateToMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-g ">
+                                            <div class="ui-lg-4 ui-md-4 ui-sm-12 booking-retrieve-option">
+                                                <div id="searchByDepartureDate" class="ui-radiobutton ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="customRadioSearchCriterial:5_clone"
+                                                            name="customRadioSearchCriterial" type="radio"
+                                                            class="ui-radio-clone" data-itemindex="5"
+                                                            value="DEPARTURE_DATE"></div>
+                                                    <div
+                                                        class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                        <span
+                                                            class="ui-radiobutton-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div><img id="j_idt223" width="1" height="10" alt=""
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><label
+                                                    for="searchByDepartureDate">Buscar por fecha de salida</label>
+                                            </div>
+                                            <div id="departureDateFromContainer"
+                                                class="ui-g ui-lg-4 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                                    for="departureDateFrom" title="" class="">Desde</label><span
+                                                    id="departureDateFrom"
+                                                    class="p-datepicker ui-calendar aright prime-datePicker-disabled"
+                                                    style=""><input id="departureDateFrom_input"
+                                                        name="departureDateFrom_input" type="text"
+                                                        class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                        autocomplete="off" placeholder="" disabled="disabled"
+                                                        aria-disabled="true" role="textbox"
+                                                        aria-readonly="false"></span>
+                                                <div class="validation-error-container ">
+                                                    <div id="departureDateFromMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                            <div id="departureDateToContainer"
+                                                class="ui-g ui-lg-4 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                                    for="departureDateTo" title="" class="">Hasta</label><span
+                                                    id="departureDateTo"
+                                                    class="p-datepicker ui-calendar aright prime-datePicker-disabled"
+                                                    style=""><input id="departureDateTo_input"
+                                                        name="departureDateTo_input" type="text"
+                                                        class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled"
+                                                        autocomplete="off" placeholder="" disabled="disabled"
+                                                        aria-disabled="true" role="textbox"
+                                                        aria-readonly="false"></span>
+                                                <div class="validation-error-container ">
+                                                    <div id="departureDateToMessage" class="ui-messages ui-widget"
+                                                        aria-live="polite"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><img id="j_idt231" width="1" height="10" alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <div id="j_idt232" role="separator"
+                                class="ui-divider ui-widget soft-separator ui-divider-horizontal ui-divider-solid ui-divider-left">
+                            </div>
+                            <div id="panelFiltro">
+                                <h4>Filtros</h4>
+                                <div class="ui-g ">
+                                    <div id="agencyUsersContainer"
+                                        class="ui-g ui-lg-3 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                            for="agencyUsers" title="" class="">Usuarios</label>
+                                        <div id="agencyUsers"
+                                            class="ui-selectonemenu ui-widget ui-state-default ui-corner-all "
+                                            aria-owns="agencyUsers_panel" role="combobox" aria-haspopup="listbox"
+                                            aria-expanded="false" style="min-width: 158px;">
+                                            <div class="ui-helper-hidden-accessible"><input id="agencyUsers_focus"
+                                                    name="agencyUsers_focus" type="text" autocomplete="off"></div>
+                                            <div class="ui-helper-hidden-accessible"><select id="agencyUsers_input"
+                                                    name="agencyUsers_input" tabindex="-1" autocomplete="off"
+                                                    aria-hidden="true">
+                                                    <option selected="selected" data-escape="true">Todos</option>
+                                                    <option
+                                                        value="74291936FEE94EECB1BF53EFCF59FAE4677C97570FCB420E98470BE46B57E7C7"
+                                                        data-escape="true">1806 AGENTE 1 null</option>
+                                                    <option
+                                                        value="1719B9CB8B1D4DA39ECCD1B292DF93A555006D190F1E4EB69E24E7434F54ADD9"
+                                                        data-escape="true">usu362 Villar null</option>
+                                                    <option
+                                                        value="7BA7D510E38F4DF79489A024C5E42CF989D7B7FA90204775BFAB51527A2455DA"
+                                                        data-escape="true">usu363 prueba null</option>
+                                                    <option
+                                                        value="14869840B93F4BAB827FE2929AC759785CBA6A7242EB4902A831359E967D6AE2"
+                                                        data-escape="true">usu364 pty null</option>
+                                                    <option
+                                                        value="A056B01594E04FA3982DFC8A42F5F34584706B7F6E7341FD9F5AEFB5D7BAF38D"
+                                                        data-escape="true">usu361 null</option>
+                                                    <option
+                                                        value="6D72E1D81E6345D4AAD8166B4CC8D852829F8ECB20B84A06B0E4E8A00C763F03"
+                                                        data-escape="true">usu342 web service </option>
+                                                    <option
+                                                        value="5E257C1B671D4E2EBBA308BC069520BEAA548BB34EED4FBFA0FE126A55E6D149"
+                                                        data-escape="true">usu347 Apelldios1 null</option>
+                                                    <option
+                                                        value="EBCEC6C665EE477690C892A2714FF69BF128C160604D4A369131E5D4726B7AB3"
+                                                        data-escape="true">usu348 prueba2 null</option>
+                                                    <option
+                                                        value="30B308CCE6F1434E9706EE6A916D07DDCA9D87AB430440F5A80577311F69EAC3"
+                                                        data-escape="true">usu349 null</option>
+                                                    <option
+                                                        value="439C6E79E8FB4ED7A23F2A11E094E728434BCAF7FA4849C58BAE25464B35F51D"
+                                                        data-escape="true">usu351 Test null</option>
+                                                    <option
+                                                        value="C5EF987E7A77415A97BECAB6C1F17BA2E53F81A6C30E438D951444A620DB5B1C"
+                                                        data-escape="true">usu352 Test null</option>
+                                                    <option
+                                                        value="5285BE15C18E42A6A1F0EB9B88BB06C3492B1C02FC9E4A45AA8B3102C7A75286"
+                                                        data-escape="true">usu350 null</option>
+                                                    <option
+                                                        value="E79EF0D5D9EA4C4C8B8E9FD60733BEA1D0B0FC72B2004D83A874B29C609E85DE"
+                                                        data-escape="true">usu353 Villar null</option>
+                                                    <option
+                                                        value="23331CCFA4FC4C799C385DD2D49A00B76B6D613E23494FFEAA2B0DAFC6FC4444"
+                                                        data-escape="true">usu354 Villar null</option>
+                                                    <option
+                                                        value="6179342F765E46AB831DFD42FBA364170A00376EC7F042ADAF306F2B98B17F9D"
+                                                        data-escape="true">usu355 Val null</option>
+                                                    <option
+                                                        value="21651F8BD77548F780D12A991384BEADEF173D5A7C054D37AF61F915D15758E8"
+                                                        data-escape="true">usu356 null</option>
+                                                    <option
+                                                        value="7B3F34D02B364BACAADFFC13BD867BBA4777B70CF63E4DA0B93A6A13F723487A"
+                                                        data-escape="true">usu357 null</option>
+                                                    <option
+                                                        value="A843CE7732A0411E8B47C34E65D98F7BD2ED40115A5C41FA894D983CE1EF9C50"
+                                                        data-escape="true">usu358 null</option>
+                                                    <option
+                                                        value="DDB6261816824DCC9E15C35F5E7773313B36C67F26F545CB8402F26231234D34"
+                                                        data-escape="true">usu359 null</option>
+                                                    <option
+                                                        value="45B0EF24474A4BAB87937509998C2CBBF7552DE21FA145978B529CBE3FB3AF1B"
+                                                        data-escape="true">usu360 null</option>
+                                                </select></div><label id="agencyUsers_label"
+                                                class="ui-selectonemenu-label ui-inputfield ui-corner-all">Todos</label>
+                                            <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
+                                                    class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                        </div>
+                                        <div class="validation-error-container ">
+                                            <div id="agencyUsersMessage" class="ui-messages ui-widget"
+                                                aria-live="polite"></div>
+                                        </div>
+                                    </div>
+                                    <div id="filter-destinationContainer"
+                                        class="ui-g ui-lg-3 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                            for="j_idt182:filter-destination" title="" class=""
+                                            style="opacity: 0; transition: opacity 0.5s linear 0s;">Destino</label><span
+                                            id="destination" class="ui-autocomplete" role="application"><input
+                                                id="destination_input" name="destination_input" type="text"
+                                                class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all"
+                                                autocomplete="off" placeholder="Destino" value="" role="textbox"
+                                                aria-readonly="false" aria-disabled="false"
+                                                aria-autocomplete="list"><input id="destination_hinput"
+                                                name="destination_hinput" type="hidden" autocomplete="off"
+                                                aria-hidden="true"><span id="destination_panel"
+                                                class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"
+                                                role="listbox" tabindex="-1"></span><span role="status"
+                                                aria-live="polite"
+                                                class="ui-autocomplete-status ui-helper-hidden-accessible"></span></span>
+                                        <div class="validation-error-container ">
+                                            <div id="filter-destinationMessage" class="ui-messages ui-widget"
+                                                aria-live="polite"></div>
+                                        </div>
+                                    </div>
+                                    <div id="bookStatusContainer"
+                                        class="ui-g ui-lg-6 ui-md-4 ui-sm-12  field noRequired" style=""><label
+                                            for="bookStatus" title="" class="">Estado</label>
+                                        <table id="bookStatus" role="presentation"
+                                            class="ui-selectmanycheckbox ui-widget">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-chkbox ui-widget">
+                                                            <div class="ui-helper-hidden-accessible"><input
+                                                                    id="bookStatus:0" name="bookStatus" type="checkbox"
+                                                                    value="BOOKED" checked="checked"></div>
+                                                            <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                                <span
+                                                                    class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span>
+                                                            </div>
+                                                        </div><label for="bookStatus:0">Activas</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-chkbox ui-widget">
+                                                            <div class="ui-helper-hidden-accessible"><input
+                                                                    id="bookStatus:1" name="bookStatus" type="checkbox"
+                                                                    value="ISSUED" checked="checked"></div>
+                                                            <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                                <span
+                                                                    class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span>
+                                                            </div>
+                                                        </div><label for="bookStatus:1">Emitidas</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-chkbox ui-widget">
+                                                            <div class="ui-helper-hidden-accessible"><input
+                                                                    id="bookStatus:2" name="bookStatus" type="checkbox"
+                                                                    value="CANCELLED" checked="checked"></div>
+                                                            <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                                <span
+                                                                    class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span>
+                                                            </div>
+                                                        </div><label for="bookStatus:2">Canceladas</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-chkbox ui-widget">
+                                                            <div class="ui-helper-hidden-accessible"><input
+                                                                    id="bookStatus:3" name="bookStatus" type="checkbox"
+                                                                    value="UNCONFIRMED" checked="checked"></div>
+                                                            <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                                <span
+                                                                    class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span>
+                                                            </div>
+                                                        </div><label for="bookStatus:3">No confirmadas</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-chkbox ui-widget">
+                                                            <div class="ui-helper-hidden-accessible"><input
+                                                                    id="bookStatus:4" name="bookStatus" type="checkbox"
+                                                                    value="CREDIT_CARD_VALIDATION_REQUIRED"
+                                                                    checked="checked"></div>
+                                                            <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                                <span
+                                                                    class="ui-chkbox-icon ui-icon ui-icon-check ui-c"></span>
+                                                            </div>
+                                                        </div><label for="bookStatus:4">Pendientes</label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="validation-error-container ">
+                                            <div id="bookStatusMessage" class="ui-messages ui-widget"
+                                                aria-live="polite"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-g "></div>
+                                <div class="ui-g "></div><img id="j_idt260" width="1" height="5px;" alt=""
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><img
+                                    id="j_idt275" width="1" height="5px;" alt=""
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            </div>
+                            <div class="buttons-container"><button id="buscarReservas" name="buscarReservas"
+                                    class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                                    title="Buscar reservas" type="submit" role="button" aria-disabled="false"><span
+                                        class="ui-button-text ui-c">Buscar reservas</span></button></div>
+                        </div><input id="requestPanel_collapsed" name="requestPanel_collapsed" type="hidden"
+                            autocomplete="off" aria-hidden="true" value="false">
+                    </div><img id="j_idt279" width="1" height="25px;" alt=""
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    <div id="bookRetrieveResults"
+                        class="ui-panel ui-widget ui-widget-content ui-corner-all booking-list"
+                        data-widget="widget_bookRetrieveResults">
+                        <div id="bookRetrieveResults_content" class="ui-panel-content ui-widget-content">
+                            <div class="ui-g label-bookings-found-container"><label id="j_idt280"
+                                    class="ui-outputlabel ui-widget">Reservas encontradas:</label><label id="j_idt281"
+                                    class="ui-outputlabel ui-widget number-bookings-found">0</label></div>
+                            <div id="bookRetrieveTable"
+                                class="ui-datatable ui-widget booking-list-table ui-datatable-reflow"
+                                style="visibility: visible;"><label id="bookRetrieveTable_reflowDD_label"
+                                    for="bookRetrieveTable_reflowDD" class="ui-reflow-label">Ordenar</label><select
+                                    id="bookRetrieveTable_reflowDD" name="bookRetrieveTable_reflowDD"
+                                    class="ui-reflow-dropdown ui-state-default" autocomplete="off">
+                                    <option value="0_0">Loc. Ascendente</option>
+                                    <option value="0_1">Loc. Descendente</option>
+                                    <option value="1_0">Estado Ascendente</option>
+                                    <option value="1_1">Estado Descendente</option>
+                                    <option value="2_0">Cía. Ascendente</option>
+                                    <option value="2_1">Cía. Descendente</option>
+                                    <option value="3_0">Nombre Ascendente</option>
+                                    <option value="3_1">Nombre Descendente</option>
+                                    <option value="4_0">Límite emisión Ascendente</option>
+                                    <option value="4_1">Límite emisión Descendente</option>
+                                    <option value="5_0">F. Reserva Ascendente</option>
+                                    <option value="5_1">F. Reserva Descendente</option>
+                                </select>
+                                <div class="ui-datatable-tablewrapper">
+                                    <table role="grid">
+                                        <thead id="bookRetrieveTable_head">
+                                            <tr role="row">
+                                                <th id="bookRetrieveTable:j_idt282" class="ui-state-default"
+                                                    role="columnheader" scope="col"><span
+                                                        class="ui-column-title"></span></th>
+                                                <th id="bookRetrieveTable:j_idt284" class="ui-state-default"
+                                                    role="columnheader" scope="col"><span
+                                                        class="ui-column-title"></span></th>
+                                                <th id="bookRetrieveTable:j_idt288" class="ui-state-default"
+                                                    role="columnheader" aria-label="Usuario" scope="col"><span
+                                                        class="ui-column-title">Usuario</span></th>
+                                                <th id="bookRetrieveTable:j_idt292"
+                                                    class="ui-state-default ui-sortable-column" role="columnheader"
+                                                    aria-label="Loc.: activar ordenación ascendente de la columna"
+                                                    scope="col" tabindex="0" aria-sort="other"><span
+                                                        class="ui-column-title">Loc.</span><span
+                                                        class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><span
+                                                        class="ui-sortable-column-badge ui-helper-hidden"></span></th>
+                                                <th id="bookRetrieveTable:j_idt294"
+                                                    class="ui-state-default ui-sortable-column" role="columnheader"
+                                                    aria-label="Estado: activar ordenación ascendente de la columna"
+                                                    scope="col" tabindex="0"><span
+                                                        class="ui-column-title">Estado</span><span
+                                                        class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><span
+                                                        class="ui-sortable-column-badge ui-helper-hidden"></span></th>
+                                                <th id="bookRetrieveTable:j_idt296"
+                                                    class="ui-state-default ui-sortable-column" role="columnheader"
+                                                    aria-label="Cía.: activar ordenación ascendente de la columna"
+                                                    scope="col" tabindex="0"><span
+                                                        class="ui-column-title">Cía.</span><span
+                                                        class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><span
+                                                        class="ui-sortable-column-badge ui-helper-hidden"></span></th>
+                                                <th id="bookRetrieveTable:j_idt298" class="ui-state-default"
+                                                    role="columnheader" aria-label="Trayecto" scope="col"><span
+                                                        class="ui-column-title">Trayecto</span></th>
+                                                <th id="bookRetrieveTable:j_idt300"
+                                                    class="ui-state-default ui-sortable-column" role="columnheader"
+                                                    aria-label="Nombre: activar ordenación ascendente de la columna"
+                                                    scope="col" tabindex="0"><span
+                                                        class="ui-column-title">Nombre</span><span
+                                                        class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><span
+                                                        class="ui-sortable-column-badge ui-helper-hidden"></span></th>
+                                                <th id="bookRetrieveTable:j_idt302"
+                                                    class="ui-state-default ui-sortable-column" role="columnheader"
+                                                    aria-label="F. Reserva: activar ordenación ascendente de la columna"
+                                                    scope="col" tabindex="0"><span class="ui-column-title">F.
+                                                        Reserva</span><span
+                                                        class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><span
+                                                        class="ui-sortable-column-badge ui-helper-hidden"></span></th>
+                                                <th id="bookRetrieveTable:j_idt303"
+                                                    class="ui-state-default ui-sortable-column" role="columnheader"
+                                                    aria-label="Límite emisión: activar ordenación ascendente de la columna"
+                                                    scope="col" tabindex="0"><span class="ui-column-title">Límite
+                                                        emisión</span><span
+                                                        class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span><span
+                                                        class="ui-sortable-column-badge ui-helper-hidden"></span></th>
+                                                <th id="bookRetrieveTable:j_idt304" class="ui-state-default"
+                                                    role="columnheader" aria-label="GDS" scope="col"><span
+                                                        class="ui-column-title">GDS</span></th>
+                                                <th id="bookRetrieveTable:j_idt306"
+                                                    class="ui-state-default center-column" role="columnheader"
+                                                    aria-label="C." scope="col"><span class="ui-column-title"><span
+                                                            title="Cambios">C.</span></span></th>
+                                                <th id="bookRetrieveTable:j_idt328"
+                                                    class="ui-state-default center-column" role="columnheader"
+                                                    aria-label="R." scope="col"><span class="ui-column-title"><span
+                                                            title="Reembolsos">R.</span></span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="bookRetrieveTable_data" class="ui-datatable-data ui-widget-content">
+                                            <tr class="ui-widget-content ui-datatable-empty-message">
+                                                <td colspan="13">No se han encontrado resultados para su búsqueda.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="bookRetrieveTable_paginator_bottom"
+                                    class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom"
+                                    role="navigation" aria-label="Paginación"><a
+                                        href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                                        class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled"
+                                        aria-label="Primera página" tabindex="-1"><span
+                                            class="ui-icon ui-icon-seek-first">F</span></a><a
+                                        href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                                        class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled"
+                                        aria-label="Página anterior" tabindex="-1"><span
+                                            class="ui-icon ui-icon-seek-prev">P</span></a><span
+                                        class="ui-paginator-pages"></span><a
+                                        href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                                        class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled"
+                                        aria-label="Página siguiente" tabindex="-1"><span
+                                            class="ui-icon ui-icon-seek-next">N</span></a><a
+                                        href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                                        class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled"
+                                        aria-label="Última página" tabindex="-1"><span
+                                            class="ui-icon ui-icon-seek-end">E</span></a><label
+                                        id="bookRetrieveTable:j_id112_rppLabel" for="bookRetrieveTable:j_id112"
+                                        class="ui-paginator-rpp-label ui-helper-hidden">Filas por página</label><select
+                                        id="bookRetrieveTable:j_id112" name="bookRetrieveTable_rppDD"
+                                        aria-labelledby="bookRetrieveTable:j_id112_rppLabel"
+                                        class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left"
+                                        autocomplete="off">
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                    </select></div>
+                            </div>
+                        </div>
+                    </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1"
+                        value="4393768613724151503:-6124449109715830583" autocomplete="off">
+                    <input name="primefaces.nonce" type="hidden"
+                        value="MWM5MjQ4NjQtODJiMS00ZTk1LWEyMzctZDAzMWE1NzMyN2Ni">
+                </form>
+                <div id="j_idt350"
+                    class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container loading"
+                    role="dialog" aria-describedby="j_idt350_content" aria-hidden="true" aria-modal="true"
+                    aria-labelledby="j_idt350_title" style="width: auto; height: auto;">
+                    <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top" style=""><span
+                            id="j_idt350_title" class="ui-dialog-title"></span></div>
+                    <div class="ui-dialog-content ui-widget-content" id="j_idt350_content" style="height: auto;"><img
+                            id="j_idt351" src="./airBookingRetrive_files/loading.gif" alt="" class="loading-content"
+                            width="280"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dlgSessionExpired"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container session-expired-dialog"
+        role="dialog" aria-describedby="dlgSessionExpired_content" aria-hidden="true" aria-modal="true"
+        aria-labelledby="dlgSessionExpired_title" style="width: auto; height: auto;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span
+                id="dlgSessionExpired_title" class="ui-dialog-title"></span><a
+                href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Cerrar"
+                role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
+        <div class="ui-dialog-content ui-widget-content" id="dlgSessionExpired_content" style="height: auto;">
+            <div class="ui-g ">
+
+                <span class="gi-icon fas gi-session-expired "
+                    style="margin: auto;           height: 115px;           width: 115px;           background-size: 115px;           font-size:115px;"></span>
+            </div>
+            <div class="ui-g "><label id="j_idt354" class="ui-outputlabel ui-widget"
+                    style="font-size: 1.5em; margin-top: 15px; color: #e44049">Se ha perdido la sesión con los sistemas
+                    externos</label></div>
+            <div class="ui-g "><label id="j_idt355" class="ui-outputlabel ui-widget"
+                    style="font-size: 1.15em; margin: 5px auto; text-align: center">Por favor, vuelve a iniciar
+                    sesión.</label></div>
+            <div class="buttons-container"><button id="j_idt357" name="j_idt357"
+                    class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="submit"
+                    role="button" aria-disabled="false"><span class="ui-button-text ui-c">Cerrar sesión</span></button>
+            </div>
+        </div>
+    </div>
+    <div id="j_idt358"
+        class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"
+        role="alertdialog" aria-describedby="j_idt358_content" aria-hidden="true" aria-modal="true"
+        aria-labelledby="j_idt358_title" style="width: auto; height: auto;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt358_title"
+                class="ui-dialog-title"></span><a
+                href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Cerrar"
+                role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
+        <div class="ui-dialog-content ui-widget-content" id="j_idt358_content" style="height: auto;"><span
+                class="ui-icon ui-confirm-dialog-severity"></span><span class="ui-confirm-dialog-message"></span></div>
+        <div class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix"><button id="j_idt359"
+                name="j_idt359"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-yes"
+                type="button" role="button" aria-disabled="false"><span
+                    class="ui-button-icon-left ui-icon ui-c fa fa-check"></span><span
+                    class="ui-button-text ui-c">Sí</span></button><button id="j_idt360" name="j_idt360"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-no"
+                type="button" role="button" aria-disabled="false"><span
+                    class="ui-button-icon-left ui-icon ui-c fa fa-times"></span><span
+                    class="ui-button-text ui-c">No</span></button></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <a class="footer-logo" href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"><img
+                    id="j_idt364" src="./airBookingRetrive_files/iris_logo.svg" alt="">
+            </a>
+            <div class="footer-links"><a href="http://localhost:8080/policy/cookies.xhtml"
+                    class="ui-link ui-widget footer-company">Política de Cookies</a>
+            </div>
+            <div class="footer-info"><label id="j_idt368" class="ui-outputlabel ui-widget">©</label><span id="j_idt369"
+                    class="ui-clock ui-widget ui-widget-header ui-corner-all">2022</span><label id="j_idt370"
+                    class="ui-outputlabel ui-widget footer-company">Grupo Iris</label>
+
+            </div>
+            <div id="top-row">
+                <a href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    class="fa fa-arrow-alt-circle-up fa-2x"></a>
+            </div>
+        </div>
+    </div>
+    <script
+        nonce="">PrimeFaces.csp.register('customRadioSearchCriterial:0', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('customRadioSearchCriterial:1', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('customRadioSearchCriterial:2', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('customRadioSearchCriterial:3', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('bookingDateTo_input', 'onkeyup', function (event) { keysForDate(this, event.keyCode) }); PrimeFaces.csp.register('customRadioSearchCriterial:4', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('customRadioSearchCriterial:3_clone', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('customRadioSearchCriterial:5', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('purchaseDateFrom_input', 'onkeyup', function (event) { keysForDate(this, event.keyCode) }); PrimeFaces.csp.register('purchaseDateTo_input', 'onkeyup', function (event) { keysForDate(this, event.keyCode) }); PrimeFaces.csp.register('departureDateFrom_input', 'onkeyup', function (event) { keysForDate(this, event.keyCode) }); PrimeFaces.csp.register('a\-72eae7f5\-d451\-4007\-81cf\-4bea58ee67fd', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt42", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('customRadioSearchCriterial:1_clone', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('a\-1b0397af\-d201\-451b\-bf3d\-03c9652e9a35', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt30", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('a\-1a99c0ad\-7c32\-4a92\-8bcd\-f659cb886510', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt25", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('menu\-toggle', 'onclick', function (event) { $('div#menu-responsive\\:menu-bar').slideToggle('slow'); }); PrimeFaces.csp.register('customRadioSearchCriterial:2_clone', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('j_idt357', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt357", p: "j_idt357", onco: function (xhr, status, args, data) { PF('dlgSessionExpired').hide(); } }); return false; }); PrimeFaces.csp.register('a\-b8448213\-5842\-4b66\-bc80\-a9dc8f089adf', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt41", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('buscarReservas', 'onclick', function (event) { PrimeFaces.ab({ s: "buscarReservas", f: "j_idt182", p: "buscarReservas filtrosExclusivos panelFiltro", u: "bookRetrieveResults" }); return false; }); PrimeFaces.csp.register('j_idt53', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt53" }); return false; }); PrimeFaces.csp.register('a\-d99cbcb7\-6a2e\-418c\-b88f\-9ef92fc1cc3f', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt20", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('customRadioSearchCriterial:0_clone', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('destination_input', 'onclick', function (event) { this.select(); }); PrimeFaces.csp.register('destination_input', 'onfocus', function (event) { this.select(); }); PrimeFaces.csp.register('a\-0bce97f6\-f964\-4f50\-8c24\-cb850d7d2c69', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt35", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('customRadioSearchCriterial:4_clone', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('a\-6e676fb8\-6d0b\-40f3\-8453\-0c1adb937fba', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt17", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('bookingDateFrom_input', 'onkeyup', function (event) { keysForDate(this, event.keyCode) }); PrimeFaces.csp.register('a\-eda7be36\-0755\-4f65\-bd6e\-abd5970fabb8', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt18", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('customRadioSearchCriterial:5_clone', 'onchange', function (event) { PrimeFaces.ab({ s: "customRadioSearchCriterial", e: "valueChange", f: "j_idt182", p: "filtrosExclusivos", u: "filtrosExclusivos" }); }); PrimeFaces.csp.register('a\-4e88e4cd\-5b56\-4a95\-bed6\-1b6949013efe', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt40", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('j_idt60', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt60" }); return false; }); PrimeFaces.csp.register('departureDateTo_input', 'onkeyup', function (event) { keysForDate(this, event.keyCode) });</script>
+    <script type="text/javascript" src="./airBookingRetrive_files/theme.js.xhtml" nonce=""></script>
+    <script type="text/javascript" src="./airBookingRetrive_files/primeLocale.js.xhtml" nonce=""></script>
+    <div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div>
+    <div id="j_idt15:j_idt16_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-6e676fb8-6d0b-40f3-8453-0c1adb937fba"><span class="ui-menuitem-text">Reservas</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-eda7be36-0755-4f65-bd6e-abd5970fabb8"><span class="ui-menuitem-icon ui-icon fas fa-plane"
+                        aria-hidden="true"></span><span class="ui-menuitem-text">Reservas Aéreo</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/air/bookingRetrieve/externalBooking/externalBookingForm.xhtml"><span
+                        class="ui-menuitem-icon ui-icon fas fa-plane" aria-hidden="true"></span><span
+                        class="ui-menuitem-text">Consultas externas</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-d99cbcb7-6a2e-418c-b88f-9ef92fc1cc3f"><span class="ui-menuitem-icon ui-icon fas fa-train"
+                        aria-hidden="true"></span><span class="ui-menuitem-text">Reservas de tren</span></a></li>
+        </ul>
+    </div>
+    <div id="j_idt15:j_idt24_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-1a99c0ad-7c32-4a92-8bcd-f659cb886510"><span class="ui-menuitem-text">Utilidades</span></a>
+            </li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/carriersmenu/carriers-menu.xhtml"><span
+                        class="ui-menuitem-text">Autocheckin e Info. equipaje</span></a></li>
+        </ul>
+    </div>
+    <div id="j_idt15:j_idt29_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-1b0397af-d201-451b-bf3d-03c9652e9a35"><span class="ui-menuitem-text">Mi cuenta</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/air/report/reports.xhtml"><span
+                        class="ui-menuitem-text">Informes aéreo</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-0bce97f6-f964-4f50-8c24-cb850d7d2c69"><span class="ui-menuitem-text">Pagos
+                        aéreo/tren</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/agencyadmin/main.xhtml"><span
+                        class="ui-menuitem-text">Configuración</span></a></li>
+        </ul>
+    </div>
+    <div id="j_idt15:notificationsBTN_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-4e88e4cd-5b56-4a95-bed6-1b6949013efe"><span class="ui-menuitem-text">Notificaciones</span></a>
+            </li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-plane"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-b8448213-5842-4b66-bc80-a9dc8f089adf"><span class="ui-menuitem-text">11 Mensajes sin
+                        leer</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-train"
+                    href="http://localhost:8080/air/bookingRetrieve/airBookingRetrieve.xhtml#"
+                    id="a-72eae7f5-d451-4007-81cf-4bea58ee67fd"><span class="ui-menuitem-text">0 Mensajes sin
+                        leer</span></a></li>
+        </ul>
+    </div>
+    <div class="ui-tooltip ui-tooltip-global ui-widget ui-tooltip-right" role="tooltip">
+        <div class="ui-tooltip-arrow"></div>
+        <div class="ui-tooltip-text ui-shadow ui-corner-all"></div>
+    </div>
+    <div id="bookingDateFrom_panel"
+        class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ui-input-overlay p-datepicker-panel"
+        style="display: none; position: absolute;">
+        <div class="ui-datepicker-group ui-widget-content">
+            <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+                    class="ui-datepicker-prev ui-corner-all" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-w"></span></a><a class="ui-datepicker-next ui-corner-all"
+                    tabindex="0"><span class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                <div class="ui-datepicker-title"><span class="ui-datepicker-month">Julio</span>&nbsp;<span
+                        class="ui-datepicker-year">2022</span></div>
+            </div>
+            <div class="ui-datepicker-calendar-container">
+                <table class="ui-datepicker-calendar">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span title="Lunes">L</span></th>
+                            <th scope="col"><span title="Martes">M</span></th>
+                            <th scope="col"><span title="Miércoles">X</span></th>
+                            <th scope="col"><span title="Jueves">J</span></th>
+                            <th scope="col"><span title="Viernes">V</span></th>
+                            <th scope="col"><span title="Sábado">S</span></th>
+                            <th scope="col"><span title="Domingo">D</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">1</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">2</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">3</a></td>
+                        </tr>
+                        <tr>
+                            <td class=" ui-datepicker-today"><a tabindex="0"
+                                    class=" ui-state-default ui-state-active ui-state-highlight">4</a></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">5</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">6</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">7</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">8</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">9</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">10</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">11</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">12</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">13</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">14</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">15</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">16</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">17</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">18</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">19</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">20</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">21</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">22</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">23</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">24</span></td>
+                        </tr>
+                        <tr>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">25</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">26</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">31</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="bookingDateTo_panel"
+        class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ui-input-overlay p-datepicker-panel"
+        style="display: none; position: absolute;">
+        <div class="ui-datepicker-group ui-widget-content">
+            <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+                    class="ui-datepicker-prev ui-corner-all" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-w"></span></a><a class="ui-datepicker-next ui-corner-all"
+                    tabindex="0"><span class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                <div class="ui-datepicker-title"><span class="ui-datepicker-month">Julio</span>&nbsp;<span
+                        class="ui-datepicker-year">2022</span></div>
+            </div>
+            <div class="ui-datepicker-calendar-container">
+                <table class="ui-datepicker-calendar">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span title="Lunes">L</span></th>
+                            <th scope="col"><span title="Martes">M</span></th>
+                            <th scope="col"><span title="Miércoles">X</span></th>
+                            <th scope="col"><span title="Jueves">J</span></th>
+                            <th scope="col"><span title="Viernes">V</span></th>
+                            <th scope="col"><span title="Sábado">S</span></th>
+                            <th scope="col"><span title="Domingo">D</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">1</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">2</span></td>
+                            <td class=""><span class=" ui-state-default ui-state-disabled">3</span></td>
+                        </tr>
+                        <tr>
+                            <td class=" ui-datepicker-today"><a tabindex="0"
+                                    class=" ui-state-default ui-state-active ui-state-highlight">4</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">5</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">6</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">7</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">8</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">9</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">10</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">11</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">12</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">13</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">14</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">15</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">16</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">17</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">18</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">19</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">20</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">21</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">22</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">23</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">24</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">25</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">26</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">27</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">28</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">29</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">30</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">31</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="purchaseDateFrom_panel"
+        class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ui-input-overlay ui-state-disabled p-datepicker-panel"
+        style="display: none; position: absolute;">
+        <div class="ui-datepicker-group ui-widget-content">
+            <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+                    class="ui-datepicker-prev ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-w"></span></a><a
+                    class="ui-datepicker-next ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                <div class="ui-datepicker-title"><span class="ui-datepicker-month">Julio</span>&nbsp;<span
+                        class="ui-datepicker-year">2022</span></div>
+            </div>
+            <div class="ui-datepicker-calendar-container">
+                <table class="ui-datepicker-calendar">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span title="Lunes">L</span></th>
+                            <th scope="col"><span title="Martes">M</span></th>
+                            <th scope="col"><span title="Miércoles">X</span></th>
+                            <th scope="col"><span title="Jueves">J</span></th>
+                            <th scope="col"><span title="Viernes">V</span></th>
+                            <th scope="col"><span title="Sábado">S</span></th>
+                            <th scope="col"><span title="Domingo">D</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">1</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">2</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">3</a></td>
+                        </tr>
+                        <tr>
+                            <td class=" ui-datepicker-today"><a tabindex="0"
+                                    class=" ui-state-default ui-state-highlight">4</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">5</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">6</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">7</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">8</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">9</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">10</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">11</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">12</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">13</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">14</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">15</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">16</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">17</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">18</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">19</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">20</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">21</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">22</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">23</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">24</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">25</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">26</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">27</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">28</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">29</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">30</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">31</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="purchaseDateTo_panel"
+        class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ui-input-overlay ui-state-disabled p-datepicker-panel"
+        style="display: none; position: absolute;">
+        <div class="ui-datepicker-group ui-widget-content">
+            <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+                    class="ui-datepicker-prev ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-w"></span></a><a
+                    class="ui-datepicker-next ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                <div class="ui-datepicker-title"><span class="ui-datepicker-month">Julio</span>&nbsp;<span
+                        class="ui-datepicker-year">2022</span></div>
+            </div>
+            <div class="ui-datepicker-calendar-container">
+                <table class="ui-datepicker-calendar">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span title="Lunes">L</span></th>
+                            <th scope="col"><span title="Martes">M</span></th>
+                            <th scope="col"><span title="Miércoles">X</span></th>
+                            <th scope="col"><span title="Jueves">J</span></th>
+                            <th scope="col"><span title="Viernes">V</span></th>
+                            <th scope="col"><span title="Sábado">S</span></th>
+                            <th scope="col"><span title="Domingo">D</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">1</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">2</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">3</a></td>
+                        </tr>
+                        <tr>
+                            <td class=" ui-datepicker-today"><a tabindex="0"
+                                    class=" ui-state-default ui-state-highlight">4</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">5</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">6</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">7</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">8</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">9</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">10</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">11</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">12</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">13</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">14</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">15</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">16</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">17</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">18</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">19</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">20</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">21</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">22</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">23</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">24</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">25</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">26</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">27</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">28</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">29</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">30</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">31</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="departureDateFrom_panel"
+        class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ui-input-overlay ui-state-disabled p-datepicker-panel"
+        style="display: none; position: absolute;">
+        <div class="ui-datepicker-group ui-widget-content">
+            <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+                    class="ui-datepicker-prev ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-w"></span></a><a
+                    class="ui-datepicker-next ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                <div class="ui-datepicker-title"><span class="ui-datepicker-month">Julio</span>&nbsp;<span
+                        class="ui-datepicker-year">2022</span></div>
+            </div>
+            <div class="ui-datepicker-calendar-container">
+                <table class="ui-datepicker-calendar">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span title="Lunes">L</span></th>
+                            <th scope="col"><span title="Martes">M</span></th>
+                            <th scope="col"><span title="Miércoles">X</span></th>
+                            <th scope="col"><span title="Jueves">J</span></th>
+                            <th scope="col"><span title="Viernes">V</span></th>
+                            <th scope="col"><span title="Sábado">S</span></th>
+                            <th scope="col"><span title="Domingo">D</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">1</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">2</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">3</a></td>
+                        </tr>
+                        <tr>
+                            <td class=" ui-datepicker-today"><a tabindex="0"
+                                    class=" ui-state-default ui-state-highlight">4</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">5</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">6</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">7</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">8</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">9</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">10</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">11</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">12</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">13</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">14</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">15</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">16</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">17</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">18</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">19</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">20</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">21</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">22</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">23</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">24</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">25</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">26</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">27</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">28</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">29</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">30</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">31</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="departureDateTo_panel"
+        class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ui-input-overlay ui-state-disabled p-datepicker-panel"
+        style="display: none; position: absolute;">
+        <div class="ui-datepicker-group ui-widget-content">
+            <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+                    class="ui-datepicker-prev ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-w"></span></a><a
+                    class="ui-datepicker-next ui-corner-all ui-state-disabled" tabindex="0"><span
+                        class="ui-icon ui-icon-circle-triangle-e"></span></a>
+                <div class="ui-datepicker-title"><span class="ui-datepicker-month">Julio</span>&nbsp;<span
+                        class="ui-datepicker-year">2022</span></div>
+            </div>
+            <div class="ui-datepicker-calendar-container">
+                <table class="ui-datepicker-calendar">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span title="Lunes">L</span></th>
+                            <th scope="col"><span title="Martes">M</span></th>
+                            <th scope="col"><span title="Miércoles">X</span></th>
+                            <th scope="col"><span title="Jueves">J</span></th>
+                            <th scope="col"><span title="Viernes">V</span></th>
+                            <th scope="col"><span title="Sábado">S</span></th>
+                            <th scope="col"><span title="Domingo">D</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">27</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">28</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">29</span></td>
+                            <td class=" ui-datepicker-other-month ui-datepicker-other-month-hidden"><span
+                                    class=" ui-state-default ui-state-disabled">30</span></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">1</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">2</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">3</a></td>
+                        </tr>
+                        <tr>
+                            <td class=" ui-datepicker-today"><a tabindex="0"
+                                    class=" ui-state-default ui-state-highlight">4</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">5</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">6</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">7</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">8</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">9</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">10</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">11</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">12</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">13</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">14</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">15</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">16</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">17</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">18</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">19</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">20</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">21</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">22</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">23</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">24</a></td>
+                        </tr>
+                        <tr>
+                            <td class=""><a tabindex="0" class=" ui-state-default">25</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">26</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">27</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">28</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">29</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">30</a></td>
+                            <td class=""><a tabindex="0" class=" ui-state-default">31</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="agencyUsers_panel"
+        class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay">
+        <div class="ui-selectonemenu-items-wrapper" style="max-height:200px"></div>
+    </div>
+    <div class="ui-dialog-docking-zone"></div>
+</body>
+
+</html>
