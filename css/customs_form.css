@@ -335,6 +335,11 @@ input.ui-inputfield {
     height: 84px;
     padding: 0px 0px 0px 0px !important;
 }
+
+.date-range-picker-from{
+    padding-right: 5px!important;
+}
+
 .date-range-picker-from .input-icon,
 .date-range-picker-from-single .input-icon,
 .date-range-picker-to .input-icon {
@@ -363,7 +368,12 @@ input.ui-inputfield {
     padding: 0px !important;
     overflow: hidden;
 }
-
+.month-wrapper table thead{
+    background: #EBEBEB;
+}
+.date-picker-wrapper .footer {
+    display: none;
+}
 .month-wrapper::before {
     background-color: var(--color-primary) !important;
     display: flex;
@@ -383,8 +393,19 @@ input.ui-inputfield {
     height: calc(100% - 60px);
     width: calc(50% - 10px) !important;
     border: 5px solid var(--color-white);
-    padding: 30px;
-    margin: 5px;
+    padding: 5px;
+    margin: 5px;    
+}
+
+.date-picker-wrapper .month-wrapper table.month1{
+    border: 2px solid #F3F2EB;
+    background: #FFFFFF;
+}
+
+.date-picker-wrapper .month-wrapper table.month1, .date-picker-wrapper .month-wrapper table.month2 {    
+    border: 2px solid #F3F2EB;
+    background: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .month-wrapper .gap {

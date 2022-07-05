@@ -494,3 +494,46 @@ organizar los input para que cubran mas espacio (nombre y pasajero)
     height: 28px;
     padding: 10px;
 }
+
+/*#region footer*/
+.footer-container{
+    max-width: 1100px!important;
+    padding-bottom: 20px;
+}
+
+.footer .footer-container .footer-links{
+    margin-right: 10px!important;
+    border-right: 1px solid #002333;
+    border-left: 1px solid #002333;
+}
+.footer .footer-container .footer-logo{
+    height: 70px!important;
+}
+/*#endredion footer*/
+
+
+/*#region boton flotante flecha*/
+#top-row {
+    position: fixed;
+    bottom: 59px;
+    right: 150px;
+    height: 60px;
+    width: 60px;
+}
+
+#top-row a:hover {
+    background-image: url(../../old/resources/media/icon-up-hover.svg);
+}
+
+#top-row a {
+    background-image: url(../../old/resources/media/icon-up.svg);
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.fa-arrow-alt-circle-up:before {
+    content: "" !important;
+}
+
+/*#endregion*/
