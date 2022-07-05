@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost:8080/message/unreadMessages.xhtml -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head id="j_idt5">
+        <link type="text/css" rel="stylesheet" href="/resource/primeicons.css" />
+        <link type="text/css" rel="stylesheet" href="/resource/primeflex.min.css" />
+        <link type="text/css" rel="stylesheet" href="/resource/theme.css" />
+        <link type="text/css" rel="stylesheet" href="/resource/components.css" />
+        <script type="text/javascript" src="/resource/jquery.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/jquery-plugins.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/core.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/components.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <link type="text/css" rel="stylesheet" href="/resource/clock.css" />
+        <script type="text/javascript" src="/resource/raphael.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/clock.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/touchswipe.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/keyfilter.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/watermark.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/inputmask.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/datepicker.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/inputnumber.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <link type="text/css" rel="stylesheet" href="/resource/inputnumber.css" />
+        <link type="text/css" rel="stylesheet" href="/css/customs.css" />  
+        <link type="text/css" rel="stylesheet" href="/css/customs_form.css" />
+        <link type="text/css" rel="stylesheet" href="/css/customs_responsives.css" />
+        <script src="./js/custom.js"></script>
+        <script type="text/javascript"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl">if (window.PrimeFaces) { PrimeFaces.settings.locale = 'es_ES'; PrimeFaces.settings.viewId = '/air/avail/availAirForm.xhtml'; PrimeFaces.settings.contextPath = ''; PrimeFaces.settings.cookiesSecure = false; }</script>
+        <script type="text/javascript"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl">$(function () { if (window.PrimeFaces) { PrimeFaces.csp.init('NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl'); };; });</script>
+        <title>
+            Sistema de reservas - 22.09.00-SNAPSHOT (2022-07-02 23:00)
+        </title>
+        <link href="https://public.grupoiris.net/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="/resource/moment-with-locales.min.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/jquery.daterangepicker.min.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/sidebar.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <script type="text/javascript" src="/resource/custom.js"
+            nonce="NGZiMzNlMDUtMTExNC00MDIyLWJhMmEtY2U5ZGY3MDM2ZWNl"></script>
+        <link rel="icon" href="/resource/favicon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </head>
+
+<body>
+    <div id="header" class="ui-g header">
+        <div id="header-container" class="ui-g header-container">
+            <spam class="btnCloseMenu">X</spam>
+            <div class="header-left">
+                <form id="j_idt15" name="j_idt15" method="post"
+                    action="http://localhost:8080/message/unreadMessages.xhtml"
+                    enctype="application/x-www-form-urlencoded">
+                    <input type="hidden" name="j_idt15" value="j_idt15">
+                    <span id="j_idt15:j_idt16" class="ui-menubutton ui-widget"><button id="j_idt15:j_idt16_button"
+                            name="j_idt15:j_idt16_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Reservas</span></button></span><span id="j_idt15:j_idt24"
+                        class="ui-menubutton ui-widget"><button id="j_idt15:j_idt24_button"
+                            name="j_idt15:j_idt24_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Utilidades</span></button></span><span id="j_idt15:j_idt29"
+                        class="ui-menubutton ui-widget"><button id="j_idt15:j_idt29_button"
+                            name="j_idt15:j_idt29_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Mi cuenta</span></button></span><span
+                        id="j_idt15:notificationsBTN" class="ui-menubutton ui-widget notificationsBTN"><button
+                            id="j_idt15:notificationsBTN_button" name="j_idt15:notificationsBTN_button" type="button"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                            role="button" aria-disabled="false"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span
+                                class="ui-button-text ui-c">Notificaciones</span></button></span><input type="hidden"
+                        name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0"
+                        value="-4072249374297918244:8267322115868508423" autocomplete="off">
+                    <input name="primefaces.nonce" type="hidden"
+                        value="YmRjNTI3MDMtMGQzZC00NDYzLWFkMmMtNzFkZWUwY2NhMGUy">
+                </form>
+            </div>
+            <div class="header-left-2"><span class="header-item"><label id="j_idt47"
+                        class="ui-outputlabel ui-widget fa fa-user">1806</label></span></div>
+            <div class="header-left-button"><span class="header-item">
+                    <span class="fas fa-clock"></span><span id="j_idt51"
+                        class="ui-clock ui-widget ui-widget-header ui-corner-all">04/07/2022 18:32</span></span><span
+                    class="header-item"><a id="j_idt53" href="http://localhost:8080/message/unreadMessages.xhtml#"
+                        class="ui-commandlink ui-widget fas fa-sign-out-alt">| Salir</a></span></div>
+        </div>
+        <div class="header-right"><span class="header-item"><label id="j_idt58"
+                    class="ui-outputlabel ui-widget fa fa-user">1806</label></span><span class="header-item"><a
+                    id="j_idt60" href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    class="ui-commandlink ui-widget fas fa-sign-out-alt">| Salir</a></span></div>
+    </div>
+    <div id="menu-sticky" class="ui-outputpanel ui-widget"
+        style="position: static; top: auto; z-index: 1001; width: auto;">
+        <div class="ui-g menu">
+            <div class="ui-g menu-container">
+                <a id="menu-logo" href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+                    class="menu-logo-container">
+                    <div class="logoMenu"></div>
+                </a>
+
+                <div id="menu-toggle" class="menu-toggle" layout="block">
+                    <a class="fa fa-bars fa-2x"></a>
+                </div>
+            </div>
+            <script nonce="">
+                $('div#menu-responsive\\:menu-bar').hide();
+
+                $(document).ready(function () {
+                    if (
+                        $('.menu-owner').length == 0
+                        && $('.menu-company').length == 0
+                        && $('.menu-group').length == 0
+                    ) { $(".menu-bar").remove(); }
+                });   
+            </script>
+        </div>
+    </div>
+    <div class="ui-g menu-responsive">
+        <div class="ui-g menu-container">
+            <a id="menu-logo" href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"
+                class="menu-logo-container">
+                <div class="logoMenu"></div>
+            </a>
+
+            <div id="menu-toggle" class="menu-toggle" layout="block">
+                <a class="fa fa-bars fa-2x"></a>
+            </div>
+        </div>
+        <script nonce="">
+            $('div#menu-responsive\\:menu-bar').hide();
+
+            $(document).ready(function () {
+                if (
+                    $('.menu-owner').length == 0
+                    && $('.menu-company').length == 0
+                    && $('.menu-group').length == 0
+                ) { $(".menu-bar").remove(); }
+            });   
+        </script>
+    </div>
+    <div id="j_idt177"></div>
+    <div id="globalMessages" class="ui-messages ui-widget" aria-live="polite"></div>
+    <div id="j_idt179"></div>
+    <div id="body" class="ui-g">
+        <div id="body-container">
+            <div id="content">
+                <div class="white-panel">
+                    <h2>Mensajes sin leer</h2>
+                    <form id="filter-messages-form" name="filter-messages-form" method="post"
+                        action="http://localhost:8080/message/unreadMessages.xhtml"
+                        enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="filter-messages-form" value="filter-messages-form">
+                        <div class="ui-g ">
+                            <div id="dates-unreaded-messages" class="input-date-range ui-g ui-lg-4 ui-md-12 ui-sm-12">
+                                <div class="ui-g-6 ui-sm-12 ui-g-nopad date-range-picker-from"><label
+                                        for="dates-unreaded-messagesfrom" title="" class=""
+                                        style="opacity: 0; transition: opacity 0.5s linear 0s;">Desde</label><input
+                                        id="dates-unreaded-messagesfrom" name="dates-unreaded-messagesfrom" type="text"
+                                        class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
+                                        autocomplete="off" placeholder="Desde" role="textbox" aria-readonly="false"
+                                        aria-disabled="false">
+                                    <span class="input-icon fa fa-calendar-alt"></span>
+                                    <div class="validation-error-container">
+                                        <div id="dates-unreaded-messagesMessageFrom" class="ui-messages ui-widget"
+                                            aria-live="polite"></div>
+                                    </div>
+                                </div>
+                                <div class="ui-g-6 ui-sm-12 ui-g-nopad date-range-picker-to"><label
+                                        for="dates-unreaded-messagesto" title="" class=""
+                                        style="opacity: 0; transition: opacity 0.5s linear 0s;">Hasta</label><input
+                                        id="dates-unreaded-messagesto" name="dates-unreaded-messagesto" type="text"
+                                        class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
+                                        autocomplete="off" placeholder="Hasta" role="textbox" aria-readonly="false"
+                                        aria-disabled="false">
+                                    <span class="input-icon fa fa-calendar-alt"></span>
+                                    <div class="validation-error-container">
+                                        <div id="dates-unreaded-messagesMessageTo" class="ui-messages ui-widget"
+                                            aria-live="polite"></div>
+                                    </div>
+                                </div>
+
+
+                                <script type="text/javascript" nonce="">
+                                    var startDate = false ? 'false' : false;
+                                    var endDate = 04 / 07 / 2022 ? '04/07/2022' : 04 / 07 / 2022;
+                                    var format = false ? 'DD/MM/YYYY HH:mm' : 'DD/MM/YYYY';
+                                    if (false) {
+                                        $('#dates-unreaded-messages').dateRangePicker({
+                                            autoClose: true,
+                                            startDate: startDate,
+                                            endDate: endDate,
+                                            singleDate: false,
+                                            startOfWeek: 'monday',
+                                            format: format,
+                                            language: 'es',
+                                            time: {
+                                                enabled: false
+                                            },
+                                            customCloseAnimation: function (cb) {
+                                                $(this).fadeOut(400, cb);
+                                            },
+                                            getValue: function () {
+                                                return $(this).val();
+                                            },
+                                            setValue: function (s, s1, s2) {
+                                                if (!$('#dates-unreaded-messagesfrom').attr('readonly') && !$('#dates-unreaded-messagesfrom').is(':disabled') && s != $('#dates-unreaded-messagesfrom').val()) {
+                                                    $('#dates-unreaded-messagesfrom').val(s);
+                                                }
+                                            }
+                                        }).bind('datepicker-change', function (event, obj) {
+                                            if (null != null) {
+                                                null();
+                                            }
+                                        });
+                                    } else {
+                                        $('#dates-unreaded-messages').dateRangePicker({
+                                            selectForward: true,
+                                            autoClose: true,
+                                            startDate: startDate,
+                                            endDate: endDate,
+                                            singleDate: false,
+                                            startOfWeek: 'monday',
+                                            //maxDays: false,
+                                            format: format,
+                                            language: 'es',
+                                            time: {
+                                                enabled: false
+                                            },
+                                            customCloseAnimation: function (cb) {
+                                                $(this).fadeOut(400, cb);
+                                            },
+                                            getValue: function () {
+                                                if ($('#dates-unreaded-messagesfrom').val() && $('#dates-unreaded-messagesto').val())
+                                                    return $('#dates-unreaded-messagesfrom').val() + ' to ' + $('#dates-unreaded-messagesto').val();
+                                                else
+                                                    return '';
+                                            },
+                                            setValue: function (s, s1, s2) {
+                                                $('#dates-unreaded-messagesfrom').val(s1);
+                                                $('#dates-unreaded-messagesto').val(s2);
+                                            }
+                                        }).bind('datepicker-change', function (event, obj) {
+                                            if (null != null) {
+                                                null();
+                                            }
+                                        });
+                                    }
+                                </script>
+                            </div>
+                            <div id="messageTypeContainer" class="ui-g ui-lg-2 ui-md-6 ui-sm-12  field noRequired"
+                                style=""><label for="messageType" title="" class="">Tipo</label>
+                                <div id="messageType" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all "
+                                    aria-owns="messageType_panel" role="combobox" aria-haspopup="listbox"
+                                    aria-expanded="false" style="min-width: 60px;">
+                                    <div class="ui-helper-hidden-accessible"><input id="messageType_focus"
+                                            name="messageType_focus" type="text" autocomplete="off"></div>
+                                    <div class="ui-helper-hidden-accessible"><select id="messageType_input"
+                                            name="messageType_input" tabindex="-1" autocomplete="off"
+                                            aria-hidden="true">
+                                            <option value="" selected="selected" data-escape="true">Todos</option>
+                                            <option value="AIR" data-escape="true">Aéreo</option>
+                                            <option value="TRAIN" data-escape="true">Tren</option>
+                                        </select></div><label id="messageType_label"
+                                        class="ui-selectonemenu-label ui-inputfield ui-corner-all">Todos</label>
+                                    <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
+                                            class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                </div>
+                                <div class="validation-error-container ">
+                                    <div id="messageTypeMessage" class="ui-messages ui-widget" aria-live="polite"></div>
+                                </div>
+                            </div>
+                            <div id="messageCategoryContainer" class="ui-g ui-lg-2 ui-md-6 ui-sm-12  field noRequired"
+                                style=""><label for="messageCategory" title="" class="">Motivo</label>
+                                <div id="messageCategory"
+                                    class="ui-selectonemenu ui-widget ui-state-default ui-corner-all "
+                                    aria-owns="messageCategory_panel" role="combobox" aria-haspopup="listbox"
+                                    aria-expanded="false" style="min-width: 386px;">
+                                    <div class="ui-helper-hidden-accessible"><input id="messageCategory_focus"
+                                            name="messageCategory_focus" type="text" autocomplete="off"></div>
+                                    <div class="ui-helper-hidden-accessible"><select id="messageCategory_input"
+                                            name="messageCategory_input" tabindex="-1" autocomplete="off"
+                                            aria-hidden="true">
+                                            <option value="" selected="selected" data-escape="true">Todos</option>
+                                            <option value="CHANGE" data-escape="true">Consultas o peticiones sobre
+                                                CAMBIOS</option>
+                                            <option value="REFUND" data-escape="true">Consultas o peticiones sobre
+                                                REEMBOLSOS</option>
+                                            <option value="CARRIER_MESSAGE" data-escape="true">EMITIR billetes o
+                                                consultas sobre EMISIONES</option>
+                                            <option value="SPECIAL_SERVICE" data-escape="true">Pedir SERVICIOS
+                                                ESPECIALES</option>
+                                            <option value="INVOLUNTARY_CHANGE" data-escape="true">Consultar mensajes
+                                                sobre CAMBIOS INVOLUNTARIOS (Q7)</option>
+                                            <option value="OTHER" data-escape="true">Realizar otra consulta o petición
+                                            </option>
+                                        </select></div><label id="messageCategory_label"
+                                        class="ui-selectonemenu-label ui-inputfield ui-corner-all">Todos</label>
+                                    <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
+                                            class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                </div>
+                                <div class="validation-error-container ">
+                                    <div id="messageCategoryMessage" class="ui-messages ui-widget" aria-live="polite">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="readedMessagesContainer"
+                                class="ui-g ui-lg-2 ui-md- ui-sm-12  checkField noRequired" style=""><label
+                                    for="readedMessages" style="margin-right: 0px;" title="">Mostrar mensajes
+                                    leídos</label>
+                                <div id="readedMessages" class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="readedMessages_input"
+                                            name="readedMessages_input" type="checkbox" autocomplete="off"
+                                            aria-checked="false"></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <div class="validation-error-container ">
+                                    <div id="readedMessagesMessage" class="ui-messages ui-widget" aria-live="polite">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-container"><button id="j_idt234" name="j_idt234"
+                                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                                type="submit" role="button" aria-disabled="false"><span
+                                    class="ui-button-text ui-c">Buscar</span></button></div><input type="hidden"
+                            name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1"
+                            value="-4072249374297918244:8267322115868508423" autocomplete="off">
+                        <input name="primefaces.nonce" type="hidden"
+                            value="YmRjNTI3MDMtMGQzZC00NDYzLWFkMmMtNzFkZWUwY2NhMGUy">
+                    </form>
+                    <form id="messagesForm" name="messagesForm" method="post"
+                        action="http://localhost:8080/message/unreadMessages.xhtml"
+                        enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="messagesForm" value="messagesForm">
+                        <div class="ui-g label-bookings-found-container"><label id="j_idt235"
+                                class="ui-outputlabel ui-widget">Resultados totales:</label><label id="j_idt236"
+                                class="ui-outputlabel ui-widget number-bookings-found">11</label></div>
+                        <div id="messagesTable" class="ui-datatable ui-widget ui-datatable-reflow"
+                            style="visibility: visible;">
+                            <div class="ui-datatable-tablewrapper">
+                                <table role="grid">
+                                    <thead id="messagesTable_head">
+                                        <tr role="row">
+                                            <th id="messagesTable:j_idt240" class="ui-state-default" role="columnheader"
+                                                scope="col" style="width:4%"><span class="ui-column-title"></span></th>
+                                            <th id="messagesTable:j_idt243" class="ui-state-default" role="columnheader"
+                                                aria-label="Fecha" scope="col" style="width:11%"><span
+                                                    class="ui-column-title">Fecha</span></th>
+                                            <th id="messagesTable:j_idt245" class="ui-state-default" role="columnheader"
+                                                aria-label="Localizador" scope="col" style="width:10%"><span
+                                                    class="ui-column-title">Localizador</span></th>
+                                            <th id="messagesTable:j_idt247" class="ui-state-default" role="columnheader"
+                                                aria-label="Tipo" scope="col" style="width:7%"><span
+                                                    class="ui-column-title">Tipo</span></th>
+                                            <th id="messagesTable:j_idt249" class="ui-state-default" role="columnheader"
+                                                aria-label="Categoría" scope="col" style="width:10%"><span
+                                                    class="ui-column-title">Categoría</span></th>
+                                            <th id="messagesTable:j_idt251" class="ui-state-default" role="columnheader"
+                                                aria-label="Remitente" scope="col" style="width:15%"><span
+                                                    class="ui-column-title">Remitente</span></th>
+                                            <th id="messagesTable:j_idt253" class="ui-state-default" role="columnheader"
+                                                aria-label="Texto" scope="col"><span
+                                                    class="ui-column-title">Texto</span></th>
+                                            <th id="messagesTable:j_idt255" class="ui-state-default center-column"
+                                                role="columnheader" aria-label="Leído" scope="col"><span
+                                                    class="ui-column-title">Leído</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="messagesTable_data" class="ui-datatable-data ui-widget-content">
+                                        <tr data-ri="0" class="ui-widget-content ui-datatable-even" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:0:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:0:creationDate" class="" style="">23/01/2020
+                                                    09:01</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>MTF2O2</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">Ocurrió un error al emitir los
+                                                    billetes de la reserva: TSM MISSING
+                                                    Por favor, revise que el estado de la reserva es correcto y en caso
+                                                    de no serlo póngase en contacto con su consolidador.</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="1" class="ui-widget-content ui-datatable-odd" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:1:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:1:creationDate" class="" style="">23/01/2020
+                                                    09:37</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>JSK78</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">Ocurrió un error al cancelar los
+                                                    billetes de la reserva: En caso de haber contratado otros servicios,
+                                                    para solicitar el reembolso debe contactarse con Iberia
+                                                    Los siguientes billetes siguen activos:
+                                                    075-2100414457
+                                                    Por favor, revise que el estado de la reserva es correcto y en caso
+                                                    de no serlo póngase en contacto con su consolidador.</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="2" class="ui-widget-content ui-datatable-even" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:2:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:2:creationDate" class="" style="">29/01/2020
+                                                    15:58</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>MYLPJ</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">Ocurrió un error al cancelar los
+                                                    billetes de la reserva: En caso de haber contratado otros servicios,
+                                                    para solicitar el reembolso debe contactarse con Iberia
+                                                    Los siguientes billetes siguen activos:
+                                                    075-2100420856
+                                                    Por favor, revise que el estado de la reserva es correcto y en caso
+                                                    de no serlo póngase en contacto con su consolidador.</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="3" class="ui-widget-content ui-datatable-odd" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:3:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:3:creationDate" class="" style="">16/09/2020
+                                                    08:36</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>QJDYL7</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">prueba mensaje</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="4" class="ui-widget-content ui-datatable-even" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:4:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:4:creationDate" class="" style="">16/09/2020
+                                                    08:38</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>QJDYL7</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">hgfjhgfjhgfjhgfjhgfjh</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="5" class="ui-widget-content ui-datatable-odd" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:5:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:5:creationDate" class="" style="">16/09/2020
+                                                    08:41</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>MSYRV</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">hgfjgfjhgf hgfjhgfjhg</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="6" class="ui-widget-content ui-datatable-even" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:6:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:6:creationDate" class="" style="">09/03/2021
+                                                    09:02</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>OS6HO9</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">Estimado cliente, recuerde que debido
+                                                    a nuestro horario laboral este mensaje no podrá ser atendido hasta
+                                                    nuestro regreso.
+                                                    Si tiene algún tema urgente puede contactar con el 916 666
+                                                    666</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="7" class="ui-widget-content ui-datatable-odd" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:7:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:7:creationDate" class="" style="">09/03/2021
+                                                    09:03</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>OS6HO9</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>EMITIR billetes o consultas
+                                                sobre EMISIONES</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">La nueva fecha límite de emision ha
+                                                    cambiado de 10/03/2021 22:59 a 10/03/2021 23:59</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="8" class="ui-widget-content ui-datatable-even" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:8:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:8:creationDate" class="" style="">09/03/2021
+                                                    21:09</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>OUYI2N</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>EMITIR billetes o consultas
+                                                sobre EMISIONES</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">La nueva fecha límite de emision ha
+                                                    cambiado de 10/03/2021 22:59 a 10/03/2021 23:59</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                        <tr data-ri="9" class="ui-widget-content ui-datatable-odd" role="row">
+                                            <td role="gridcell" class=""><span class="ui-column-title"></span><a
+                                                    id="messagesTable:9:j_idt241"
+                                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                                    class="ui-commandlink ui-widget fa fa-search"></a></td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Fecha</span><span
+                                                    id="messagesTable:9:creationDate" class="" style="">07/10/2021
+                                                    10:28</span></td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Localizador</span>R5FLI9</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Tipo</span>Aéreo
+                                            </td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Categoría</span>Realizar otra consulta o
+                                                petición</td>
+                                            <td role="gridcell" class=""><span
+                                                    class="ui-column-title">Remitente</span>admin (Otras - 107)</td>
+                                            <td role="gridcell" class=""><span class="ui-column-title">Texto</span><span
+                                                    style="white-space: pre-line">Esta reserva de procedencia externa ha
+                                                    sido grabada en el sistema por el administrador</span></td>
+                                            <td role="gridcell" class="center-column"><span
+                                                    class="ui-column-title">Leído</span><span
+                                                    class="fas fa-times"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="messagesTable_paginator_bottom"
+                                class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom"
+                                role="navigation" aria-label="Paginación"><a
+                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                    class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled"
+                                    aria-label="Primera página" tabindex="-1"><span
+                                        class="ui-icon ui-icon-seek-first">F</span></a><span
+                                    class="ui-paginator-pages"><a
+                                        class="ui-paginator-page ui-state-default ui-state-active ui-corner-all"
+                                        tabindex="0" href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                        aria-label="Página 1">1</a><a
+                                        class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0"
+                                        href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                        aria-label="Página 2">2</a></span><a
+                                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                                    class="ui-paginator-last ui-state-default ui-corner-all" aria-label="Última página"
+                                    tabindex="0"><span class="ui-icon ui-icon-seek-end">E</span></a><label
+                                    id="messagesTable:j_id45_rppLabel" for="messagesTable:j_id45"
+                                    class="ui-paginator-rpp-label ui-helper-hidden">Filas por página</label><select
+                                    id="messagesTable:j_id45" name="messagesTable_rppDD"
+                                    aria-labelledby="messagesTable:j_id45_rppLabel"
+                                    class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left"
+                                    autocomplete="off">
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                </select>
+                                <div style="float:right;padding-top: 5px;">
+                                    <script type="text/javascript" src="./unreadMessages_files/jsf.js.xhtml"
+                                        nonce=""></script><a id="messagesTable:downloadXlsx"
+                                        href="http://localhost:8080/message/unreadMessages.xhtml#"><img
+                                            id="messagesTable:j_idt238" src="./unreadMessages_files/xlsx-icon.svg"
+                                            alt="" width="24"></a>
+                                </div>
+                            </div>
+                        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2"
+                            value="-4072249374297918244:8267322115868508423" autocomplete="off">
+                        <input name="primefaces.nonce" type="hidden"
+                            value="YmRjNTI3MDMtMGQzZC00NDYzLWFkMmMtNzFkZWUwY2NhMGUy">
+                    </form>
+                </div>
+                <div id="j_idt258"
+                    class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container loading"
+                    role="dialog" aria-describedby="j_idt258_content" aria-hidden="true" aria-modal="true"
+                    aria-labelledby="j_idt258_title" style="width: auto; height: auto;">
+                    <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top" style=""><span
+                            id="j_idt258_title" class="ui-dialog-title"></span></div>
+                    <div class="ui-dialog-content ui-widget-content" id="j_idt258_content" style="height: auto;"><img
+                            id="j_idt259" src="./unreadMessages_files/loading.gif" alt="" class="loading-content"
+                            width="280"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="date-picker-wrapper no-shortcuts no-gap two-months" unselectable="on"
+        style="display: none; top: 410px; left: 286.5px; user-select: none;">
+        <div class="drp_top-bar">
+            <div class="normal-top"><span class="selection-top">Seleccionado: </span> <b class="start-day">...</b> <span
+                    class="separator-day"> to </span> <b class="end-day">...</b> <i class="selected-days">(<span
+                        class="selected-days-num">3</span> Días)</i></div>
+            <div class="error-top">error</div>
+            <div class="default-top">Por favor selecciona un rango de fechas.</div><input type="button"
+                class="apply-btn disabled hide" value="Cerrar">
+        </div>
+        <div class="month-wrapper" style="width: 0px;">
+            <table class="month1" cellspacing="0" border="0" cellpadding="0">
+                <thead>
+                    <tr class="caption">
+                        <th> <span class="prev">&lt; </span> </th>
+                        <th colspan="5" class="month-name">
+                            <div class="month-element">junio</div>
+                            <div class="month-element">2022</div>
+                        </th>
+                        <th><span class="next">&gt;</span> </th>
+                    </tr>
+                    <tr class="week-name">
+                        <th>lu</th>
+                        <th>ma</th>
+                        <th>mi</th>
+                        <th>ju</th>
+                        <th>vi</th>
+                        <th>sa</th>
+                        <th>do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div time="1653890400000" data-tooltip="" class="day lastMonth  valid ">30</div>
+                        </td>
+                        <td>
+                            <div time="1653976800000" data-tooltip="" class="day lastMonth  valid ">31</div>
+                        </td>
+                        <td>
+                            <div time="1654063200000" data-tooltip="" class="day toMonth  valid ">1</div>
+                        </td>
+                        <td>
+                            <div time="1654149600000" data-tooltip="" class="day toMonth  valid ">2</div>
+                        </td>
+                        <td>
+                            <div time="1654236000000" data-tooltip="" class="day toMonth  valid ">3</div>
+                        </td>
+                        <td>
+                            <div time="1654322400000" data-tooltip="" class="day toMonth  valid ">4</div>
+                        </td>
+                        <td>
+                            <div time="1654408800000" data-tooltip="" class="day toMonth  valid ">5</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1654495200000" data-tooltip="" class="day toMonth  valid ">6</div>
+                        </td>
+                        <td>
+                            <div time="1654581600000" data-tooltip="" class="day toMonth  valid ">7</div>
+                        </td>
+                        <td>
+                            <div time="1654668000000" data-tooltip="" class="day toMonth  valid ">8</div>
+                        </td>
+                        <td>
+                            <div time="1654754400000" data-tooltip="" class="day toMonth  valid ">9</div>
+                        </td>
+                        <td>
+                            <div time="1654840800000" data-tooltip="" class="day toMonth  valid ">10</div>
+                        </td>
+                        <td>
+                            <div time="1654927200000" data-tooltip="" class="day toMonth  valid ">11</div>
+                        </td>
+                        <td>
+                            <div time="1655013600000" data-tooltip="" class="day toMonth  valid ">12</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1655100000000" data-tooltip="" class="day toMonth  valid ">13</div>
+                        </td>
+                        <td>
+                            <div time="1655186400000" data-tooltip="" class="day toMonth  valid ">14</div>
+                        </td>
+                        <td>
+                            <div time="1655272800000" data-tooltip="" class="day toMonth  valid ">15</div>
+                        </td>
+                        <td>
+                            <div time="1655359200000" data-tooltip="" class="day toMonth  valid ">16</div>
+                        </td>
+                        <td>
+                            <div time="1655445600000" data-tooltip="" class="day toMonth  valid ">17</div>
+                        </td>
+                        <td>
+                            <div time="1655532000000" data-tooltip="" class="day toMonth  valid ">18</div>
+                        </td>
+                        <td>
+                            <div time="1655618400000" data-tooltip="" class="day toMonth  valid ">19</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1655704800000" data-tooltip="" class="day toMonth  valid ">20</div>
+                        </td>
+                        <td>
+                            <div time="1655791200000" data-tooltip="" class="day toMonth  valid ">21</div>
+                        </td>
+                        <td>
+                            <div time="1655877600000" data-tooltip="" class="day toMonth  valid ">22</div>
+                        </td>
+                        <td>
+                            <div time="1655964000000" data-tooltip="" class="day toMonth  valid ">23</div>
+                        </td>
+                        <td>
+                            <div time="1656050400000" data-tooltip="" class="day toMonth  valid ">24</div>
+                        </td>
+                        <td>
+                            <div time="1656136800000" data-tooltip="" class="day toMonth  valid ">25</div>
+                        </td>
+                        <td>
+                            <div time="1656223200000" data-tooltip="" class="day toMonth  valid ">26</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1656309600000" data-tooltip="" class="day toMonth  valid ">27</div>
+                        </td>
+                        <td>
+                            <div time="1656396000000" data-tooltip="" class="day toMonth  valid ">28</div>
+                        </td>
+                        <td>
+                            <div time="1656482400000" data-tooltip="" class="day toMonth  valid ">29</div>
+                        </td>
+                        <td>
+                            <div time="1656568800000" data-tooltip="" class="day toMonth  valid ">30</div>
+                        </td>
+                        <td>
+                            <div time="1656655200000" data-tooltip="" class="day nextMonth  valid ">1</div>
+                        </td>
+                        <td>
+                            <div time="1656741600000" data-tooltip="" class="day nextMonth  valid ">2</div>
+                        </td>
+                        <td>
+                            <div time="1656828000000" data-tooltip="" class="day nextMonth  valid ">3</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="gap" style="visibility: hidden; height: 0px;">
+                <div class="gap-top-mask"></div>
+                <div class="gap-bottom-mask"></div>
+                <div class="gap-lines">
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                    <div class="gap-line">
+                        <div class="gap-1"></div>
+                        <div class="gap-2"></div>
+                        <div class="gap-3"></div>
+                    </div>
+                </div>
+            </div>
+            <table class="month2" cellspacing="0" border="0" cellpadding="0">
+                <thead>
+                    <tr class="caption">
+                        <th><span class="prev">&lt;</span> </th>
+                        <th colspan="5" class="month-name">
+                            <div class="month-element">julio</div>
+                            <div class="month-element">2022</div>
+                        </th>
+                        <th> <span class="next">&gt;</span> </th>
+                    </tr>
+                    <tr class="week-name">
+                        <th>lu</th>
+                        <th>ma</th>
+                        <th>mi</th>
+                        <th>ju</th>
+                        <th>vi</th>
+                        <th>sa</th>
+                        <th>do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div time="1656309600000" data-tooltip="" class="day lastMonth  valid ">27</div>
+                        </td>
+                        <td>
+                            <div time="1656396000000" data-tooltip="" class="day lastMonth  valid ">28</div>
+                        </td>
+                        <td>
+                            <div time="1656482400000" data-tooltip="" class="day lastMonth  valid ">29</div>
+                        </td>
+                        <td>
+                            <div time="1656568800000" data-tooltip="" class="day lastMonth  valid ">30</div>
+                        </td>
+                        <td>
+                            <div time="1656655200000" data-tooltip="" class="day toMonth  valid ">1</div>
+                        </td>
+                        <td>
+                            <div time="1656741600000" data-tooltip="" class="day toMonth  valid ">2</div>
+                        </td>
+                        <td>
+                            <div time="1656828000000" data-tooltip="" class="day toMonth  valid ">3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1656914400000" data-tooltip="" class="day toMonth  valid real-today">4</div>
+                        </td>
+                        <td>
+                            <div time="1657000800000" data-tooltip="" class="day toMonth  invalid ">5</div>
+                        </td>
+                        <td>
+                            <div time="1657087200000" data-tooltip="" class="day toMonth  invalid ">6</div>
+                        </td>
+                        <td>
+                            <div time="1657173600000" data-tooltip="" class="day toMonth  invalid ">7</div>
+                        </td>
+                        <td>
+                            <div time="1657260000000" data-tooltip="" class="day toMonth  invalid ">8</div>
+                        </td>
+                        <td>
+                            <div time="1657346400000" data-tooltip="" class="day toMonth  invalid ">9</div>
+                        </td>
+                        <td>
+                            <div time="1657432800000" data-tooltip="" class="day toMonth  invalid ">10</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1657519200000" data-tooltip="" class="day toMonth  invalid ">11</div>
+                        </td>
+                        <td>
+                            <div time="1657605600000" data-tooltip="" class="day toMonth  invalid ">12</div>
+                        </td>
+                        <td>
+                            <div time="1657692000000" data-tooltip="" class="day toMonth  invalid ">13</div>
+                        </td>
+                        <td>
+                            <div time="1657778400000" data-tooltip="" class="day toMonth  invalid ">14</div>
+                        </td>
+                        <td>
+                            <div time="1657864800000" data-tooltip="" class="day toMonth  invalid ">15</div>
+                        </td>
+                        <td>
+                            <div time="1657951200000" data-tooltip="" class="day toMonth  invalid ">16</div>
+                        </td>
+                        <td>
+                            <div time="1658037600000" data-tooltip="" class="day toMonth  invalid ">17</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1658124000000" data-tooltip="" class="day toMonth  invalid ">18</div>
+                        </td>
+                        <td>
+                            <div time="1658210400000" data-tooltip="" class="day toMonth  invalid ">19</div>
+                        </td>
+                        <td>
+                            <div time="1658296800000" data-tooltip="" class="day toMonth  invalid ">20</div>
+                        </td>
+                        <td>
+                            <div time="1658383200000" data-tooltip="" class="day toMonth  invalid ">21</div>
+                        </td>
+                        <td>
+                            <div time="1658469600000" data-tooltip="" class="day toMonth  invalid ">22</div>
+                        </td>
+                        <td>
+                            <div time="1658556000000" data-tooltip="" class="day toMonth  invalid ">23</div>
+                        </td>
+                        <td>
+                            <div time="1658642400000" data-tooltip="" class="day toMonth  invalid ">24</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1658728800000" data-tooltip="" class="day toMonth  invalid ">25</div>
+                        </td>
+                        <td>
+                            <div time="1658815200000" data-tooltip="" class="day toMonth  invalid ">26</div>
+                        </td>
+                        <td>
+                            <div time="1658901600000" data-tooltip="" class="day toMonth  invalid ">27</div>
+                        </td>
+                        <td>
+                            <div time="1658988000000" data-tooltip="" class="day toMonth  invalid ">28</div>
+                        </td>
+                        <td>
+                            <div time="1659074400000" data-tooltip="" class="day toMonth  invalid ">29</div>
+                        </td>
+                        <td>
+                            <div time="1659160800000" data-tooltip="" class="day toMonth  invalid ">30</div>
+                        </td>
+                        <td>
+                            <div time="1659247200000" data-tooltip="" class="day toMonth  invalid ">31</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div time="1659333600000" data-tooltip="" class="day nextMonth  invalid ">1</div>
+                        </td>
+                        <td>
+                            <div time="1659420000000" data-tooltip="" class="day nextMonth  invalid ">2</div>
+                        </td>
+                        <td>
+                            <div time="1659506400000" data-tooltip="" class="day nextMonth  invalid ">3</div>
+                        </td>
+                        <td>
+                            <div time="1659592800000" data-tooltip="" class="day nextMonth  invalid ">4</div>
+                        </td>
+                        <td>
+                            <div time="1659679200000" data-tooltip="" class="day nextMonth  invalid ">5</div>
+                        </td>
+                        <td>
+                            <div time="1659765600000" data-tooltip="" class="day nextMonth  invalid ">6</div>
+                        </td>
+                        <td>
+                            <div time="1659852000000" data-tooltip="" class="day nextMonth  invalid ">7</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="dp-clearfix"></div>
+            <div class="time">
+                <div class="time1"></div>
+                <div class="time2"></div>
+            </div>
+            <div class="dp-clearfix"></div>
+        </div>
+        <div class="footer"></div>
+        <div class="date-range-length-tip"></div>
+    </div>
+    <div id="dlgSessionExpired"
+        class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container session-expired-dialog"
+        role="dialog" aria-describedby="dlgSessionExpired_content" aria-hidden="true" aria-modal="true"
+        aria-labelledby="dlgSessionExpired_title" style="width: auto; height: auto;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span
+                id="dlgSessionExpired_title" class="ui-dialog-title"></span><a
+                href="http://localhost:8080/message/unreadMessages.xhtml#"
+                class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Cerrar"
+                role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
+        <div class="ui-dialog-content ui-widget-content" id="dlgSessionExpired_content" style="height: auto;">
+            <div class="ui-g ">
+
+                <span class="gi-icon fas gi-session-expired "
+                    style="margin: auto;           height: 115px;           width: 115px;           background-size: 115px;           font-size:115px;"></span>
+            </div>
+            <div class="ui-g "><label id="j_idt262" class="ui-outputlabel ui-widget"
+                    style="font-size: 1.5em; margin-top: 15px; color: #e44049">Se ha perdido la sesión con los sistemas
+                    externos</label></div>
+            <div class="ui-g "><label id="j_idt263" class="ui-outputlabel ui-widget"
+                    style="font-size: 1.15em; margin: 5px auto; text-align: center">Por favor, vuelve a iniciar
+                    sesión.</label></div>
+            <div class="buttons-container"><button id="j_idt265" name="j_idt265"
+                    class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="submit"
+                    role="button" aria-disabled="false"><span class="ui-button-text ui-c">Cerrar sesión</span></button>
+            </div>
+        </div>
+    </div>
+    <div id="j_idt266"
+        class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"
+        role="alertdialog" aria-describedby="j_idt266_content" aria-hidden="true" aria-modal="true"
+        aria-labelledby="j_idt266_title" style="width: auto; height: auto;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt266_title"
+                class="ui-dialog-title"></span><a href="http://localhost:8080/message/unreadMessages.xhtml#"
+                class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Cerrar"
+                role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
+        <div class="ui-dialog-content ui-widget-content" id="j_idt266_content" style="height: auto;"><span
+                class="ui-icon ui-confirm-dialog-severity"></span><span class="ui-confirm-dialog-message"></span></div>
+        <div class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix"><button id="j_idt267"
+                name="j_idt267"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-yes"
+                type="button" role="button" aria-disabled="false"><span
+                    class="ui-button-icon-left ui-icon ui-c fa fa-check"></span><span
+                    class="ui-button-text ui-c">Sí</span></button><button id="j_idt268" name="j_idt268"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-no"
+                type="button" role="button" aria-disabled="false"><span
+                    class="ui-button-icon-left ui-icon ui-c fa fa-times"></span><span
+                    class="ui-button-text ui-c">No</span></button></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <a class="footer-logo" href="http://localhost:8080/air/avail/availAirForm.xhtml?faces-redirect=true"><img
+                    id="j_idt272" src="./unreadMessages_files/iris_logo.svg" alt="">
+            </a>
+            <div class="footer-links"><a href="http://localhost:8080/policy/cookies.xhtml"
+                    class="ui-link ui-widget footer-company">Política de Cookies</a>
+            </div>
+            <div class="footer-info"><label id="j_idt276" class="ui-outputlabel ui-widget">©</label><span id="j_idt277"
+                    class="ui-clock ui-widget ui-widget-header ui-corner-all">2022</span><label id="j_idt278"
+                    class="ui-outputlabel ui-widget footer-company">Grupo Iris</label>
+
+            </div>
+            <div id="top-row">
+                <a href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    class="fa fa-arrow-alt-circle-up fa-2x"></a>
+            </div>
+        </div>
+    </div>
+    <script
+        nonce="">PrimeFaces.csp.register('messagesTable:0:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:0:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('messagesTable:3:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:3:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('messagesTable:downloadXlsx', 'onclick', function (event) { mojarra.jsfcljs(document.getElementById('messagesForm'), { 'messagesTable:downloadXlsx': 'messagesTable:downloadXlsx' }, ''); return false }); PrimeFaces.csp.register('messagesTable:6:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:6:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('messagesTable:9:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:9:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('a\-bfd82a4f\-79af\-46b7\-a27e\-960920f5519e', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt30", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('a\-bb87dbf7\-20f3\-40fe\-b629\-559306e736ff', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt18", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('messagesTable:8:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:8:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('messagesTable:5:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:5:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('a\-9727f32a\-9e66\-4d93\-8c54\-d6d7184e461a', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt41", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('messagesTable:2:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:2:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('a\-59f1cf09\-93e4\-4669\-9f61\-9b72e3ee8e45', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt42", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('j_idt265', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt265", p: "j_idt265", onco: function (xhr, status, args, data) { PF('dlgSessionExpired').hide(); } }); return false; }); PrimeFaces.csp.register('a\-0042fb2e\-6304\-4b90\-b4ce\-624e6f1f7cd0', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt35", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('menu\-toggle', 'onclick', function (event) { $('div#menu-responsive\\:menu-bar').slideToggle('slow'); }); PrimeFaces.csp.register('j_idt53', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt53" }); return false; }); PrimeFaces.csp.register('a\-9949dd5b\-c22f\-4e1c\-8a64\-ee7bfd00b77c', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt25", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('messagesTable:7:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:7:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('a\-a4140e96\-2776\-4f5e\-9801\-8163a7a13b81', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt20", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('a\-d2ee092c\-bd1e\-4e2f\-9862\-b97127ce329d', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt40", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('messagesTable:4:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:4:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('j_idt60', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt60" }); return false; }); PrimeFaces.csp.register('messagesTable:1:j_idt241', 'onclick', function (event) { PrimeFaces.ab({ s: "messagesTable:1:j_idt241", f: "messagesForm" }); return false; }); PrimeFaces.csp.register('a\-e0ebb1db\-c541\-448f\-b07a\-9bec68c78917', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt15:j_idt17", f: "j_idt15" }); return false; }); PrimeFaces.csp.register('j_idt234', 'onclick', function (event) { PrimeFaces.ab({ s: "j_idt234", f: "filter-messages-form", u: "messagesForm" }); return false; });</script>
+    <script type="text/javascript" src="./unreadMessages_files/theme.js.xhtml" nonce=""></script>
+    <script type="text/javascript" src="./unreadMessages_files/primeLocale.js.xhtml" nonce=""></script>
+    <div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div>
+    <div id="j_idt15:j_idt16_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-e0ebb1db-c541-448f-b07a-9bec68c78917"><span class="ui-menuitem-text">Reservas</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-bb87dbf7-20f3-40fe-b629-559306e736ff"><span class="ui-menuitem-icon ui-icon fas fa-plane"
+                        aria-hidden="true"></span><span class="ui-menuitem-text">Reservas Aéreo</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/air/bookingRetrieve/externalBooking/externalBookingForm.xhtml"><span
+                        class="ui-menuitem-icon ui-icon fas fa-plane" aria-hidden="true"></span><span
+                        class="ui-menuitem-text">Consultas externas</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-a4140e96-2776-4f5e-9801-8163a7a13b81"><span class="ui-menuitem-icon ui-icon fas fa-train"
+                        aria-hidden="true"></span><span class="ui-menuitem-text">Reservas de tren</span></a></li>
+        </ul>
+    </div>
+    <div id="j_idt15:j_idt24_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-9949dd5b-c22f-4e1c-8a64-ee7bfd00b77c"><span class="ui-menuitem-text">Utilidades</span></a>
+            </li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all"
+                    href="http://localhost:8080/carriersmenu/carriers-menu.xhtml"><span
+                        class="ui-menuitem-text">Autocheckin e Info. equipaje</span></a></li>
+        </ul>
+    </div>
+    <div id="j_idt15:j_idt29_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-bfd82a4f-79af-46b7-a27e-960920f5519e"><span class="ui-menuitem-text">Mi cuenta</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/air/report/reports.xhtml"><span
+                        class="ui-menuitem-text">Informes aéreo</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-0042fb2e-6304-4b90-b4ce-624e6f1f7cd0"><span class="ui-menuitem-text">Pagos
+                        aéreo/tren</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all" href="http://localhost:8080/agencyadmin/main.xhtml"><span
+                        class="ui-menuitem-text">Configuración</span></a></li>
+        </ul>
+    </div>
+    <div id="j_idt15:notificationsBTN_menu"
+        class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+        role="menu">
+        <ul class="ui-menu-list ui-helper-reset">
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-close"
+                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-d2ee092c-bd1e-4e2f-9862-b97127ce329d"><span class="ui-menuitem-text">Notificaciones</span></a>
+            </li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-plane"
+                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-9727f32a-9e66-4d93-8c54-d6d7184e461a"><span class="ui-menuitem-text">11 Mensajes sin
+                        leer</span></a></li>
+            <li class="ui-menuitem ui-widget ui-corner-all" role="none"><a tabindex="-1" role="menuitem"
+                    class="ui-menuitem-link ui-corner-all menu-item-train"
+                    href="http://localhost:8080/message/unreadMessages.xhtml#"
+                    id="a-59f1cf09-93e4-4669-9f61-9b72e3ee8e45"><span class="ui-menuitem-text">0 Mensajes sin
+                        leer</span></a></li>
+        </ul>
+    </div>
+    <div class="ui-tooltip ui-tooltip-global ui-widget ui-tooltip-right" role="tooltip">
+        <div class="ui-tooltip-arrow"></div>
+        <div class="ui-tooltip-text ui-shadow ui-corner-all"></div>
+    </div>
+    <div id="messageType_panel"
+        class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay">
+        <div class="ui-selectonemenu-items-wrapper" style="max-height:200px"></div>
+    </div>
+    <div id="messageCategory_panel"
+        class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay">
+        <div class="ui-selectonemenu-items-wrapper" style="max-height:200px"></div>
+    </div>
+    <div class="ui-dialog-docking-zone"></div>
+</body>
+
+</html>
