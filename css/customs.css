@@ -4,6 +4,17 @@
     --color-primary: #05A5C7;
     --color-white: #fff;
 }
+html{
+    height: auto;
+}
+body {
+    background-image: url(/resources/media/header.jpg) !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 0 !important;
+    height: auto;
+    min-height: 100%;
+}
 
 #body {
     padding-bottom: 140px;
@@ -61,8 +72,9 @@
     width: 25px;
     margin-right: 10px;
     float: left;
-    background-image: url(/resources/media/icon-menumobile-profile.svg) !important;   
+    background-image: url(/resources/media/icon-menumobile-profile.svg) !important;
 }
+
 .header-right .ui-outputlabel.ui-widget.fa.fa-user {
     align-items: center;
     display: flex;
@@ -70,7 +82,7 @@
     cursor: pointer;
 }
 
-.header-right .ui-outputlabel.ui-widget.fa.fa-user::before {   
+.header-right .ui-outputlabel.ui-widget.fa.fa-user::before {
     content: "";
     height: 40px;
     width: 40px;
@@ -79,7 +91,8 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-.header-right .ui-outputlabel.ui-widget.fa.fa-user:hover:before  {
+
+.header-right .ui-outputlabel.ui-widget.fa.fa-user:hover:before {
     background-image: url(/resources/media/icon-profile-header-mobile-hover.svg) !important;
 }
 
@@ -118,6 +131,7 @@
     color: var(--color-white);
     position: relative;
 }
+
 .header-left-button {
     position: absolute;
     bottom: 0;
@@ -128,10 +142,12 @@
     left: 10px;
     color: var(--color-white) !important;
 }
+
 .header-left-button a {
     color: var(--color-white) !important;
 }
-.header-right{
+
+.header-right {
     z-index: 1;
     position: absolute;
     right: 0;
@@ -187,11 +203,13 @@
     font-size: 0.9rem !important;
     align-items: center;
 }
+
 .header-left-2 .header-item label {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
+
 .header-left form .ui-menubutton.ui-widget button {
     font-weight: 400 !important;
     padding: 0px;
@@ -321,10 +339,6 @@
     z-index: -100;
 }
 
-/*BORRAR*/
-.cb-slideshow div {
-    background-image: url(/resources/media/header.jpg) !important;
-}
 
 /*#endregion*/
 
@@ -380,6 +394,7 @@
     height: 22px;
     content: "";
 }
+
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover::after {
     background-image: url(/resources/media/icon-nav-active.svg);
     background-position: 7px 0;
@@ -496,19 +511,21 @@ organizar los input para que cubran mas espacio (nombre y pasajero)
 }
 
 /*#region footer*/
-.footer-container{
-    max-width: 1100px!important;
+.footer-container {
+    max-width: 1100px !important;
     padding-bottom: 20px;
 }
 
-.footer .footer-container .footer-links{
-    margin-right: 10px!important;
+.footer .footer-container .footer-links {
+    margin-right: 10px !important;
     border-right: 1px solid #002333;
     border-left: 1px solid #002333;
 }
-.footer .footer-container .footer-logo{
-    height: 70px!important;
+
+.footer .footer-container .footer-logo {
+    height: 70px !important;
 }
+
 /*#endredion footer*/
 
 

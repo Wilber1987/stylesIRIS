@@ -8,6 +8,20 @@
     border-radius: 10px;
 }
 
+#body-container{
+    border-radius: 1cm;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    background-color: var(--color-white);
+}
+#body-container .ui-g, #body-container h2 {    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
 /*#region inputs generales*/
 input.ui-inputfield {
     padding: 24px 12px !important;
