@@ -1,0 +1,8 @@
+function expand(validation) {
+    if (validation) {
+        $("div[data-widget]").each(function (index, value) {
+            PF(value.attributes['data-widget'].value).expand();
+        })
+    }
+}
+

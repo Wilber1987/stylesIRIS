@@ -58,6 +58,10 @@ input.ui-inputfield {
     box-sizing: border-box;
     width: 100%;
 }
+.ui-state-default .ui-icon, .ui-messages .ui-icon, .ui-sidebar-close .ui-icon, .ui-datepicker-header .ui-icon,
+.ui-dialog-titlebar-icon .ui-icon, .ui-selectcheckboxmenu-filter-container .ui-icon {
+    background-image: none;
+}
 
 /*#endregion*/
 /*#region BOTONES precio horario*/
@@ -332,6 +336,14 @@ input.ui-inputfield {
     background-size: 50px;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+#second-digits-ticketContainer {
+    position: relative;
+}
+#second-digits-ticketContainer::before {
+    position: absolute;
+    left: -5px;
+    top: 25px;
 }
 #passengersOverlayPanelContainer .ui-g{
     display: flex;    
