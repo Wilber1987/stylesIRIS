@@ -493,3 +493,20 @@ input.ui-inputfield {
 }
 
 /*#endregion*/
+
+/*#region tablas de resultados*/
+#availResults .ui-paginator{
+    text-align: right!important;
+}
+#airList .ui-g.air .air-price{
+    background-color: rgb(30, 30, 90);
+    margin: 0px!important;
+    color: white!important;/*TODO COLOR WHITE*/
+}
+#airList .ui-g.air .air-price button{
+    border-radius: 20px;
+}
+#airList .ui-g.air .air-price button::before{
+    background-image: url(../media/icon-precio-hover.svg) !important;
+}
+/*#endregion tablas */
