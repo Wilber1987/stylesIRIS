@@ -8,20 +8,17 @@ window.addEventListener("load", () => {
 })
 
 function DisplayAcordeonForm() {
-    const AcordeonBtnPlus = document.querySelectorAll(".AcordeonBtnPlus");
-    console.log(AcordeonBtnPlus);
-    AcordeonBtnPlus.forEach(acordeon => {
-        const AcordeonForm = document.querySelector("#" + acordeon.attributes.name.value);
-        acordeon.onclick = () => {
-            if (AcordeonForm.className.includes("AcordeonFormActive")) {
-                acordeon.innerHTML = "+";
-                AcordeonForm.className = "AcordeonForm";
-            } else {
-                acordeon.innerHTML = "-";
-                AcordeonForm.className = "AcordeonForm AcordeonFormActive";
-            }
+    const AcordeonBtnPlus = document.querySelector(".AcordeonBtnPlus");
+    const AcordeonForm = document.querySelector(".AcordeonForm");
+    AcordeonBtnPlus.onclick = () => {
+        if (AcordeonForm.className.includes("AcordeonFormActive")) {
+            AcordeonBtnPlus.innerHTML = "+";
+            AcordeonForm.className = "AcordeonForm";
+        } else {
+            AcordeonBtnPlus.innerHTML = "-";
+            AcordeonForm.className = "AcordeonForm AcordeonFormActive";
         }
-    });
+    }
 }
 
 function MenuStickyScrollStyle() {
