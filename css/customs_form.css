@@ -509,4 +509,8 @@ input.ui-inputfield {
 #airList .ui-g.air .air-price button::before{
     background-image: url(../media/icon-precio-hover.svg) !important;
 }
+.fa-suitcase:before{
+    content: ''!important;  
+    background-image: url(/resources/media/icon-menumobile-next.svg) !important;
+}
 /*#endregion tablas */
