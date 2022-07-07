@@ -19,8 +19,10 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: center;
     justify-content: center;
+}
+#filter-messages-form .ui-g{
+    align-items: center;
 }
 /*#region inputs generales*/
 input.ui-inputfield {
@@ -494,23 +496,3 @@ input.ui-inputfield {
 
 /*#endregion*/
 
-/*#region tablas de resultados*/
-#availResults .ui-paginator{
-    text-align: right!important;
-}
-#airList .ui-g.air .air-price{
-    background-color: rgb(30, 30, 90);
-    margin: 0px!important;
-    color: white!important;/*TODO COLOR WHITE*/
-}
-#airList .ui-g.air .air-price button{
-    border-radius: 20px;
-}
-#airList .ui-g.air .air-price button::before{
-    background-image: url(../media/icon-precio-hover.svg) !important;
-}
-.fa-suitcase:before{
-    content: ''!important;  
-    background-image: url(/resources/media/icon-menumobile-next.svg) !important;
-}
-/*#endregion tablas */
