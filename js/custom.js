@@ -8,8 +8,7 @@ window.addEventListener("load", () => {
 })
 
 function DisplayAcordeonForm() {
-    const AcordeonBtnPlus = document.querySelectorAll(".AcordeonBtnPlus");
-    console.log(AcordeonBtnPlus);
+    const AcordeonBtnPlus = document.querySelectorAll(".AcordeonBtnPlus");    
     AcordeonBtnPlus.forEach(acordeon => {
         const AcordeonForm = document.querySelector("#" + acordeon.attributes.name.value);
         acordeon.onclick = () => {
