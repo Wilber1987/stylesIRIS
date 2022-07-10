@@ -616,91 +616,91 @@ body {
     content: "" !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(../../old/resources/media/icon-flights.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(../../old/resources/media/icon-flights-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
     background-image: url(../../old/resources/media/icon-trains.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
     background-image: url(../../old/resources/media/icon-trains-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
     background-image: url(../../old/resources/media/icon-hotels.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
     background-image: url(../../old/resources/media/icon-hotels-hover.svg) !important;
 }
 
 /*nuevo tabmenu*/
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
     background-image: url(../../old/resources/media/icon-hotel_flight.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
     background-image: url(../../old/resources/media/icon-hotel_flight-hover.svg) !important;
 }
 
 
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
     background-image: url(../../old/resources/media/icon-cruises.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-cruises {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-cruises {
     background-image: url(../../old/resources/media/icon-cruises-hover.svg) !important;
 }
 
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
     background-image: url(../../old/resources/media/icon-digital_signature.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
     background-image: url(../../old/resources/media/icon-digital_signature-hover.svg) !important;
 }
 
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
     background-image: url(../../old/resources/media/icon-activities.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-activities {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-activities {
     background-image: url(../../old/resources/media/icon-activities-hover.svg) !important;
 }
 
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
     background-image: url(../../old/resources/media/icon-bookroad.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-bookroad {
     background-image: url(../../old/resources/media/icon-bookroad-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
     background-image: url(../../old/resources/media/icon-busway.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-busway {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-busway {
     background-image: url(../../old/resources/media/icon-busway-hover.svg) !important;
 }
 

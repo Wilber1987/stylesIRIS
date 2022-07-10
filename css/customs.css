@@ -24,6 +24,7 @@ body {
 #avail-container {
     background: initial !important;
     max-width: 1200px;
+    padding: 0px;
 }
 
 /*#region menu de acceso a diferentes sistemas y HEADRS*/
@@ -349,21 +350,31 @@ body {
 
 
 /*#region tab menu*/
+.body-main-page {
+    padding-top: 0px;
+    height: auto;
+}
+#availTabMenu{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;    
+    margin-top: 50px;
+}
 
-#avail-container .ui-tabmenu {
+#availTabMenu .ui-tabmenu {
     display: flex;
     width: 100%;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {}
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +384,7 @@ body {
     padding-bottom: 0px !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-text {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-text {
     list-style: none;
     font-style: normal;
     font-weight: 400;
@@ -384,18 +395,7 @@ body {
     padding-bottom: 15px;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link::after {
-    background-image: url(/resources/media/icon-nav-active.svg);
-    background-position: 7px 0;
-    background-repeat: no-repeat;
-    transform: translateX(-0%);
-    left: 50%;
-    width: 60px;
-    height: 22px;
-    content: "";
-}
-
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover::after {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link::after {
     background-image: url(/resources/media/icon-nav-active.svg);
     background-position: 7px 0;
     background-repeat: no-repeat;
@@ -407,12 +407,13 @@ body {
 }
 
 
-.ui-tabmenu .ui-menuitem-icon {
+
+
+#availTabMenu .ui-tabmenu .ui-menuitem-icon {
     margin-right: 0px !important;
 }
 
-
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon {
     background-repeat: no-repeat !important;
     background-position-x: center !important;
     background-position-y: center !important;
@@ -420,6 +421,16 @@ body {
     width: 40px;
     overflow: hidden;
     min-width: 40px;
+}
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover::after {
+    background-image: url(/resources/media/icon-nav-active.svg);
+    background-position: 7px 0;
+    background-repeat: no-repeat;
+    transform: translateX(-0%);
+    left: 50%;
+    width: 60px;
+    height: 22px;
+    content: "";
 }
 
 .fa-train:before,
@@ -436,53 +447,53 @@ body {
     background-size: 30px 30px;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-plane,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-plane {
     background-image: url(/resources/media/icon-flights-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train {
     background-image: url(/resources/media/icon-trains-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-train,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-train {
     background-image: url(/resources/media/icon-trains-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel {
     background-image: url(/resources/media/icon-hotels-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotel,
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link:hover>.ui-menuitem-icon.ui-icon.fa.fa-hotel {
     background-image: url(/resources/media/icon-hotels-hover.svg) !important;
 }
 
 /*nuevo tabmenu*/
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-hotels-flights {
     background-image: url(/resources/media/icon-hotel_flight-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-cruises {
     background-image: url(/resources/media/icon-cruises-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-digital-signature {
     background-image: url(/resources/media/icon-digital_signature-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-activities {
     background-image: url(/resources/media/icon-activities-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-bookroad {
     background-image: url(/resources/media/icon-bookroad-hover.svg) !important;
 }
 
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
+#availTabMenu .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link .ui-menuitem-icon.ui-icon.fa.fa-busway {
     background-image: url(/resources/media/icon-busway-hover.svg) !important;
 }
 
