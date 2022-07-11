@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
     const Menu = document.querySelector("#header-container");
     BtnCloseMenu(Menu);
     DisplayMenu(Menu);
+    DisplayMenuFilter();
     MenuStickyScrollStyle();
     DisplayAcordeonForm();
 })
@@ -50,7 +51,22 @@ function DisplayMenu(Menu) {
         }
     };
 }
-
+function DisplayMenuFilter() {
+    const FilterOptions = document.querySelector(".avail-results-order");
+    const Menu = document.querySelector(".avail-filters-column");
+    const FilterBTN = document.createElement("input");
+    FilterBTN.value = "FILTRAR BÚSQUEDA";
+    FilterBTN.className = "FilterBTN";
+    FilterBTN.type = "button";
+    FilterBTN.onclick = () => {
+        if (Menu.className.includes("menu-active")) {
+            Menu.className = "avail-filters-column";
+        } else {
+            Menu.className = "avail-filters-column menu-active";
+        }
+    };
+    FilterOptions.insertBefore(FilterBTN, FilterOptions.firstChild);
+}
 function BtnCloseMenu(Menu) {
 
     const btnCloseMenu = document.createElement("spam");

@@ -493,6 +493,8 @@ input.ui-inputfield {
     font-weight: 500;
     cursor: pointer;
 }
-
+button.ui-button, .lowcost-contract button.generate-document-button{
+border-radius: 20px !important;
+}
 /*#endregion*/
 

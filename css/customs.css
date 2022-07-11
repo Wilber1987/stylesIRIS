@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
 :root {
     --main-font: sans-serif;
     --main-font-two: 100% "DM Sans", sans-serif;
     --color-primary: #05A5C7;
     --color-white: #fff;
+    --color-secundario: #043e4b;
 }
-html{
+
+html {
     height: auto;
 }
+
 body {
     background-image: url(/resources/media/header.jpg) !important;
     background-size: 100% 100% !important;
@@ -98,9 +102,25 @@ body {
     background-image: url(/resources/media/icon-profile-header-mobile-hover.svg) !important;
 }
 
+.avail-results-order {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.avail-results-order .ui-g {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#changeView {
+    margin: 0px;
+}
+
 #header-container,
 .ui-menu.ui-menu-dynamic,
-.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done {
+.ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done,
+.avail-filters-column {
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -116,6 +136,15 @@ body {
     transition: all 0.6s;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
     overflow: hidden;
+}
+
+.FilterBTN {
+    background-color: var(--color-secundario);
+    padding: 10px;
+    border-radius: 50px;
+    color: var(--color-white) !important;
+    width: 200px;
+    cursor: pointer;
 }
 
 .header-left form,
@@ -192,18 +221,48 @@ body {
 .header-left form .ui-menubutton.ui-widget,
 .header-left-2 .header-item,
 .btnCloseMenu,
+.avail-filters-column .ui-panel .ui-panel-titlebar,
+.avail-filters-column .filter-count-container,
 .ui-menu.ui-menu-dynamic ul li a,
 .ui-menu.ui-menu-dynamic.ui-connected-overlay-enter-done ul li a {
     color: var(--color-white) !important;
     border-bottom: var(--color-white) 1px solid;
     margin: 0px;
     margin-left: 0px !important;
-    padding: 17px 23px !important;
+    padding: 10px 23px !important;
     font-weight: 400 !important;
     cursor: pointer;
     display: flex;
     font-size: 0.9rem !important;
     align-items: center;
+    background-color: initial;
+}
+
+.avail-filters-column {
+    background-color: var(--color-secundario);
+}
+
+.avail-filters-column .filters .filter-panel,
+.avail-filters-column .filter-count-container {
+    background-color: initial;
+}
+
+.avail-filters-column .filters .filter-panel a {
+    position: absolute;
+    right: 20px;
+}
+
+.avail-summary {
+    background: initial;
+}
+
+.avail-summary-container {
+    width: auto;
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    height: 40px;
 }
 
 .header-left-2 .header-item label {
@@ -362,8 +421,6 @@ body {
     justify-content: space-between;
     width: 100%;
 }
-
-#avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {}
 
 #avail-container .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem a.ui-menuitem-link {
     display: flex;
