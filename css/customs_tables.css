@@ -1,6 +1,22 @@
 /*#region tablas de resultados*/
 #content .ui-g div {}
 
+.avail-results-order {
+    display: grid;
+    grid-template-columns: 650px 650px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.display-search-row{
+background-color: #fff;
+}
+#availResults{
+    max-width: 1300px;
+    margin: auto;
+}
+
 .air-price {
     background-color: var(--color-secundario);
     margin: 0px !important;
