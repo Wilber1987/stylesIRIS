@@ -544,8 +544,12 @@ button.ui-button,
 }
 #data{
     background-color: #FFFFFF;
-    z-index: 1;
-    position: absolute;
+    z-index: 1010;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     color: #000000 !important;
 }
 
