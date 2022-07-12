@@ -31,7 +31,10 @@ body {
     background: initial !important;
     max-width: 1200px;
 }
-
+/*TODO BORRAR*/
+.cb-slideshow div{
+    background-image: url(/resources/media/header.jpg) !important;
+}
 /*#region menu de acceso a diferentes sistemas y HEADRS*/
 .ui-tabmenu li.ui-state-active a,
 .ui-tabmenu a.ui-menuitem-link {
@@ -52,6 +55,11 @@ body {
 
 #menu-sticky {
     z-index: 1001 !important;
+    box-shadow: none;
+}
+.ui-sticky .menu {
+    background-color: initial;
+    box-shadow: none;
 }
 
 #header {
@@ -242,16 +250,18 @@ body {
 }
 
 .avail-summary {
-    background: initial;
+    background: #fff;
 }
-
+.collapsed-search{
+}
 .avail-summary-container {
     width: auto;
     max-width: 1200px;
     margin: auto;
     background-color: var(--color-primary);
     border-radius: 20px;
-    height: 40px;
+    min-height: 40px;
+    padding: 20px;
 }
 
 .header-left-2 .header-item label {

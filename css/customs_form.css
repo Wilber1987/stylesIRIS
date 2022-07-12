@@ -542,15 +542,8 @@ button.ui-button,
 .lowcost-contract button.generate-document-button {
     border-radius: 20px !important;
 }
-#data{
-    background-color: #FFFFFF;
-    z-index: 1010;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #000000 !important;
-}
+.avail-summary-container #data{
+    padding: 20px;
+}  
 
 /*#endregion*/

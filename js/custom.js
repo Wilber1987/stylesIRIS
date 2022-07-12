@@ -9,18 +9,18 @@ window.addEventListener("load", () => {
 })
 
 function DisplayAcordeonForm() {
-    const AcordeonBtnPlus = document.querySelectorAll(".AcordeonBtnPlus");    
+    const AcordeonBtnPlus = document.querySelectorAll(".AcordeonBtnPlus");
     AcordeonBtnPlus.forEach(acordeon => {
         const AcordeonForm = document.querySelector("#" + acordeon.attributes.name.value);
-        acordeon.onclick = () => {
-            if (AcordeonForm.className.includes("AcordeonFormActive")) {
-                acordeon.innerHTML = "+";
-                AcordeonForm.className = "AcordeonForm";
-            } else {
-                acordeon.innerHTML = "-";
-                AcordeonForm.className = "AcordeonForm AcordeonFormActive";
-            }
+        //acordeon.onclick = () => {
+        if (AcordeonForm.className.includes("AcordeonFormActive")) {
+            acordeon.innerHTML = "+";
+            AcordeonForm.className = "AcordeonForm";
+        } else {
+            acordeon.innerHTML = "-";
+            AcordeonForm.className = "AcordeonForm AcordeonFormActive";
         }
+        // }
     });
 }
 
