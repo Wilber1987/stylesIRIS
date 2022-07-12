@@ -18,7 +18,7 @@
 }
 
 #body-container .ui-lg-12 {
-    padding: 0px;
+    padding: 0px !important;
 }
 
 #body-container #content {
@@ -30,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .avail-results-order .ui-g {
     display: flex;
@@ -524,9 +524,8 @@ input.ui-inputfield {
     justify-content: flex-end;
 }
 
-.AcordeonBtnPlus::before {
+.AcordeonLabel {
     color: var(--color-primary);
-    content: "#{msg.MoreOptions}";
     margin-right: 10px;
     display: inline-block;
 }
