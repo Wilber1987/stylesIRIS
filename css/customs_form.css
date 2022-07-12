@@ -19,8 +19,10 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: center;
     justify-content: center;
+}
+#filter-messages-form .ui-g{
+    align-items: center;
 }
 /*#region inputs generales*/
 input.ui-inputfield {
@@ -493,3 +495,4 @@ input.ui-inputfield {
 }
 
 /*#endregion*/
+
