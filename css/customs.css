@@ -565,6 +565,7 @@ body {
 
 .adaptable-container {
     overflow: hidden;
+    margin-bottom: 130px;
 }
 
 /*#endregion*/

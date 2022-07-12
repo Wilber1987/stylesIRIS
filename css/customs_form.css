@@ -5,8 +5,7 @@
 }
 
 #avail-form>form#availabilityForm {
-    border-radius: 10px;
-    padding-bottom: 130px;
+    border-radius: 10px;    
 }
 
 #body-container {
@@ -107,9 +106,12 @@ input.ui-inputfield {
     background: var(--color-white);
     border: 0px solid #297DB5 !important;
     border: inherit;
-    padding: 7px 30px;
     border-radius: 5px 0px 0px 5px;
+    padding: 7px 30px;   
     background-color: #EBEBEB;
+}
+.ui-selectonebutton .ui-button.ui-state-default.ui-corner-right.ui-state-active {
+    border-radius: 0px 5px 5px 0px;
 }
 
 #requestType .ui-selectonebutton.ui-buttonset.ui-widget.ui-corner-all.ui-buttonset-2 div:first-of-type.ui-state-active span:first-of-type {
@@ -539,7 +541,7 @@ input.ui-inputfield {
 
 button.ui-button,
 .lowcost-contract button.generate-document-button {
-    border-radius: 20px !important;
+    border-radius: 100px !important;
 }
 .avail-summary-container #data{
     padding: 20px;

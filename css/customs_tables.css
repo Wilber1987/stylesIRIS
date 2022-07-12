@@ -34,23 +34,9 @@ background-color: #fff;
     color: var(--color-white) !important;
 }
 
-input,
-.p-datepicker input,
-.title-text-upper2,
-.segment-step,
-.ui-selectonemenu,
-.ui-selectcheckboxmenu,
-textarea,
-.avail-tab-view .city,
-.ui-selectonemenu label.ui-selectonemenu-label,
-.ui-selectcheckboxmenu label.ui-selectcheckboxmenu-label,
 .air .avail-mosaic-view,
 .avail-detail-view .air .air-journey-group-header *:not(.link),
 .alternate-proposals .air-journey-group-header,
-.date-picker-wrapper,
-.ui-datepicker-title,
-.ui-datepicker-calendar th,
-.ui-datepicker-unselectable,
 .train-journey-group-header {
     color: var(--color-white) !important;
 }
