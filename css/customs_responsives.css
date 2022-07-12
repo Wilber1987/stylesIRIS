@@ -1,25 +1,22 @@
 /*#region responsives */
-@media (max-width: 1200px) {
-
-    #header-container,
-    .menu-container,
-    .footer-container {
-        width: 100% !important;
-    }
-}
-
 @media only screen and (max-width: 1600px) {
     #top-row {
         display: none;
     }
 }
+@media (max-width: 1200px) {    
+}
 
 @media only screen and (max-width: 991px) {
-
     #header,
     #body {
         overflow: hidden;
         display: block;
+    }
+    #header-container,
+    .menu-container,
+    .footer-container {
+        width: 100% !important;
     }
 
     #avail-container {
@@ -256,15 +253,9 @@
         border-radius: 5px;
         width: calc(100% - 64px);
     }
-
     .date-picker-wrapper .drp_top-bar .default-top {
         display: none;
     }
-
-    .date-range-picker-from .input-icon,
-    .date-range-picker-from-single .input-icon,
-    .date-range-picker-to .input-icon {}
-
     .footer .footer-container .footer-info .footer-company {
         margin: 0px; 
         margin-left: 15px;
@@ -274,8 +265,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    /*#region footer*/
     .footer {
         border-radius: 0px 0px 0px 0px;
         margin-right: auto;
@@ -284,8 +273,6 @@
         padding-right: 0px;
         height: auto;
     }
-
-    /*#endregion*/
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -301,6 +288,3 @@
         margin-bottom: 20px !important;
     }
 }
-
-
-/*endregion*/

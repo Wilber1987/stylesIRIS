@@ -1,6 +1,4 @@
 /*#region tablas de resultados*/
-#content .ui-g div {}
-
 .avail-results-order {
     display: grid;
     grid-template-columns: 650px 650px;
