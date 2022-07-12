@@ -1,20 +1,78 @@
 /*#region tablas de resultados*/
-#availResults .ui-paginator{
-    text-align: right!important;
+#content .ui-g div {}
+
+.avail-results-order {
+    display: grid;
+    grid-template-columns: 650px 650px;
+    justify-content: center;
+    width: 100%;
 }
-#airList .ui-g.air .air-price{
-    background-color: rgb(30, 30, 90);
-    margin: 0px!important;
-    color: white!important;/*TODO COLOR WHITE*/
+
+
+.display-search-row{
+background-color: #fff;
 }
-#airList .ui-g.air .air-price button{
-    border-radius: 20px;
+#availResults{
+    max-width: 1300px;
+    margin: auto;
 }
-#airList .ui-g.air .air-price button::before{
-    background-image: url(../media/icon-precio-hover.svg) !important;
+
+.air-price {
+    background-color: var(--color-secundario);
+    margin: 0px !important;
+    color: var(--color-white) !important;
+    justify-content: center;
+    align-items: center;
 }
-.fa-suitcase:before{
-    content: ''!important;  
-    background-image: url(/resources/media/icon-menumobile-next.svg) !important;
+
+.air-price .price,
+.air-price a,
+.air-journey-group-header span,
+.air-journey-group-header label,
+.air-journey-group-header a,
+.air-journey-group-header {
+    color: var(--color-white) !important;
+}
+
+input,
+.p-datepicker input,
+.title-text-upper2,
+.segment-step,
+.ui-selectonemenu,
+.ui-selectcheckboxmenu,
+textarea,
+.avail-tab-view .city,
+.ui-selectonemenu label.ui-selectonemenu-label,
+.ui-selectcheckboxmenu label.ui-selectcheckboxmenu-label,
+.air .avail-mosaic-view,
+.avail-detail-view .air .air-journey-group-header *:not(.link),
+.alternate-proposals .air-journey-group-header,
+.date-picker-wrapper,
+.ui-datepicker-title,
+.ui-datepicker-calendar th,
+.ui-datepicker-unselectable,
+.train-journey-group-header {
+    color: var(--color-white) !important;
+}
+
+.air-journey-container {
+    padding: 0px;
+    padding-right: 10px;
+}
+
+.air-journey-group-header {
+    background-color: var(--color-secundario);
+    color: var(--color-white) !important;
+}
+
+.avail-detail-view .air .air-journey-group-header,
+.alternate-proposals .air-journey-group-header,
+.air-journeis-info .air-journey-group-header,
+.avail-detail-view .air .train-journey-group-header,
+.air-journeis-info .train-journey-group-header {
+    border-bottom: none;
+}
+.avail-detail-view .car, .avail-detail-view .air, .avail-detail-view .background-color-light-grey, .external-booking-price .air-price-detail{
+    margin-bottom: 50px;
 }
 /*#endregion tablas */

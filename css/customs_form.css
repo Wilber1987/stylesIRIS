@@ -6,23 +6,48 @@
 
 #avail-form>form#availabilityForm {
     border-radius: 10px;
+    padding-bottom: 130px;
 }
 
-#body-container{
-    border-radius: 1cm;
+#body-container {
     overflow: hidden;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-    padding: 20px;
     background-color: var(--color-white);
+    width: 100%;
+    background-color: #e5e5e5;
+    margin: 0px;
 }
-#body-container .ui-g, #body-container h2 {    
+
+#body-container .ui-lg-12 {
+    padding: 0px;
+}
+
+#body-container #content {
+    margin: auto;
+}
+
+#body-container .ui-g,
+#body-container h2 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    justify-content: center;
+    /* justify-content: center; */
 }
-#filter-messages-form .ui-g{
+.avail-results-order .ui-g {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
+}
+
+#filter-messages-form .ui-g {
+    align-items: center;
+}
+
+#priceOrder{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
 }
 /*#region inputs generales*/
 input.ui-inputfield {
@@ -60,8 +85,13 @@ input.ui-inputfield {
     box-sizing: border-box;
     width: 100%;
 }
-.ui-state-default .ui-icon, .ui-messages .ui-icon, .ui-sidebar-close .ui-icon, .ui-datepicker-header .ui-icon,
-.ui-dialog-titlebar-icon .ui-icon, .ui-selectcheckboxmenu-filter-container .ui-icon {
+
+.ui-state-default .ui-icon,
+.ui-messages .ui-icon,
+.ui-sidebar-close .ui-icon,
+.ui-datepicker-header .ui-icon,
+.ui-dialog-titlebar-icon .ui-icon,
+.ui-selectcheckboxmenu-filter-container .ui-icon {
     background-image: none;
 }
 
@@ -206,10 +236,15 @@ input.ui-inputfield {
 /*#endregion*/
 /*#region CHECKS y RADIOS*/
 
-.ui-state-default .ui-icon, .ui-messages .ui-icon, .ui-sidebar-close .ui-icon, .ui-datepicker-header .ui-icon, .ui-dialog-titlebar-icon .ui-icon, .ui-selectcheckboxmenu-filter-container .ui-icon
-{
-    background-image: none!important;
+.ui-state-default .ui-icon,
+.ui-messages .ui-icon,
+.ui-sidebar-close .ui-icon,
+.ui-datepicker-header .ui-icon,
+.ui-dialog-titlebar-icon .ui-icon,
+.ui-selectcheckboxmenu-filter-container .ui-icon {
+    background-image: none !important;
 }
+
 .ui-radiobutton-box.ui-widget.ui-corner-all.ui-state-default.ui-state-active {
     background-color: var(--color-primary) !important;
     box-sizing: border-box;
@@ -339,21 +374,26 @@ input.ui-inputfield {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
 #second-digits-ticketContainer {
     position: relative;
 }
+
 #second-digits-ticketContainer::before {
     position: absolute;
     left: -5px;
     top: 25px;
 }
-#passengersOverlayPanelContainer .ui-g{
-    display: flex;    
+
+#passengersOverlayPanelContainer .ui-g {
+    display: flex;
     flex-wrap: inherit;
 }
-#passengersOverlayPanelContainer .ui-g{
+
+#passengersOverlayPanelContainer .ui-g {
     width: 100%;
 }
+
 /*#endregion*/
 /*#region Calendario y fechas*/
 
@@ -364,8 +404,8 @@ input.ui-inputfield {
     padding: 0px 0px 0px 0px !important;
 }
 
-.date-range-picker-from{
-    padding-right: 5px!important;
+.date-range-picker-from {
+    padding-right: 5px !important;
 }
 
 .date-range-picker-from .input-icon,
@@ -396,12 +436,15 @@ input.ui-inputfield {
     padding: 0px !important;
     overflow: hidden;
 }
-.month-wrapper table thead{
+
+.month-wrapper table thead {
     background: #EBEBEB;
 }
+
 .date-picker-wrapper .footer {
     display: none;
 }
+
 .month-wrapper::before {
     background-color: var(--color-primary) !important;
     display: flex;
@@ -422,15 +465,16 @@ input.ui-inputfield {
     width: calc(50% - 10px) !important;
     border: 5px solid var(--color-white);
     padding: 5px;
-    margin: 5px;    
+    margin: 5px;
 }
 
-.date-picker-wrapper .month-wrapper table.month1{
+.date-picker-wrapper .month-wrapper table.month1 {
     border: 2px solid #F3F2EB;
     background: #FFFFFF;
 }
 
-.date-picker-wrapper .month-wrapper table.month1, .date-picker-wrapper .month-wrapper table.month2 {    
+.date-picker-wrapper .month-wrapper table.month1,
+.date-picker-wrapper .month-wrapper table.month2 {
     border: 2px solid #F3F2EB;
     background: #FFFFFF;
     border-radius: 0px 0px 10px 10px;
@@ -494,5 +538,12 @@ input.ui-inputfield {
     cursor: pointer;
 }
 
-/*#endregion*/
+button.ui-button,
+.lowcost-contract button.generate-document-button {
+    border-radius: 20px !important;
+}
+.avail-summary-container #data{
+    padding: 20px;
+}  
 
+/*#endregion*/
