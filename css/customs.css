@@ -599,9 +599,13 @@ organizar los input para que cubran mas espacio (nombre y pasajero)
 }
 
 /*#region footer*/
-.footer {    
+.footer {
     background-color: #e5e5e5;
     padding-top: 50px;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .footer-container {
     max-width: 1100px !important;
